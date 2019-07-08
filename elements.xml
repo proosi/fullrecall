@@ -67,51 +67,9 @@ LEGEND:
 
 <category name="Django">
 
-<item id="1562496313" tmtrpt="310" stmtrpt="310" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jakie zmienne trzeba zdefiniować w klasie dziedziczącej po klasie CreateView?</q>
-<a><![CDATA[model = <nazwa modelu z pliku models.py>
-template_name = '<nazwa>.html'
-fields = '__all__']]></a>
-</item>
-
-<item id="1562496540" tmtrpt="310" stmtrpt="310" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie UpdateView?</q>
-<a><![CDATA[model = <nazwa modelu z pliku models.py>
-fields =['<nazwa zmiennej>', '<nazwa zmiennej>', itd] lub '__all__'
-template_name = '<nazwa>.html']]></a>
-</item>
-
-<item id="1562496781" tmtrpt="310" stmtrpt="310" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie DeleteView?</q>
-<a><![CDATA[model = <nazwa modelu z pliku models.py>
-template_name = '<nazwa>.html'
-success_url = reverse_lazy('<nazwa>')]]></a>
-</item>
-
-<item id="1562142043" tmtrpt="311" stmtrpt="311" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
-<q>Jak nazywa się plik konfiguracyjny projektu?</q>
-<a><![CDATA[<nazwa projektu>/settings.py]]></a>
-</item>
-
-<item id="1562148509" tmtrpt="311" stmtrpt="311" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
-<q>Jak oznacza się komentarz w HTML?</q>
-<a><![CDATA[<!-- treść komentarza -->]]></a>
-</item>
-
-<item id="1562494098" tmtrpt="311" stmtrpt="311" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
-<q>Jak zabezpieczyć stronę przed Cross-Site Request Forgery?</q>
-<a>Należy wstawić tag 
-
-{% csrf_token %}</a>
-</item>
-
-<item id="1562367088" tmtrpt="311" stmtrpt="311" livl="1" rllivl="1" ivl="1" rp="1" gr="2">
-<q>Jaka metoda powinna być zdefiniowana w modelu do przekierowania na inną stronę?</q>
-<a><![CDATA[get_absolute_url(self):
-    return reverse('<nazwa strony>', args)
-
-trzeba importować metodę reverse()
-from django.urls import reverse]]></a>
+<item id="1562615709" tmtrpt="311" stmtrpt="311" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jaki tag szablonowy ustawia katalog na stronie? </q>
+<a><![CDATA[{% load '<nazwa katalogu>' %}]]></a>
 </item>
 
 <item id="1562232704" tmtrpt="312" stmtrpt="312" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
@@ -176,6 +134,20 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView</a>
 ]]></a>
 </item>
 
+<item id="1562496540" tmtrpt="312" stmtrpt="312" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
+<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie UpdateView?</q>
+<a><![CDATA[model = <nazwa modelu z pliku models.py>
+fields =['<nazwa zmiennej>', '<nazwa zmiennej>', itd] lub '__all__'
+template_name = '<nazwa>.html']]></a>
+</item>
+
+<item id="1562496781" tmtrpt="312" stmtrpt="312" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
+<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie DeleteView?</q>
+<a><![CDATA[model = <nazwa modelu z pliku models.py>
+template_name = '<nazwa>.html'
+success_url = reverse_lazy('<nazwa>')]]></a>
+</item>
+
 <item id="1562141464" tmtrpt="313" stmtrpt="313" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
 <q>Jakie polecenie uruchamia server w Django?</q>
 <a>python manage.py runserver</a>
@@ -194,6 +166,13 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView</a>
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
 </item>
 
+<item id="1562496313" tmtrpt="313" stmtrpt="313" livl="0" rllivl="0" ivl="2" rp="0" gr="4">
+<q>Jakie zmienne trzeba zdefiniować w klasie dziedziczącej po klasie CreateView?</q>
+<a><![CDATA[model = <nazwa modelu z pliku models.py>
+template_name = '<nazwa>.html'
+fields = '__all__']]></a>
+</item>
+
 <item id="1562231251" tmtrpt="314" stmtrpt="314" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
 <q>W jakim pliku definiuje się pola bazy danych?</q>
 <a><![CDATA[<nazwa app>/ model.py]]></a>
@@ -202,6 +181,15 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
 <item id="1562141296" tmtrpt="314" stmtrpt="314" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
 <q>Jakie polecenie tworzy aplikację w Django?</q>
 <a><![CDATA[django-admin startapp <nazwa aplikacji>]]></a>
+</item>
+
+<item id="1562367088" tmtrpt="314" stmtrpt="314" livl="1" rllivl="1" ivl="3" rp="2" gr="3">
+<q>Jaka metoda powinna być zdefiniowana w modelu do przekierowania na inną stronę?</q>
+<a><![CDATA[get_absolute_url(self):
+    return reverse('<nazwa strony>', args)
+
+trzeba importować metodę reverse()
+from django.urls import reverse]]></a>
 </item>
 
 <item id="1562310837" tmtrpt="315" stmtrpt="315" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
@@ -222,6 +210,13 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
 <item id="1562145444" tmtrpt="315" stmtrpt="315" livl="1" rllivl="1" ivl="5" rp="2" gr="4">
 <q>Do czego służą pliki urls.py?</q>
 <a><![CDATA[Plik <nazwa app>.urls.py definiuje adresy url dla aplikacji, a plik <nazwa projektu>.urls.py definiuje adresy url dla projektu.]]></a>
+</item>
+
+<item id="1562494098" tmtrpt="317" stmtrpt="317" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jak zabezpieczyć stronę przed Cross-Site Request Forgery?</q>
+<a>Należy wstawić tag 
+
+{% csrf_token %}</a>
 </item>
 
 <item id="1562141231" tmtrpt="318" stmtrpt="318" livl="1" rllivl="1" ivl="8" rp="2" gr="5">
@@ -256,6 +251,16 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
 <a><![CDATA[{% block <nazwa> %}
 
 {% endblock %}]]></a>
+</item>
+
+<item id="1562142043" tmtrpt="339" stmtrpt="339" livl="4" rllivl="4" ivl="28" rp="1" gr="5">
+<q>Jak nazywa się plik konfiguracyjny projektu?</q>
+<a><![CDATA[<nazwa projektu>/settings.py]]></a>
+</item>
+
+<item id="1562148509" tmtrpt="340" stmtrpt="340" livl="4" rllivl="4" ivl="29" rp="1" gr="5">
+<q>Jak oznacza się komentarz w HTML?</q>
+<a><![CDATA[<!-- treść komentarza -->]]></a>
 </item>
 
 </category>
