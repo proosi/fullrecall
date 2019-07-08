@@ -1,0 +1,35 @@
+queue.txt
+Here are items (if any) that are waiting for introduction into learning process.
+Lines that don't begin with <q>, <a> or <category
+are ignored (unless a tag is already opened).
+FullRecall DELETES element taken from this file (so it goes to the learning process only once).
+Format:
+	<q>Question?</q>
+	<a>An answer!</a>
+
+	<q>questions
+	and answers</q>
+	<a>can
+	be
+	multi-line</q>
+
+	<category name="blah">
+	item(s) here
+	</category>
+
+Items without category go into default category (i.e. the first category that is listed in any dialog with categories).
+This file should be saved using UTF-8 encoding.
+
+<category name="root">
+
+<category name="Django">
+
+<q>W jakiej sekcji settings.py dołączamy tworzone aplikacje?</q>
+<a>INSTALLED_APP = [
+    '<moja app>',
+]</a>
+
+</category>
+
+</category>
+
