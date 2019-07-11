@@ -67,82 +67,61 @@ LEGEND:
 
 <category name="Django">
 
+<<<<<<< HEAD
 <item id="1562232704" tmtrpt="312" stmtrpt="312" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
 <q>Jakie polecenie tworzy super user'a?</q>
 <a>py manage.py createsuperuser</a>
+=======
+<category name="Arduino">
+
+<item id="1562828378" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Co to jest UART?</q>
+<a>Jest to prosty i bardzo popularny interfejs szeregowy</a>
+>>>>>>> b82791f150a6f9c9be2d019ac46e35a7f64e58d1
 </item>
 
-<item id="1562231815" tmtrpt="312" stmtrpt="312" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
-<q>Jakie polecenie przygotowuje aktualizację bazy danych?</q>
-<a><![CDATA[py manage.py makemigrations <nazwa app>]]></a>
+<item id="1562828677" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Na czym opiera się zasada działania UART?</q>
+<a><![CDATA[Jego zasada działania opiera się na szeregowym wysłaniu ciągu bitów, które następnie składane są w informację. Pojedyncza ramka (w uproszczeniu bajt) danych jest nadawany w poniższej postaci:
+
+Transmisja rozpoczyna się od bitu startu, zaznaczonego na rysunku jako <b>BS</b>. Zawsze jest to bit będący logicznym zerem. Następnie, zależnie od konfiguracji, następuje po sobie 7, 8 lub 9 bitów danych (tutaj zaznaczone jako B0-B7), które są wysyłaną informacją. Bit stopu (zaznaczony tutaj jako bit <b>BK</b>) to bit będący logiczną jedynką - mówi o końcu transmisji.<img>img\KursArduino_2_001.png-300x75.png</img>]]></a>
 </item>
 
-<item id="1562231869" tmtrpt="312" stmtrpt="312" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
-<q>Jakie polecenie aktualizuje bazę danych?</q>
-<a><![CDATA[py manage.py migrate <nazwa app>]]></a>
+<item id="1562828761" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jakie piny w Arduino obsługują UART?</q>
+<a><![CDATA[<b>Tx</b>  - do wysyłania danych (pin 1 w Arduino)
+<b>Rx</b>  -do odbierania danych (pin 0 w Arduino)]]></a>
 </item>
 
-<item id="1562144643" tmtrpt="312" stmtrpt="312" livl="1" rllivl="1" ivl="3" rp="2" gr="3">
-<q>Do czego służy URLConfs?</q>
-<a><![CDATA[Określa pod jakim adresem dana treść ma być wyświetlona.
-Adresy i zawartość są mapowane w tablicy 
-
-<span style="color:#f00">urlpatterns = [
-
-]
-</span>
-<span style="color:#f00">path()</span> wymaga: <span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> path
-    <span style="color:#f00">path</span>(<wyrażenie regularne>,  <co ma być wyświetlone>, <alias strony>)
-lub
-    <span style="color:#f00">path</span>(<wyrażenie regularne>,<span style="color:#f00"> include</span>(<urls app>))
-<span style="color:#f00">include()</span> wymaga: <span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> include]]></a>
+<item id="1562829062" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Od jakich parametrów zależy transmisja UART? </q>
+<a>baud-rate - prędkość przesyłu danych. Ilość tranmitowanych bitów na sekundę (np. 9600, 115200)
+</a>
 </item>
 
-<item id="1562314507" tmtrpt="312" stmtrpt="312" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
-<q>Jaki jest tag szablonowy dla plików statycznych?</q>
-<a><![CDATA[{%  load <nazwa katalogu> %}
-
-przykład
-
-{% load static%}
-
-<link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
+<item id="1562829249" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Co to jest USART?</q>
+<a>USART - Universal Synchronous and Asynchronous Reciever and Transmitter
+interfejs komunikacyjny</a>
 </item>
 
-<item id="1562492957" tmtrpt="312" stmtrpt="312" livl="0" rllivl="0" ivl="2" rp="0" gr="4">
-<q>Jakie klasy generyczne służą do edycji widoków?</q>
-<a>CreateView - tworzy nowy widok 
-UpdateView - edytuje istniejący widok 
-DeleteView - kasuje istniejący widok
-
-wymagany import:
-from django.views.generic.edit import CreateView, UpdateView, DeleteView</a>
+<item id="1562844737" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jakie polecenie ustawia prędkość transmisji?</q>
+<a>Serial.begin(9600)</a>
 </item>
 
-<item id="1562494771" tmtrpt="312" stmtrpt="312" livl="0" rllivl="0" ivl="2" rp="0" gr="4">
-<q>Jak definiujemy formularz HTML do wprowadzania danych przez użytkownika?</q>
-<a><![CDATA[<form action="" method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <input type="submit" value="Save" />
-</form>
-]]></a>
+<item id="1562846177" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jaka funkcja umożliwia ustawinie wartości początkowej dla algorytmu generowania liczb pseudolosowych?</q>
+<a>randomSeed(wartosc_poczatkowa);</a>
 </item>
 
-<item id="1562496540" tmtrpt="312" stmtrpt="312" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
-<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie UpdateView?</q>
-<a><![CDATA[model = <nazwa modelu z pliku models.py>
-fields =['<nazwa zmiennej>', '<nazwa zmiennej>', itd] lub '__all__'
-template_name = '<nazwa>.html']]></a>
+<item id="1562846316" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jaka funkcja generuje liczby pseudolosowe?</q>
+<a><![CDATA[random(  <zakres dolny>, <zakres górny>)
+random( <górny zakres> )]]></a>
 </item>
 
-<item id="1562496781" tmtrpt="312" stmtrpt="312" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
-<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie DeleteView?</q>
-<a><![CDATA[model = <nazwa modelu z pliku models.py>
-template_name = '<nazwa>.html'
-success_url = reverse_lazy('<nazwa>')]]></a>
-</item>
-
+<<<<<<< HEAD
 <item id="1562615709" tmtrpt="312" stmtrpt="312" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
 <q>Jaki tag szablonowy ustawia katalog na stronie? </q>
 <a><![CDATA[{% load '<nazwa katalogu>' %}]]></a>
@@ -152,26 +131,28 @@ success_url = reverse_lazy('<nazwa>')]]></a>
 <q>Jakie polecenie uruchamia server w Django?</q>
 <a>python manage.py runserver</a>
 </item>
+=======
+<item id="1562844668" tmtrpt="315" stmtrpt="315" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
+<q>Jaki jest szablon programów dla Arduino?</q>
+<a>void setup(){
+>>>>>>> b82791f150a6f9c9be2d019ac46e35a7f64e58d1
 
-<item id="1562330120" tmtrpt="313" stmtrpt="313" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
-<q>Jak zdefiniować liczbę mnoga dla "modelu" w panelu administracyjnym?</q>
-<a><![CDATA[class Meta():
-    verbose_name_plural = "<nazwa modelu w liczbie mnogiej>"]]></a>
+}
+
+void loop(){
+
+}
+
+
+</a>
 </item>
 
-<item id="1562324135" tmtrpt="313" stmtrpt="313" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
-<q>Jak określić położenie katalogu dla plików statycznych?</q>
-<a># blog_project/settings.py
-
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
+<item id="1562844794" tmtrpt="315" stmtrpt="315" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
+<q>Jakie polecenie drukuje w porcie szeregowym?</q>
+<a>System.println("drukowany tekst")</a>
 </item>
 
-<item id="1562496313" tmtrpt="313" stmtrpt="313" livl="0" rllivl="0" ivl="2" rp="0" gr="4">
-<q>Jakie zmienne trzeba zdefiniować w klasie dziedziczącej po klasie CreateView?</q>
-<a><![CDATA[model = <nazwa modelu z pliku models.py>
-template_name = '<nazwa>.html'
-fields = '__all__']]></a>
-</item>
+</category>
 
 <item id="1562231251" tmtrpt="314" stmtrpt="314" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
 <q>W jakim pliku definiuje się pola bazy danych?</q>
@@ -190,6 +171,15 @@ fields = '__all__']]></a>
 
 trzeba importować metodę reverse()
 from django.urls import reverse]]></a>
+</item>
+
+<item id="1562496781" tmtrpt="314" stmtrpt="314" livl="1" rllivl="2" ivl="1" rp="1" gr="2">
+<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie DeleteView?</q>
+<a><![CDATA[model = <nazwa modelu z pliku models.py>
+template_name = '<nazwa>.html'
+success_url = reverse_lazy('<nazwa>')
+
+from django.urls import reverse_lazy]]></a>
 </item>
 
 <item id="1562310837" tmtrpt="315" stmtrpt="315" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
@@ -212,6 +202,43 @@ from django.urls import reverse]]></a>
 <a><![CDATA[Plik <nazwa app>.urls.py definiuje adresy url dla aplikacji, a plik <nazwa projektu>.urls.py definiuje adresy url dla projektu.]]></a>
 </item>
 
+<item id="1562144643" tmtrpt="315" stmtrpt="315" livl="3" rllivl="4" ivl="2" rp="3" gr="2">
+<q>Do czego służy URLConfs?</q>
+<a><![CDATA[Określa pod jakim adresem dana treść ma być wyświetlona.
+Adresy i zawartość są mapowane w tablicy 
+
+<span style="color:#f00">urlpatterns = [
+
+]
+</span>
+<span style="color:#f00">path()</span> wymaga: <span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> path
+    <span style="color:#f00">path</span>(<wyrażenie regularne>,  <co ma być wyświetlone>, <alias strony>)
+lub
+    <span style="color:#f00">path</span>(<wyrażenie regularne>,<span style="color:#f00"> include</span>(<urls app>))
+<span style="color:#f00">include()</span> wymaga: <span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> include]]></a>
+</item>
+
+<item id="1562494771" tmtrpt="315" stmtrpt="315" livl="2" rllivl="3" ivl="2" rp="1" gr="2">
+<q>Jak definiujemy formularz HTML do wprowadzania danych przez użytkownika?</q>
+<a><![CDATA[<form action="" method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="Save" />
+</form>
+]]></a>
+</item>
+
+<item id="1562314507" tmtrpt="315" stmtrpt="315" livl="3" rllivl="4" ivl="2" rp="2" gr="2">
+<q>Jaki jest tag szablonowy dla plików statycznych?</q>
+<a><![CDATA[{%  load <nazwa katalogu> %}
+
+przykład
+
+{% load static%}
+
+<link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
+</item>
+
 <item id="1562494098" tmtrpt="317" stmtrpt="317" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
 <q>Jak zabezpieczyć stronę przed Cross-Site Request Forgery?</q>
 <a>Należy wstawić tag 
@@ -224,14 +251,40 @@ from django.urls import reverse]]></a>
 <a><![CDATA[django-admin startproject <nazwa projektu>]]></a>
 </item>
 
+<item id="1562324135" tmtrpt="318" stmtrpt="318" livl="3" rllivl="3" ivl="5" rp="2" gr="3">
+<q>Jak określić położenie katalogu dla plików statycznych?</q>
+<a># blog_project/settings.py
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
+</item>
+
 <item id="1562142150" tmtrpt="319" stmtrpt="319" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
 <q>W jakim pliku definiujemy co ma być wyświetlone na stronie?</q>
 <a><![CDATA[<nazwa projektu>/<nazwa app>/views.py]]></a>
 </item>
 
+<item id="1562496313" tmtrpt="319" stmtrpt="319" livl="2" rllivl="2" ivl="6" rp="1" gr="3">
+<q>Jakie zmienne trzeba zdefiniować w klasie dziedziczącej po klasie CreateView?</q>
+<a><![CDATA[model = <nazwa modelu z pliku models.py>
+template_name = '<nazwa>.html'
+fields = '__all__']]></a>
+</item>
+
 <item id="1562314369" tmtrpt="320" stmtrpt="320" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
 <q>Jak przekazać zmienną do dokumentu html?</q>
 <a><![CDATA[{{ <nazwa zmiennej> }}]]></a>
+</item>
+
+<item id="1562496540" tmtrpt="321" stmtrpt="321" livl="1" rllivl="2" ivl="8" rp="1" gr="4">
+<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie UpdateView?</q>
+<a><![CDATA[model = <nazwa modelu z pliku models.py>
+fields =['<nazwa zmiennej>', '<nazwa zmiennej>', itd] lub '__all__'
+template_name = '<nazwa>.html']]></a>
+</item>
+
+<item id="1562615709" tmtrpt="321" stmtrpt="321" livl="0" rllivl="2" ivl="8" rp="0" gr="5">
+<q>Jaki tag szablonowy ustawia katalog na stronie? </q>
+<a><![CDATA[{% load '<nazwa katalogu>' %}]]></a>
 </item>
 
 <item id="1562311022" tmtrpt="324" stmtrpt="324" livl="2" rllivl="2" ivl="14" rp="1" gr="5">
@@ -246,11 +299,27 @@ from django.urls import reverse]]></a>
 {% endfor %}</a>
 </item>
 
+<item id="1562492957" tmtrpt="325" stmtrpt="325" livl="2" rllivl="3" ivl="12" rp="1" gr="4">
+<q>Jakie klasy generyczne służą do edycji widoków?</q>
+<a>CreateView - tworzy nowy widok 
+UpdateView - edytuje istniejący widok 
+DeleteView - kasuje istniejący widok
+
+wymagany import:
+from django.views.generic.edit import CreateView, UpdateView, DeleteView</a>
+</item>
+
 <item id="1562314296" tmtrpt="326" stmtrpt="326" livl="2" rllivl="2" ivl="16" rp="1" gr="5">
 <q>Jaki jest tag szablonowy dla bloku?</q>
 <a><![CDATA[{% block <nazwa> %}
 
 {% endblock %}]]></a>
+</item>
+
+<item id="1562330120" tmtrpt="331" stmtrpt="331" livl="4" rllivl="4" ivl="18" rp="1" gr="4">
+<q>Jak zdefiniować liczbę mnoga dla "modelu" w panelu administracyjnym?</q>
+<a><![CDATA[class Meta():
+    verbose_name_plural = "<nazwa modelu w liczbie mnogiej>"]]></a>
 </item>
 
 <item id="1562142043" tmtrpt="339" stmtrpt="339" livl="4" rllivl="4" ivl="28" rp="1" gr="5">
@@ -261,6 +330,26 @@ from django.urls import reverse]]></a>
 <item id="1562148509" tmtrpt="340" stmtrpt="340" livl="4" rllivl="4" ivl="29" rp="1" gr="5">
 <q>Jak oznacza się komentarz w HTML?</q>
 <a><![CDATA[<!-- treść komentarza -->]]></a>
+</item>
+
+<item id="1562232704" tmtrpt="342" stmtrpt="342" livl="4" rllivl="5" ivl="29" rp="1" gr="5">
+<q>Jakie polecenie tworzy super user'a?</q>
+<a>py manage.py createsuperuser</a>
+</item>
+
+<item id="1562231869" tmtrpt="345" stmtrpt="345" livl="4" rllivl="5" ivl="32" rp="1" gr="5">
+<q>Jakie polecenie aktualizuje bazę danych?</q>
+<a><![CDATA[py manage.py migrate <nazwa app>]]></a>
+</item>
+
+<item id="1562231815" tmtrpt="346" stmtrpt="346" livl="4" rllivl="5" ivl="33" rp="1" gr="5">
+<q>Jakie polecenie przygotowuje aktualizację bazy danych?</q>
+<a><![CDATA[py manage.py makemigrations <nazwa app>]]></a>
+</item>
+
+<item id="1562141464" tmtrpt="348" stmtrpt="348" livl="6" rllivl="6" ivl="35" rp="2" gr="5">
+<q>Jakie polecenie uruchamia server w Django?</q>
+<a>python manage.py runserver</a>
 </item>
 
 </category>
