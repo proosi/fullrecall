@@ -67,11 +67,6 @@ LEGEND:
 
 <category name="Django">
 
-<item id="1562615709" tmtrpt="311" stmtrpt="311" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jaki tag szablonowy ustawia katalog na stronie? </q>
-<a><![CDATA[{% load '<nazwa katalogu>' %}]]></a>
-</item>
-
 <item id="1562232704" tmtrpt="312" stmtrpt="312" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
 <q>Jakie polecenie tworzy super user'a?</q>
 <a>py manage.py createsuperuser</a>
@@ -146,6 +141,11 @@ template_name = '<nazwa>.html']]></a>
 <a><![CDATA[model = <nazwa modelu z pliku models.py>
 template_name = '<nazwa>.html'
 success_url = reverse_lazy('<nazwa>')]]></a>
+</item>
+
+<item id="1562615709" tmtrpt="312" stmtrpt="312" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
+<q>Jaki tag szablonowy ustawia katalog na stronie? </q>
+<a><![CDATA[{% load '<nazwa katalogu>' %}]]></a>
 </item>
 
 <item id="1562141464" tmtrpt="313" stmtrpt="313" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
