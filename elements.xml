@@ -115,6 +115,11 @@ interfejs komunikacyjny</a>
 random( <górny zakres> )]]></a>
 </item>
 
+<item id="1562846397" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jak zrobić wykres kilku wartości w Kreślarce?</q>
+<a>Należy wysłać liczby w tej samej linii oddzielonych znakiem tabulatora, a na ich końcu powinien pojawić się znak nowej linii.</a>
+</item>
+
 <item id="1562844668" tmtrpt="315" stmtrpt="315" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
 <q>Jaki jest szablon programów dla Arduino?</q>
 <a>void setup(){
