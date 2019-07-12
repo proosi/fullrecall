@@ -67,108 +67,6 @@ LEGEND:
 
 <category name="Django">
 
-<category name="Arduino">
-
-<item id="1562828378" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Co to jest UART?</q>
-<a>Jest to prosty i bardzo popularny interfejs szeregowy</a>
-</item>
-
-<item id="1562828677" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Na czym opiera się zasada działania UART?</q>
-<a><![CDATA[Jego zasada działania opiera się na szeregowym wysłaniu ciągu bitów, które następnie składane są w informację. Pojedyncza ramka (w uproszczeniu bajt) danych jest nadawany w poniższej postaci:
-
-Transmisja rozpoczyna się od bitu startu, zaznaczonego na rysunku jako <b>BS</b>. Zawsze jest to bit będący logicznym zerem. Następnie, zależnie od konfiguracji, następuje po sobie 7, 8 lub 9 bitów danych (tutaj zaznaczone jako B0-B7), które są wysyłaną informacją. Bit stopu (zaznaczony tutaj jako bit <b>BK</b>) to bit będący logiczną jedynką - mówi o końcu transmisji.<img>img\KursArduino_2_001.png-300x75.png</img>]]></a>
-</item>
-
-<item id="1562828761" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jakie piny w Arduino obsługują UART?</q>
-<a><![CDATA[<b>Tx</b>  - do wysyłania danych (pin 1 w Arduino)
-<b>Rx</b>  -do odbierania danych (pin 0 w Arduino)]]></a>
-</item>
-
-<item id="1562829062" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Od jakich parametrów zależy transmisja UART? </q>
-<a>baud-rate - prędkość przesyłu danych. Ilość tranmitowanych bitów na sekundę (np. 9600, 115200)
-</a>
-</item>
-
-<item id="1562829249" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Co to jest USART?</q>
-<a>USART - Universal Synchronous and Asynchronous Reciever and Transmitter
-interfejs komunikacyjny</a>
-</item>
-
-<item id="1562844737" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jakie polecenie ustawia prędkość transmisji?</q>
-<a>Serial.begin(9600)</a>
-</item>
-
-<item id="1562846177" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jaka funkcja umożliwia ustawinie wartości początkowej dla algorytmu generowania liczb pseudolosowych?</q>
-<a>randomSeed(wartosc_poczatkowa);</a>
-</item>
-
-<item id="1562846316" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jaka funkcja generuje liczby pseudolosowe?</q>
-<a><![CDATA[random(  <zakres dolny>, <zakres górny>)
-random( <górny zakres> )]]></a>
-</item>
-
-<item id="1562846397" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jak zrobić wykres kilku wartości w Kreślarce?</q>
-<a>Należy wysłać liczby w tej samej linii oddzielonych znakiem tabulatora, a na ich końcu powinien pojawić się znak nowej linii.</a>
-</item>
-
-<item id="1562844668" tmtrpt="315" stmtrpt="315" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
-<q>Jaki jest szablon programów dla Arduino?</q>
-<a>void setup(){
-
-}
-
-void loop(){
-
-}
-
-
-</a>
-</item>
-
-<item id="1562844794" tmtrpt="315" stmtrpt="315" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
-<q>Jakie polecenie drukuje w porcie szeregowym?</q>
-<a>System.println("drukowany tekst")</a>
-</item>
-
-</category>
-
-<item id="1562231251" tmtrpt="314" stmtrpt="314" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
-<q>W jakim pliku definiuje się pola bazy danych?</q>
-<a><![CDATA[<nazwa app>/ model.py]]></a>
-</item>
-
-<item id="1562141296" tmtrpt="314" stmtrpt="314" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
-<q>Jakie polecenie tworzy aplikację w Django?</q>
-<a><![CDATA[django-admin startapp <nazwa aplikacji>]]></a>
-</item>
-
-<item id="1562367088" tmtrpt="314" stmtrpt="314" livl="1" rllivl="1" ivl="3" rp="2" gr="3">
-<q>Jaka metoda powinna być zdefiniowana w modelu do przekierowania na inną stronę?</q>
-<a><![CDATA[get_absolute_url(self):
-    return reverse('<nazwa strony>', args)
-
-trzeba importować metodę reverse()
-from django.urls import reverse]]></a>
-</item>
-
-<item id="1562496781" tmtrpt="314" stmtrpt="314" livl="1" rllivl="2" ivl="1" rp="1" gr="2">
-<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie DeleteView?</q>
-<a><![CDATA[model = <nazwa modelu z pliku models.py>
-template_name = '<nazwa>.html'
-success_url = reverse_lazy('<nazwa>')
-
-from django.urls import reverse_lazy]]></a>
-</item>
-
 <item id="1562310837" tmtrpt="315" stmtrpt="315" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
 <q>Co zwraca klasa generyczna LiestView?</q>
 <a>W self.object_list zwraca listę obiektów  (usually, but not necessarily a queryset). </a>
@@ -182,48 +80,6 @@ from django.urls import reverse_lazy]]></a>
 <item id="1562314022" tmtrpt="315" stmtrpt="315" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
 <q>Jaki jest szablonowy tag dla adresu url?</q>
 <a><![CDATA[{%  url '<nazwa>' %}]]></a>
-</item>
-
-<item id="1562145444" tmtrpt="315" stmtrpt="315" livl="1" rllivl="1" ivl="5" rp="2" gr="4">
-<q>Do czego służą pliki urls.py?</q>
-<a><![CDATA[Plik <nazwa app>.urls.py definiuje adresy url dla aplikacji, a plik <nazwa projektu>.urls.py definiuje adresy url dla projektu.]]></a>
-</item>
-
-<item id="1562144643" tmtrpt="315" stmtrpt="315" livl="3" rllivl="4" ivl="2" rp="3" gr="2">
-<q>Do czego służy URLConfs?</q>
-<a><![CDATA[Określa pod jakim adresem dana treść ma być wyświetlona.
-Adresy i zawartość są mapowane w tablicy 
-
-<span style="color:#f00">urlpatterns = [
-
-]
-</span>
-<span style="color:#f00">path()</span> wymaga: <span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> path
-    <span style="color:#f00">path</span>(<wyrażenie regularne>,  <co ma być wyświetlone>, <alias strony>)
-lub
-    <span style="color:#f00">path</span>(<wyrażenie regularne>,<span style="color:#f00"> include</span>(<urls app>))
-<span style="color:#f00">include()</span> wymaga: <span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> include]]></a>
-</item>
-
-<item id="1562494771" tmtrpt="315" stmtrpt="315" livl="2" rllivl="3" ivl="2" rp="1" gr="2">
-<q>Jak definiujemy formularz HTML do wprowadzania danych przez użytkownika?</q>
-<a><![CDATA[<form action="" method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <input type="submit" value="Save" />
-</form>
-]]></a>
-</item>
-
-<item id="1562314507" tmtrpt="315" stmtrpt="315" livl="3" rllivl="4" ivl="2" rp="2" gr="2">
-<q>Jaki jest tag szablonowy dla plików statycznych?</q>
-<a><![CDATA[{%  load <nazwa katalogu> %}
-
-przykład
-
-{% load static%}
-
-<link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
 </item>
 
 <item id="1562494098" tmtrpt="317" stmtrpt="317" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
@@ -245,6 +101,11 @@ przykład
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
 </item>
 
+<item id="1562141296" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="3" rp="2" gr="5">
+<q>Jakie polecenie tworzy aplikację w Django?</q>
+<a><![CDATA[django-admin startapp <nazwa aplikacji>]]></a>
+</item>
+
 <item id="1562142150" tmtrpt="319" stmtrpt="319" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
 <q>W jakim pliku definiujemy co ma być wyświetlone na stronie?</q>
 <a><![CDATA[<nazwa projektu>/<nazwa app>/views.py]]></a>
@@ -255,6 +116,26 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
 <a><![CDATA[model = <nazwa modelu z pliku models.py>
 template_name = '<nazwa>.html'
 fields = '__all__']]></a>
+</item>
+
+<item id="1562496781" tmtrpt="319" stmtrpt="319" livl="1" rllivl="2" ivl="4" rp="2" gr="3">
+<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie DeleteView?</q>
+<a><![CDATA[model = <nazwa modelu z pliku models.py>
+template_name = '<nazwa>.html'
+success_url = reverse_lazy('<nazwa>')
+
+from django.urls import reverse_lazy]]></a>
+</item>
+
+<item id="1562314507" tmtrpt="319" stmtrpt="319" livl="2" rllivl="2" ivl="4" rp="3" gr="3">
+<q>Jaki jest tag szablonowy dla plików statycznych?</q>
+<a><![CDATA[{%  load <nazwa katalogu> %}
+
+przykład
+
+{% load static%}
+
+<link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
 </item>
 
 <item id="1562314369" tmtrpt="320" stmtrpt="320" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
@@ -274,9 +155,44 @@ template_name = '<nazwa>.html']]></a>
 <a><![CDATA[{% load '<nazwa katalogu>' %}]]></a>
 </item>
 
+<item id="1562367088" tmtrpt="321" stmtrpt="321" livl="3" rllivl="4" ivl="6" rp="3" gr="3">
+<q>Jaka metoda powinna być zdefiniowana w modelu do przekierowania na inną stronę?</q>
+<a><![CDATA[get_absolute_url(self):
+    return reverse('<nazwa strony>', args)
+
+trzeba importować metodę reverse()
+from django.urls import reverse]]></a>
+</item>
+
+<item id="1562144643" tmtrpt="322" stmtrpt="322" livl="2" rllivl="2" ivl="7" rp="4" gr="4">
+<q>Do czego służy URLConfs?</q>
+<a><![CDATA[Określa pod jakim adresem dana treść ma być wyświetlona.
+Adresy i zawartość są mapowane w tablicy 
+
+<span style="color:#f00">urlpatterns = [
+
+]
+</span>
+<span style="color:#f00">path()</span> wymaga: <span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> path
+    <span style="color:#f00">path</span>(<wyrażenie regularne>,  <co ma być wyświetlone>, <alias strony>)
+lub
+    <span style="color:#f00">path</span>(<wyrażenie regularne>,<span style="color:#f00"> include</span>(<urls app>))
+<span style="color:#f00">include()</span> wymaga: <span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> include]]></a>
+</item>
+
 <item id="1562311022" tmtrpt="324" stmtrpt="324" livl="2" rllivl="2" ivl="14" rp="1" gr="5">
 <q>Co zwraca klasa generyczna DetailView?</q>
 <a>Obiekt self.object na którym działa widok.</a>
+</item>
+
+<item id="1562494771" tmtrpt="324" stmtrpt="324" livl="2" rllivl="2" ivl="9" rp="2" gr="4">
+<q>Jak definiujemy formularz HTML do wprowadzania danych przez użytkownika?</q>
+<a><![CDATA[<form action="" method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="Save" />
+</form>
+]]></a>
 </item>
 
 <item id="1562314125" tmtrpt="325" stmtrpt="325" livl="2" rllivl="2" ivl="15" rp="1" gr="5">
@@ -314,9 +230,19 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView</a>
 <a><![CDATA[<nazwa projektu>/settings.py]]></a>
 </item>
 
+<item id="1562145444" tmtrpt="339" stmtrpt="339" livl="5" rllivl="5" ivl="24" rp="3" gr="5">
+<q>Do czego służą pliki urls.py?</q>
+<a><![CDATA[Plik <nazwa app>.urls.py definiuje adresy url dla aplikacji, a plik <nazwa projektu>.urls.py definiuje adresy url dla projektu.]]></a>
+</item>
+
 <item id="1562148509" tmtrpt="340" stmtrpt="340" livl="4" rllivl="4" ivl="29" rp="1" gr="5">
 <q>Jak oznacza się komentarz w HTML?</q>
 <a><![CDATA[<!-- treść komentarza -->]]></a>
+</item>
+
+<item id="1562231251" tmtrpt="340" stmtrpt="340" livl="6" rllivl="7" ivl="25" rp="2" gr="4">
+<q>W jakim pliku definiuje się pola bazy danych?</q>
+<a><![CDATA[<nazwa app>/ model.py]]></a>
 </item>
 
 <item id="1562232704" tmtrpt="342" stmtrpt="342" livl="4" rllivl="5" ivl="29" rp="1" gr="5">
@@ -337,6 +263,80 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView</a>
 <item id="1562141464" tmtrpt="348" stmtrpt="348" livl="6" rllivl="6" ivl="35" rp="2" gr="5">
 <q>Jakie polecenie uruchamia server w Django?</q>
 <a>python manage.py runserver</a>
+</item>
+
+</category>
+
+<category name="Arduino">
+
+<item id="1562846397" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jak zrobić wykres kilku wartości w Kreślarce?</q>
+<a>Należy wysłać liczby w tej samej linii oddzielonych znakiem tabulatora, a na ich końcu powinien pojawić się znak nowej linii.</a>
+</item>
+
+<item id="1562844668" tmtrpt="315" stmtrpt="315" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
+<q>Jaki jest szablon programów dla Arduino?</q>
+<a>void setup(){
+
+}
+
+void loop(){
+
+}
+
+
+</a>
+</item>
+
+<item id="1562829062" tmtrpt="316" stmtrpt="316" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
+<q>Od jakich parametrów zależy transmisja UART? </q>
+<a>baud-rate - prędkość przesyłu danych. Ilość tranmitowanych bitów na sekundę (np. 9600, 115200)
+</a>
+</item>
+
+<item id="1562829249" tmtrpt="316" stmtrpt="316" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
+<q>Co to jest USART?</q>
+<a>USART - Universal Synchronous and Asynchronous Reciever and Transmitter
+interfejs komunikacyjny</a>
+</item>
+
+<item id="1562828378" tmtrpt="317" stmtrpt="317" livl="0" rllivl="1" ivl="2" rp="0" gr="3">
+<q>Co to jest UART?</q>
+<a>Jest to prosty i bardzo popularny interfejs szeregowy</a>
+</item>
+
+<item id="1562828761" tmtrpt="317" stmtrpt="317" livl="0" rllivl="1" ivl="2" rp="0" gr="3">
+<q>Jakie piny w Arduino obsługują UART?</q>
+<a><![CDATA[<b>Tx</b>  - do wysyłania danych (pin 1 w Arduino)
+<b>Rx</b>  -do odbierania danych (pin 0 w Arduino)]]></a>
+</item>
+
+<item id="1562846177" tmtrpt="317" stmtrpt="317" livl="0" rllivl="1" ivl="2" rp="0" gr="3">
+<q>Jaka funkcja umożliwia ustawinie wartości początkowej dla algorytmu generowania liczb pseudolosowych?</q>
+<a>randomSeed(wartosc_poczatkowa);</a>
+</item>
+
+<item id="1562828677" tmtrpt="317" stmtrpt="317" livl="0" rllivl="1" ivl="2" rp="0" gr="3">
+<q>Na czym opiera się zasada działania UART?</q>
+<a><![CDATA[Jego zasada działania opiera się na szeregowym wysłaniu ciągu bitów, które następnie składane są w informację. Pojedyncza ramka (w uproszczeniu bajt) danych jest nadawany w poniższej postaci:
+
+Transmisja rozpoczyna się od bitu startu, zaznaczonego na rysunku jako <b>BS</b>. Zawsze jest to bit będący logicznym zerem. Następnie, zależnie od konfiguracji, następuje po sobie 7, 8 lub 9 bitów danych (tutaj zaznaczone jako B0-B7), które są wysyłaną informacją. Bit stopu (zaznaczony tutaj jako bit <b>BK</b>) to bit będący logiczną jedynką - mówi o końcu transmisji.<img>img\KursArduino_2_001.png-300x75.png</img>]]></a>
+</item>
+
+<item id="1562844737" tmtrpt="319" stmtrpt="319" livl="0" rllivl="0" ivl="4" rp="0" gr="5">
+<q>Jakie polecenie ustawia prędkość transmisji?</q>
+<a>Serial.begin(9600)</a>
+</item>
+
+<item id="1562846316" tmtrpt="323" stmtrpt="323" livl="0" rllivl="1" ivl="8" rp="0" gr="5">
+<q>Jaka funkcja generuje liczby pseudolosowe?</q>
+<a><![CDATA[random(  <zakres dolny>, <zakres górny>)
+random( <górny zakres> )]]></a>
+</item>
+
+<item id="1562844794" tmtrpt="324" stmtrpt="324" livl="1" rllivl="1" ivl="9" rp="1" gr="5">
+<q>Jakie polecenie drukuje w porcie szeregowym?</q>
+<a>Serial.println("drukowany tekst")</a>
 </item>
 
 </category>
