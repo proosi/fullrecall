@@ -67,6 +67,124 @@ LEGEND:
 
 <category name="Django">
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+<item id="1562232704" tmtrpt="312" stmtrpt="312" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
+<q>Jakie polecenie tworzy super user'a?</q>
+<a>py manage.py createsuperuser</a>
+=======
+<category name="Arduino">
+
+<item id="1562828378" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Co to jest UART?</q>
+<a>Jest to prosty i bardzo popularny interfejs szeregowy</a>
+>>>>>>> b82791f150a6f9c9be2d019ac46e35a7f64e58d1
+</item>
+
+<item id="1562828677" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Na czym opiera się zasada działania UART?</q>
+<a><![CDATA[Jego zasada działania opiera się na szeregowym wysłaniu ciągu bitów, które następnie składane są w informację. Pojedyncza ramka (w uproszczeniu bajt) danych jest nadawany w poniższej postaci:
+
+Transmisja rozpoczyna się od bitu startu, zaznaczonego na rysunku jako <b>BS</b>. Zawsze jest to bit będący logicznym zerem. Następnie, zależnie od konfiguracji, następuje po sobie 7, 8 lub 9 bitów danych (tutaj zaznaczone jako B0-B7), które są wysyłaną informacją. Bit stopu (zaznaczony tutaj jako bit <b>BK</b>) to bit będący logiczną jedynką - mówi o końcu transmisji.<img>img\KursArduino_2_001.png-300x75.png</img>]]></a>
+</item>
+
+<item id="1562828761" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jakie piny w Arduino obsługują UART?</q>
+<a><![CDATA[<b>Tx</b>  - do wysyłania danych (pin 1 w Arduino)
+<b>Rx</b>  -do odbierania danych (pin 0 w Arduino)]]></a>
+</item>
+
+<item id="1562829062" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Od jakich parametrów zależy transmisja UART? </q>
+<a>baud-rate - prędkość przesyłu danych. Ilość tranmitowanych bitów na sekundę (np. 9600, 115200)
+</a>
+</item>
+
+<item id="1562829249" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Co to jest USART?</q>
+<a>USART - Universal Synchronous and Asynchronous Reciever and Transmitter
+interfejs komunikacyjny</a>
+</item>
+
+<item id="1562844737" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jakie polecenie ustawia prędkość transmisji?</q>
+<a>Serial.begin(9600)</a>
+</item>
+
+<item id="1562846177" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jaka funkcja umożliwia ustawinie wartości początkowej dla algorytmu generowania liczb pseudolosowych?</q>
+<a>randomSeed(wartosc_poczatkowa);</a>
+</item>
+
+<item id="1562846316" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jaka funkcja generuje liczby pseudolosowe?</q>
+<a><![CDATA[random(  <zakres dolny>, <zakres górny>)
+random( <górny zakres> )]]></a>
+</item>
+
+<<<<<<< HEAD
+<item id="1562615709" tmtrpt="312" stmtrpt="312" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
+<q>Jaki tag szablonowy ustawia katalog na stronie? </q>
+<a><![CDATA[{% load '<nazwa katalogu>' %}]]></a>
+</item>
+
+<item id="1562141464" tmtrpt="313" stmtrpt="313" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jakie polecenie uruchamia server w Django?</q>
+<a>python manage.py runserver</a>
+</item>
+=======
+<item id="1562844668" tmtrpt="315" stmtrpt="315" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
+<q>Jaki jest szablon programów dla Arduino?</q>
+<a>void setup(){
+>>>>>>> b82791f150a6f9c9be2d019ac46e35a7f64e58d1
+
+}
+
+void loop(){
+
+}
+
+
+</a>
+</item>
+
+<item id="1562844794" tmtrpt="315" stmtrpt="315" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
+<q>Jakie polecenie drukuje w porcie szeregowym?</q>
+<a>System.println("drukowany tekst")</a>
+</item>
+
+</category>
+
+<item id="1562231251" tmtrpt="314" stmtrpt="314" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>W jakim pliku definiuje się pola bazy danych?</q>
+<a><![CDATA[<nazwa app>/ model.py]]></a>
+</item>
+
+<item id="1562141296" tmtrpt="314" stmtrpt="314" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jakie polecenie tworzy aplikację w Django?</q>
+<a><![CDATA[django-admin startapp <nazwa aplikacji>]]></a>
+</item>
+
+<item id="1562367088" tmtrpt="314" stmtrpt="314" livl="1" rllivl="1" ivl="3" rp="2" gr="3">
+<q>Jaka metoda powinna być zdefiniowana w modelu do przekierowania na inną stronę?</q>
+<a><![CDATA[get_absolute_url(self):
+    return reverse('<nazwa strony>', args)
+
+trzeba importować metodę reverse()
+from django.urls import reverse]]></a>
+</item>
+
+<item id="1562496781" tmtrpt="314" stmtrpt="314" livl="1" rllivl="2" ivl="1" rp="1" gr="2">
+<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie DeleteView?</q>
+<a><![CDATA[model = <nazwa modelu z pliku models.py>
+template_name = '<nazwa>.html'
+success_url = reverse_lazy('<nazwa>')
+
+from django.urls import reverse_lazy]]></a>
+</item>
+
+>>>>>>> 8d598eaac72fb7265c98098b71bae5d9c8ee770b
 <item id="1562310837" tmtrpt="315" stmtrpt="315" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
 <q>Co zwraca klasa generyczna LiestView?</q>
 <a>W self.object_list zwraca listę obiektów  (usually, but not necessarily a queryset). </a>
