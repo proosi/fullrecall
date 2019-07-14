@@ -67,166 +67,11 @@ LEGEND:
 
 <category name="Django">
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-<item id="1562232704" tmtrpt="312" stmtrpt="312" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
-<q>Jakie polecenie tworzy super user'a?</q>
-<a>py manage.py createsuperuser</a>
-=======
-<category name="Arduino">
-
-<item id="1562828378" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Co to jest UART?</q>
-<a>Jest to prosty i bardzo popularny interfejs szeregowy</a>
->>>>>>> b82791f150a6f9c9be2d019ac46e35a7f64e58d1
-</item>
-
-<item id="1562828677" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Na czym opiera się zasada działania UART?</q>
-<a><![CDATA[Jego zasada działania opiera się na szeregowym wysłaniu ciągu bitów, które następnie składane są w informację. Pojedyncza ramka (w uproszczeniu bajt) danych jest nadawany w poniższej postaci:
-
-Transmisja rozpoczyna się od bitu startu, zaznaczonego na rysunku jako <b>BS</b>. Zawsze jest to bit będący logicznym zerem. Następnie, zależnie od konfiguracji, następuje po sobie 7, 8 lub 9 bitów danych (tutaj zaznaczone jako B0-B7), które są wysyłaną informacją. Bit stopu (zaznaczony tutaj jako bit <b>BK</b>) to bit będący logiczną jedynką - mówi o końcu transmisji.<img>img\KursArduino_2_001.png-300x75.png</img>]]></a>
-</item>
-
-<item id="1562828761" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jakie piny w Arduino obsługują UART?</q>
-<a><![CDATA[<b>Tx</b>  - do wysyłania danych (pin 1 w Arduino)
-<b>Rx</b>  -do odbierania danych (pin 0 w Arduino)]]></a>
-</item>
-
-<item id="1562829062" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Od jakich parametrów zależy transmisja UART? </q>
-<a>baud-rate - prędkość przesyłu danych. Ilość tranmitowanych bitów na sekundę (np. 9600, 115200)
-</a>
-</item>
-
-<item id="1562829249" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Co to jest USART?</q>
-<a>USART - Universal Synchronous and Asynchronous Reciever and Transmitter
-interfejs komunikacyjny</a>
-</item>
-
-<item id="1562844737" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jakie polecenie ustawia prędkość transmisji?</q>
-<a>Serial.begin(9600)</a>
-</item>
-
-<item id="1562846177" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jaka funkcja umożliwia ustawinie wartości początkowej dla algorytmu generowania liczb pseudolosowych?</q>
-<a>randomSeed(wartosc_poczatkowa);</a>
-</item>
-
-<item id="1562846316" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jaka funkcja generuje liczby pseudolosowe?</q>
-<a><![CDATA[random(  <zakres dolny>, <zakres górny>)
-random( <górny zakres> )]]></a>
-</item>
-
-<<<<<<< HEAD
-<item id="1562615709" tmtrpt="312" stmtrpt="312" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
-<q>Jaki tag szablonowy ustawia katalog na stronie? </q>
-<a><![CDATA[{% load '<nazwa katalogu>' %}]]></a>
-</item>
-
-<item id="1562141464" tmtrpt="313" stmtrpt="313" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
-<q>Jakie polecenie uruchamia server w Django?</q>
-<a>python manage.py runserver</a>
-</item>
-=======
-<item id="1562844668" tmtrpt="315" stmtrpt="315" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
-<q>Jaki jest szablon programów dla Arduino?</q>
-<a>void setup(){
->>>>>>> b82791f150a6f9c9be2d019ac46e35a7f64e58d1
-
-}
-
-void loop(){
-
-}
-
-
-</a>
-</item>
-
-<item id="1562844794" tmtrpt="315" stmtrpt="315" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
-<q>Jakie polecenie drukuje w porcie szeregowym?</q>
-<a>System.println("drukowany tekst")</a>
-</item>
-
-</category>
-
-<item id="1562231251" tmtrpt="314" stmtrpt="314" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
-<q>W jakim pliku definiuje się pola bazy danych?</q>
-<a><![CDATA[<nazwa app>/ model.py]]></a>
-</item>
-
-<item id="1562141296" tmtrpt="314" stmtrpt="314" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
-<q>Jakie polecenie tworzy aplikację w Django?</q>
-<a><![CDATA[django-admin startapp <nazwa aplikacji>]]></a>
-</item>
-
-<item id="1562367088" tmtrpt="314" stmtrpt="314" livl="1" rllivl="1" ivl="3" rp="2" gr="3">
-<q>Jaka metoda powinna być zdefiniowana w modelu do przekierowania na inną stronę?</q>
-<a><![CDATA[get_absolute_url(self):
-    return reverse('<nazwa strony>', args)
-
-trzeba importować metodę reverse()
-from django.urls import reverse]]></a>
-</item>
-
-<item id="1562496781" tmtrpt="314" stmtrpt="314" livl="1" rllivl="2" ivl="1" rp="1" gr="2">
-<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie DeleteView?</q>
-<a><![CDATA[model = <nazwa modelu z pliku models.py>
-template_name = '<nazwa>.html'
-success_url = reverse_lazy('<nazwa>')
-
-from django.urls import reverse_lazy]]></a>
-</item>
-
->>>>>>> 8d598eaac72fb7265c98098b71bae5d9c8ee770b
-<item id="1562310837" tmtrpt="315" stmtrpt="315" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
-<q>Co zwraca klasa generyczna LiestView?</q>
-<a>W self.object_list zwraca listę obiektów  (usually, but not necessarily a queryset). </a>
-</item>
-
-<item id="1562314216" tmtrpt="315" stmtrpt="315" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
-<q>Jaki jest tag szablonowy dla dziedziczenia?</q>
-<a><![CDATA[{%  extends '<nazwa pliku>' %}]]></a>
-</item>
-
-<item id="1562314022" tmtrpt="315" stmtrpt="315" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
-<q>Jaki jest szablonowy tag dla adresu url?</q>
-<a><![CDATA[{%  url '<nazwa>' %}]]></a>
-</item>
-
-<item id="1562494098" tmtrpt="317" stmtrpt="317" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
-<q>Jak zabezpieczyć stronę przed Cross-Site Request Forgery?</q>
-<a>Należy wstawić tag 
-
-{% csrf_token %}</a>
-</item>
-
-<item id="1562141231" tmtrpt="318" stmtrpt="318" livl="1" rllivl="1" ivl="8" rp="2" gr="5">
-<q>Jakie polecenie rozpoczyna projekt w Django?</q>
-<a><![CDATA[django-admin startproject <nazwa projektu>]]></a>
-</item>
-
-<item id="1562324135" tmtrpt="318" stmtrpt="318" livl="3" rllivl="3" ivl="5" rp="2" gr="3">
+<item id="1562324135" tmtrpt="318" stmtrpt="318" livl="2" rllivl="0" ivl="2" rp="2" gr="3">
 <q>Jak określić położenie katalogu dla plików statycznych?</q>
-<a># blog_project/settings.py
+<a>settings.py
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
-</item>
-
-<item id="1562141296" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="3" rp="2" gr="5">
-<q>Jakie polecenie tworzy aplikację w Django?</q>
-<a><![CDATA[django-admin startapp <nazwa aplikacji>]]></a>
-</item>
-
-<item id="1562142150" tmtrpt="319" stmtrpt="319" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
-<q>W jakim pliku definiujemy co ma być wyświetlone na stronie?</q>
-<a><![CDATA[<nazwa projektu>/<nazwa app>/views.py]]></a>
 </item>
 
 <item id="1562496313" tmtrpt="319" stmtrpt="319" livl="2" rllivl="2" ivl="6" rp="1" gr="3">
@@ -234,15 +79,6 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
 <a><![CDATA[model = <nazwa modelu z pliku models.py>
 template_name = '<nazwa>.html'
 fields = '__all__']]></a>
-</item>
-
-<item id="1562496781" tmtrpt="319" stmtrpt="319" livl="1" rllivl="2" ivl="4" rp="2" gr="3">
-<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie DeleteView?</q>
-<a><![CDATA[model = <nazwa modelu z pliku models.py>
-template_name = '<nazwa>.html'
-success_url = reverse_lazy('<nazwa>')
-
-from django.urls import reverse_lazy]]></a>
 </item>
 
 <item id="1562314507" tmtrpt="319" stmtrpt="319" livl="2" rllivl="2" ivl="4" rp="3" gr="3">
@@ -259,6 +95,15 @@ przykład
 <item id="1562314369" tmtrpt="320" stmtrpt="320" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
 <q>Jak przekazać zmienną do dokumentu html?</q>
 <a><![CDATA[{{ <nazwa zmiennej> }}]]></a>
+</item>
+
+<item id="1562496781" tmtrpt="320" stmtrpt="319" livl="4" rllivl="1" ivl="4" rp="2" gr="3">
+<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie DeleteView?</q>
+<a><![CDATA[model = <nazwa modelu z pliku models.py>
+template_name = '<nazwa>.html'
+success_url = reverse_lazy('<nazwa>')
+
+from django.urls import reverse_lazy]]></a>
 </item>
 
 <item id="1562496540" tmtrpt="321" stmtrpt="321" livl="1" rllivl="2" ivl="8" rp="1" gr="4">
@@ -337,10 +182,27 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView</a>
 {% endblock %}]]></a>
 </item>
 
+<item id="1562494098" tmtrpt="327" stmtrpt="317" livl="6" rllivl="5" ivl="11" rp="1" gr="3">
+<q>Jak zabezpieczyć stronę przed Cross-Site Request Forgery?</q>
+<a>Należy wstawić tag 
+
+{% csrf_token %}</a>
+</item>
+
+<item id="1562141296" tmtrpt="328" stmtrpt="318" livl="3" rllivl="1" ivl="12" rp="2" gr="5">
+<q>Jakie polecenie tworzy aplikację w Django?</q>
+<a><![CDATA[django-admin startapp <nazwa aplikacji>]]></a>
+</item>
+
 <item id="1562330120" tmtrpt="331" stmtrpt="331" livl="4" rllivl="4" ivl="18" rp="1" gr="4">
 <q>Jak zdefiniować liczbę mnoga dla "modelu" w panelu administracyjnym?</q>
 <a><![CDATA[class Meta():
     verbose_name_plural = "<nazwa modelu w liczbie mnogiej>"]]></a>
+</item>
+
+<item id="1562142150" tmtrpt="332" stmtrpt="319" livl="10" rllivl="7" ivl="16" rp="1" gr="3">
+<q>W jakim pliku definiujemy co ma być wyświetlone na stronie?</q>
+<a>views.py</a>
 </item>
 
 <item id="1562142043" tmtrpt="339" stmtrpt="339" livl="4" rllivl="4" ivl="28" rp="1" gr="5">
@@ -378,21 +240,139 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView</a>
 <a><![CDATA[py manage.py makemigrations <nazwa app>]]></a>
 </item>
 
+<item id="1562314216" tmtrpt="346" stmtrpt="346" livl="6" rllivl="6" ivl="31" rp="2" gr="5">
+<q>Jaki jest tag szablonowy dla dziedziczenia?</q>
+<a><![CDATA[{%  extends '<nazwa pliku>' %}]]></a>
+</item>
+
 <item id="1562141464" tmtrpt="348" stmtrpt="348" livl="6" rllivl="6" ivl="35" rp="2" gr="5">
 <q>Jakie polecenie uruchamia server w Django?</q>
 <a>python manage.py runserver</a>
+</item>
+
+<item id="1562310837" tmtrpt="349" stmtrpt="349" livl="6" rllivl="6" ivl="34" rp="2" gr="5">
+<q>Co zwraca klasa generyczna LiestView?</q>
+<a>W self.object_list zwraca listę obiektów  (usually, but not necessarily a queryset). </a>
+</item>
+
+<item id="1562314022" tmtrpt="350" stmtrpt="350" livl="6" rllivl="6" ivl="35" rp="2" gr="5">
+<q>Jaki jest szablonowy tag dla adresu url?</q>
+<a><![CDATA[{%  url '<nazwa>' %}]]></a>
+</item>
+
+<item id="1562141231" tmtrpt="355" stmtrpt="318" livl="8" rllivl="6" ivl="39" rp="2" gr="5">
+<q>Jakie polecenie rozpoczyna projekt w Django?</q>
+<a><![CDATA[django-admin startproject <nazwa projektu>]]></a>
 </item>
 
 </category>
 
 <category name="Arduino">
 
-<item id="1562846397" tmtrpt="314" stmtrpt="314" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<item id="1563094968" tmtrpt="317" stmtrpt="317" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jakie są możliwe tryby pracy pinów?</q>
+<a>INPUT
+OUTPUT
+INPUT_PULLUP</a>
+</item>
+
+<item id="1563095077" tmtrpt="317" stmtrpt="317" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jaka zmienna jest przypisana do 13 pinu?</q>
+<a>LED_BUILTIN</a>
+</item>
+
+<item id="1563001244" tmtrpt="318" stmtrpt="318" livl="2" rllivl="0" ivl="2" rp="0" gr="3">
+<q>Jaka funkcja zwraca ilość bajtów, które zostały odebrane i czekają na obsługę przez Arduino</q>
+<a>Serial.available()</a>
+</item>
+
+<item id="1562828761" tmtrpt="318" stmtrpt="317" livl="1" rllivl="0" ivl="2" rp="0" gr="3">
+<q>Jakie piny w Arduino obsługują UART?</q>
+<a><![CDATA[<b>Tx</b> - wysyłanie danych (w Arduino - pin 1)
+<b>Rx</b> -odbieranie danych (w Arduino - pin 0 )]]></a>
+</item>
+
+<item id="1562828378" tmtrpt="318" stmtrpt="317" livl="1" rllivl="0" ivl="2" rp="0" gr="3">
+<q>Co to jest UART?</q>
+<a>Universal asynchronous receiver-transmitter
+Uniwersalny asynchroniczny nadajnik-odbiornik
+Szeregowy interfejs komunikacyjny.
+</a>
+</item>
+
+<item id="1563094868" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
+<q>Jakie są możliwe stany pinów?</q>
+<a>HIGH, LOW</a>
+</item>
+
+<item id="1563095015" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
+<q>Do jakiego pinu podłączona jest dioda dla użytkowanika?</q>
+<a>13</a>
+</item>
+
+<item id="1562829249" tmtrpt="319" stmtrpt="319" livl="0" rllivl="1" ivl="2" rp="1" gr="3">
+<q>Co to jest USART?</q>
+<a>szeregowy interfejs komunikacyjny
+Universal Synchronous and Asynchronous Reciever and Transmitter
+</a>
+</item>
+
+<item id="1563002205" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="4" rp="0" gr="5">
+<q>Jak przypisać czytelną nazwę i  umożliwić zmianę w jednym miejscu zmianę zmiennej w całym programie ?</q>
+<a><![CDATA[dyrektywa <b>#define</b>]]></a>
+</item>
+
+<item id="1563001360" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="4" rp="0" gr="5">
+<q>Jaka funkcja kopiuje dane z bufora do momentu napotkania znaku terminatora?</q>
+<a>Serial.readStringUntil(terminator)</a>
+</item>
+
+<item id="1562963528" tmtrpt="320" stmtrpt="318" livl="2" rllivl="0" ivl="4" rp="0" gr="4">
+<q>Jak funkcja wstrzymuje działanie programu na okrślony czas?</q>
+<a><![CDATA[delay(<czas>)
+1s = 1000]]></a>
+</item>
+
+<item id="1562828677" tmtrpt="320" stmtrpt="317" livl="2" rllivl="1" ivl="4" rp="0" gr="3">
+<q>Na czym opiera się zasada działania UART?</q>
+<a><![CDATA[Jego zasada działania opiera się na szeregowym wysłaniu ciągu bitów, które następnie składane są w informację. Pojedyncza ramka (w uproszczeniu bajt) danych jest nadawany w poniższej postaci:
+
+Transmisja rozpoczyna się od bitu startu, zaznaczonego na rysunku jako <b>BS</b>. Zawsze jest to bit będący logicznym zerem. Następnie, zależnie od konfiguracji, następuje po sobie 7, 8 lub 9 bitów danych (tutaj zaznaczone jako B0-B7), które są wysyłaną informacją. Bit stopu (zaznaczony tutaj jako bit <b>BK</b>) to bit będący logiczną jedynką - mówi o końcu transmisji.<img>img\KursArduino_2_001.png-300x75.png</img>]]></a>
+</item>
+
+<item id="1562829062" tmtrpt="320" stmtrpt="320" livl="1" rllivl="1" ivl="3" rp="2" gr="3">
+<q>Od jakich parametrów zależy transmisja UART? </q>
+<a>baud-rate - prędkość przesyłu danych, bitów/sekundę (np. 9600, 115200)
+</a>
+</item>
+
+<item id="1562846397" tmtrpt="321" stmtrpt="321" livl="0" rllivl="1" ivl="6" rp="0" gr="5">
 <q>Jak zrobić wykres kilku wartości w Kreślarce?</q>
 <a>Należy wysłać liczby w tej samej linii oddzielonych znakiem tabulatora, a na ich końcu powinien pojawić się znak nowej linii.</a>
 </item>
 
-<item id="1562844668" tmtrpt="315" stmtrpt="315" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
+<item id="1562963416" tmtrpt="322" stmtrpt="318" livl="2" rllivl="0" ivl="6" rp="0" gr="5">
+<q>Jak zmienić stan pinu cyfrowego?</q>
+<a><![CDATA[digitalWrite(<pin>, <stan>)]]></a>
+</item>
+
+<item id="1562846316" tmtrpt="323" stmtrpt="323" livl="0" rllivl="1" ivl="8" rp="0" gr="5">
+<q>Jaka funkcja generuje liczby pseudolosowe?</q>
+<a><![CDATA[random(  <zakres dolny>, <zakres górny>)
+random( <górny zakres> )]]></a>
+</item>
+
+<item id="1562846177" tmtrpt="323" stmtrpt="323" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jaka funkcja umożliwia ustawinie wartości początkowej dla algorytmu generowania liczb pseudolosowych?</q>
+<a><![CDATA[randomSeed(<wartość początkowa>);]]></a>
+</item>
+
+<item id="1562844794" tmtrpt="324" stmtrpt="324" livl="1" rllivl="1" ivl="9" rp="1" gr="5">
+<q>Jakie polecenie drukuje w porcie szeregowym?</q>
+<a>Serial.println("drukowany tekst")</a>
+</item>
+
+<item id="1562844668" tmtrpt="324" stmtrpt="324" livl="1" rllivl="1" ivl="9" rp="1" gr="5">
 <q>Jaki jest szablon programów dla Arduino?</q>
 <a>void setup(){
 
@@ -406,55 +386,14 @@ void loop(){
 </a>
 </item>
 
-<item id="1562829062" tmtrpt="316" stmtrpt="316" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
-<q>Od jakich parametrów zależy transmisja UART? </q>
-<a>baud-rate - prędkość przesyłu danych. Ilość tranmitowanych bitów na sekundę (np. 9600, 115200)
-</a>
-</item>
-
-<item id="1562829249" tmtrpt="316" stmtrpt="316" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
-<q>Co to jest USART?</q>
-<a>USART - Universal Synchronous and Asynchronous Reciever and Transmitter
-interfejs komunikacyjny</a>
-</item>
-
-<item id="1562828378" tmtrpt="317" stmtrpt="317" livl="0" rllivl="1" ivl="2" rp="0" gr="3">
-<q>Co to jest UART?</q>
-<a>Jest to prosty i bardzo popularny interfejs szeregowy</a>
-</item>
-
-<item id="1562828761" tmtrpt="317" stmtrpt="317" livl="0" rllivl="1" ivl="2" rp="0" gr="3">
-<q>Jakie piny w Arduino obsługują UART?</q>
-<a><![CDATA[<b>Tx</b>  - do wysyłania danych (pin 1 w Arduino)
-<b>Rx</b>  -do odbierania danych (pin 0 w Arduino)]]></a>
-</item>
-
-<item id="1562846177" tmtrpt="317" stmtrpt="317" livl="0" rllivl="1" ivl="2" rp="0" gr="3">
-<q>Jaka funkcja umożliwia ustawinie wartości początkowej dla algorytmu generowania liczb pseudolosowych?</q>
-<a>randomSeed(wartosc_poczatkowa);</a>
-</item>
-
-<item id="1562828677" tmtrpt="317" stmtrpt="317" livl="0" rllivl="1" ivl="2" rp="0" gr="3">
-<q>Na czym opiera się zasada działania UART?</q>
-<a><![CDATA[Jego zasada działania opiera się na szeregowym wysłaniu ciągu bitów, które następnie składane są w informację. Pojedyncza ramka (w uproszczeniu bajt) danych jest nadawany w poniższej postaci:
-
-Transmisja rozpoczyna się od bitu startu, zaznaczonego na rysunku jako <b>BS</b>. Zawsze jest to bit będący logicznym zerem. Następnie, zależnie od konfiguracji, następuje po sobie 7, 8 lub 9 bitów danych (tutaj zaznaczone jako B0-B7), które są wysyłaną informacją. Bit stopu (zaznaczony tutaj jako bit <b>BK</b>) to bit będący logiczną jedynką - mówi o końcu transmisji.<img>img\KursArduino_2_001.png-300x75.png</img>]]></a>
-</item>
-
-<item id="1562844737" tmtrpt="319" stmtrpt="319" livl="0" rllivl="0" ivl="4" rp="0" gr="5">
+<item id="1562844737" tmtrpt="327" stmtrpt="319" livl="4" rllivl="1" ivl="11" rp="0" gr="4">
 <q>Jakie polecenie ustawia prędkość transmisji?</q>
 <a>Serial.begin(9600)</a>
 </item>
 
-<item id="1562846316" tmtrpt="323" stmtrpt="323" livl="0" rllivl="1" ivl="8" rp="0" gr="5">
-<q>Jaka funkcja generuje liczby pseudolosowe?</q>
-<a><![CDATA[random(  <zakres dolny>, <zakres górny>)
-random( <górny zakres> )]]></a>
-</item>
-
-<item id="1562844794" tmtrpt="324" stmtrpt="324" livl="1" rllivl="1" ivl="9" rp="1" gr="5">
-<q>Jakie polecenie drukuje w porcie szeregowym?</q>
-<a>Serial.println("drukowany tekst")</a>
+<item id="1562963004" tmtrpt="327" stmtrpt="327" livl="1" rllivl="1" ivl="10" rp="1" gr="5">
+<q>Jaka funkcja inicjuje piny cyfrowe?</q>
+<a><![CDATA[pinMode(<nazwa pinu>, <tryb>)]]></a>
 </item>
 
 </category>
