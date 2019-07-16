@@ -310,6 +310,26 @@ Szeregowy interfejs komunikacyjny.
 <a>13</a>
 </item>
 
+<item id="1563206942" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Co to jest ADC?</q>
+<a>Analog Digital Converter</a>
+</item>
+
+<item id="1563206986" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Do czego służy ADC?</q>
+<a>Do przetwarzania sygnału analogowego?</a>
+</item>
+
+<item id="1563207070" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Ile jest wejść analogowych?</q>
+<a>6 od A0 do A5</a>
+</item>
+
+<item id="1563208237" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jaka funkcja umożliwia odczyt z pinów ADC (piny A0-A5)?</q>
+<a><![CDATA[<b>analoRead(<pin>)</b>]]></a>
+</item>
+
 <item id="1562829249" tmtrpt="319" stmtrpt="319" livl="0" rllivl="1" ivl="2" rp="1" gr="3">
 <q>Co to jest USART?</q>
 <a>szeregowy interfejs komunikacyjny
