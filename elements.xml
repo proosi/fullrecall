@@ -67,6 +67,13 @@ LEGEND:
 
 <category name="Django">
 
+<item id="1562324135" tmtrpt="318" stmtrpt="318" livl="2" rllivl="0" ivl="2" rp="2" gr="3">
+<q>Jak określić położenie katalogu dla plików statycznych?</q>
+<a>settings.py
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
+</item>
+
 <item id="1562496313" tmtrpt="319" stmtrpt="319" livl="2" rllivl="2" ivl="6" rp="1" gr="3">
 <q>Jakie zmienne trzeba zdefiniować w klasie dziedziczącej po klasie CreateView?</q>
 <a><![CDATA[model = <nazwa modelu z pliku models.py>
@@ -134,13 +141,6 @@ Adresy i zawartość są mapowane w tablicy
 lub
     <span style="color:#f00">path</span>(<wyrażenie regularne>,<span style="color:#f00"> include</span>(<urls app>))
 <span style="color:#f00">include()</span> wymaga: <span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> include]]></a>
-</item>
-
-<item id="1562324135" tmtrpt="322" stmtrpt="322" livl="2" rllivl="2" ivl="4" rp="3" gr="3">
-<q>Jak określić położenie katalogu dla plików statycznych?</q>
-<a>settings.py
-
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
 </item>
 
 <item id="1562311022" tmtrpt="324" stmtrpt="324" livl="2" rllivl="2" ivl="14" rp="1" gr="5">
@@ -269,6 +269,67 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView</a>
 
 <category name="Arduino">
 
+<item id="1563094968" tmtrpt="317" stmtrpt="317" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jakie są możliwe tryby pracy pinów?</q>
+<a>INPUT
+OUTPUT
+INPUT_PULLUP</a>
+</item>
+
+<item id="1563095077" tmtrpt="317" stmtrpt="317" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jaka zmienna jest przypisana do 13 pinu?</q>
+<a>LED_BUILTIN</a>
+</item>
+
+<item id="1563001244" tmtrpt="318" stmtrpt="318" livl="2" rllivl="0" ivl="2" rp="0" gr="3">
+<q>Jaka funkcja zwraca ilość bajtów, które zostały odebrane i czekają na obsługę przez Arduino</q>
+<a>Serial.available()</a>
+</item>
+
+<item id="1562828761" tmtrpt="318" stmtrpt="317" livl="1" rllivl="0" ivl="2" rp="0" gr="3">
+<q>Jakie piny w Arduino obsługują UART?</q>
+<a><![CDATA[<b>Tx</b> - wysyłanie danych (w Arduino - pin 1)
+<b>Rx</b> -odbieranie danych (w Arduino - pin 0 )]]></a>
+</item>
+
+<item id="1562828378" tmtrpt="318" stmtrpt="317" livl="1" rllivl="0" ivl="2" rp="0" gr="3">
+<q>Co to jest UART?</q>
+<a>Universal asynchronous receiver-transmitter
+Uniwersalny asynchroniczny nadajnik-odbiornik
+Szeregowy interfejs komunikacyjny.
+</a>
+</item>
+
+<item id="1563094868" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
+<q>Jakie są możliwe stany pinów?</q>
+<a>HIGH, LOW</a>
+</item>
+
+<item id="1563095015" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
+<q>Do jakiego pinu podłączona jest dioda dla użytkowanika?</q>
+<a>13</a>
+</item>
+
+<item id="1563206942" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Co to jest ADC?</q>
+<a>Analog Digital Converter</a>
+</item>
+
+<item id="1563206986" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Do czego służy ADC?</q>
+<a>Do przetwarzania sygnału analogowego?</a>
+</item>
+
+<item id="1563207070" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Ile jest wejść analogowych?</q>
+<a>6 od A0 do A5</a>
+</item>
+
+<item id="1563208237" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jaka funkcja umożliwia odczyt z pinów ADC (piny A0-A5)?</q>
+<a><![CDATA[<b>analoRead(<pin>)</b>]]></a>
+</item>
+
 <item id="1562829249" tmtrpt="319" stmtrpt="319" livl="0" rllivl="1" ivl="2" rp="1" gr="3">
 <q>Co to jest USART?</q>
 <a>szeregowy interfejs komunikacyjny
@@ -315,7 +376,6 @@ Transmisja rozpoczyna się od bitu startu, zaznaczonego na rysunku jako <b>BS</b
 </a>
 </item>
 
-<<<<<<< HEAD
 <item id="1563309909" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
 <q>Jaki zakres napięć występuje w ARDUINO UNO? </q>
 <a>0 - 5 V</a>
@@ -324,13 +384,6 @@ Transmisja rozpoczyna się od bitu startu, zaznaczonego na rysunku jako <b>BS</b
 <item id="1563309978" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
 <q>Jaki zakres wartości daje przetwornik 10-bitowy?</q>
 <a>0 - 1023</a>
-=======
-<item id="1563094968" tmtrpt="320" stmtrpt="320" livl="0" rllivl="1" ivl="2" rp="0" gr="3">
-<q>Jakie są możliwe tryby pracy pinów?</q>
-<a>INPUT
-OUTPUT
-INPUT_PULLUP</a>
->>>>>>> 09b7809396ad6f3efc65384aac399f9b86c855a3
 </item>
 
 <item id="1562846397" tmtrpt="321" stmtrpt="321" livl="0" rllivl="1" ivl="6" rp="0" gr="5">
@@ -338,25 +391,9 @@ INPUT_PULLUP</a>
 <a>Należy wysłać liczby w tej samej linii oddzielonych znakiem tabulatora, a na ich końcu powinien pojawić się znak nowej linii.</a>
 </item>
 
-<item id="1563094868" tmtrpt="321" stmtrpt="321" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
-<q>Jakie są możliwe stany pinów?</q>
-<a>HIGH, LOW</a>
-</item>
-
 <item id="1562963416" tmtrpt="322" stmtrpt="318" livl="2" rllivl="0" ivl="6" rp="0" gr="5">
 <q>Jak zmienić stan pinu cyfrowego?</q>
 <a><![CDATA[digitalWrite(<pin>, <stan>)]]></a>
-</item>
-
-<item id="1563095077" tmtrpt="322" stmtrpt="322" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
-<q>Jaka zmienna jest przypisana do 13 pinu?</q>
-<a>LED_BUILTIN</a>
-</item>
-
-<item id="1562828761" tmtrpt="322" stmtrpt="322" livl="2" rllivl="2" ivl="4" rp="1" gr="3">
-<q>Jakie piny w Arduino obsługują UART?</q>
-<a><![CDATA[<b>Tx</b> - wysyłanie danych (w Arduino - pin 1)
-<b>Rx</b> -odbieranie danych (w Arduino - pin 0 )]]></a>
 </item>
 
 <item id="1562846316" tmtrpt="323" stmtrpt="323" livl="0" rllivl="1" ivl="8" rp="0" gr="5">
@@ -368,14 +405,6 @@ random( <górny zakres> )]]></a>
 <item id="1562846177" tmtrpt="323" stmtrpt="323" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
 <q>Jaka funkcja umożliwia ustawinie wartości początkowej dla algorytmu generowania liczb pseudolosowych?</q>
 <a><![CDATA[randomSeed(<wartość początkowa>);]]></a>
-</item>
-
-<item id="1562828378" tmtrpt="323" stmtrpt="323" livl="2" rllivl="2" ivl="5" rp="1" gr="3">
-<q>Co to jest UART?</q>
-<a>Universal asynchronous receiver-transmitter
-Uniwersalny asynchroniczny nadajnik-odbiornik
-Szeregowy interfejs komunikacyjny.
-</a>
 </item>
 
 <item id="1562844794" tmtrpt="324" stmtrpt="324" livl="1" rllivl="1" ivl="9" rp="1" gr="5">
@@ -405,16 +434,6 @@ void loop(){
 <item id="1562963004" tmtrpt="327" stmtrpt="327" livl="1" rllivl="1" ivl="10" rp="1" gr="5">
 <q>Jaka funkcja inicjuje piny cyfrowe?</q>
 <a><![CDATA[pinMode(<nazwa pinu>, <tryb>)]]></a>
-</item>
-
-<item id="1563001244" tmtrpt="328" stmtrpt="328" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
-<q>Jaka funkcja zwraca ilość bajtów, które zostały odebrane i czekają na obsługę przez Arduino</q>
-<a>Serial.available()</a>
-</item>
-
-<item id="1563095015" tmtrpt="328" stmtrpt="328" livl="1" rllivl="1" ivl="10" rp="1" gr="5">
-<q>Do jakiego pinu podłączona jest dioda dla użytkowanika?</q>
-<a>13</a>
 </item>
 
 </category>
