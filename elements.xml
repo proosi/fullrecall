@@ -337,6 +337,16 @@ Universal Synchronous and Asynchronous Reciever and Transmitter
 </a>
 </item>
 
+<item id="1563309805" tmtrpt="319" stmtrpt="319" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Ilu bitowy przetwornik ADC jest w ARDUINO UNO?</q>
+<a>10-bitowy</a>
+</item>
+
+<item id="1563311954" tmtrpt="319" stmtrpt="319" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jaka jest częstotliwość sygnału PWM generowana przez ARDUINO?</q>
+<a>490/sekundę</a>
+</item>
+
 <item id="1563002205" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="4" rp="0" gr="5">
 <q>Jak przypisać czytelną nazwę i  umożliwić zmianę w jednym miejscu zmianę zmiennej w całym programie ?</q>
 <a><![CDATA[dyrektywa <b>#define</b>]]></a>
@@ -364,6 +374,16 @@ Transmisja rozpoczyna się od bitu startu, zaznaczonego na rysunku jako <b>BS</b
 <q>Od jakich parametrów zależy transmisja UART? </q>
 <a>baud-rate - prędkość przesyłu danych, bitów/sekundę (np. 9600, 115200)
 </a>
+</item>
+
+<item id="1563309909" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
+<q>Jaki zakres napięć występuje w ARDUINO UNO? </q>
+<a>0 - 5 V</a>
+</item>
+
+<item id="1563309978" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
+<q>Jaki zakres wartości daje przetwornik 10-bitowy?</q>
+<a>0 - 1023</a>
 </item>
 
 <item id="1562846397" tmtrpt="321" stmtrpt="321" livl="0" rllivl="1" ivl="6" rp="0" gr="5">
