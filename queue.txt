@@ -20,16 +20,3 @@ Format:
 Items without category go into default category (i.e. the first category that is listed in any dialog with categories).
 This file should be saved using UTF-8 encoding.
 
-<category name="root">
-
-<category name="Django">
-
-<q>W jakiej sekcji settings.py dołączamy tworzone aplikacje?</q>
-<a>INSTALLED_APP = [
-    '<moja app>',
-]</a>
-
-</category>
-
-</category>
-

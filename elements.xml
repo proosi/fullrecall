@@ -67,43 +67,11 @@ LEGEND:
 
 <category name="Django">
 
-<item id="1562324135" tmtrpt="318" stmtrpt="318" livl="2" rllivl="0" ivl="2" rp="2" gr="3">
-<q>Jak określić położenie katalogu dla plików statycznych?</q>
-<a>settings.py
-
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
-</item>
-
-<item id="1562496313" tmtrpt="319" stmtrpt="319" livl="2" rllivl="2" ivl="6" rp="1" gr="3">
-<q>Jakie zmienne trzeba zdefiniować w klasie dziedziczącej po klasie CreateView?</q>
-<a><![CDATA[model = <nazwa modelu z pliku models.py>
-template_name = '<nazwa>.html'
-fields = '__all__']]></a>
-</item>
-
-<item id="1562314507" tmtrpt="319" stmtrpt="319" livl="2" rllivl="2" ivl="4" rp="3" gr="3">
-<q>Jaki jest tag szablonowy dla plików statycznych?</q>
-<a><![CDATA[{%  load <nazwa katalogu> %}
-
-przykład
-
-{% load static%}
-
-<link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
-</item>
-
-<item id="1562314369" tmtrpt="320" stmtrpt="320" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
-<q>Jak przekazać zmienną do dokumentu html?</q>
-<a><![CDATA[{{ <nazwa zmiennej> }}]]></a>
-</item>
-
-<item id="1562496781" tmtrpt="320" stmtrpt="319" livl="4" rllivl="1" ivl="4" rp="2" gr="3">
-<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie DeleteView?</q>
-<a><![CDATA[model = <nazwa modelu z pliku models.py>
-template_name = '<nazwa>.html'
-success_url = reverse_lazy('<nazwa>')
-
-from django.urls import reverse_lazy]]></a>
+<item id="1563397674" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>W jakiej sekcji settings.py dołączamy tworzone aplikacje?</q>
+<a><![CDATA[INSTALLED_APP = [
+    '<moja app>',
+]]]></a>
 </item>
 
 <item id="1562496540" tmtrpt="321" stmtrpt="321" livl="1" rllivl="2" ivl="8" rp="1" gr="4">
@@ -143,6 +111,17 @@ lub
 <span style="color:#f00">include()</span> wymaga: <span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> include]]></a>
 </item>
 
+<item id="1562314507" tmtrpt="322" stmtrpt="322" livl="4" rllivl="5" ivl="2" rp="4" gr="2">
+<q>Jaki jest tag szablonowy dla plików statycznych?</q>
+<a><![CDATA[{%  load <nazwa katalogu> %}
+
+przykład
+
+{% load static%}
+
+<link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
+</item>
+
 <item id="1562311022" tmtrpt="324" stmtrpt="324" livl="2" rllivl="2" ivl="14" rp="1" gr="5">
 <q>Co zwraca klasa generyczna DetailView?</q>
 <a>Obiekt self.object na którym działa widok.</a>
@@ -156,6 +135,13 @@ lub
   <input type="submit" value="Save" />
 </form>
 ]]></a>
+</item>
+
+<item id="1562496313" tmtrpt="324" stmtrpt="324" livl="6" rllivl="7" ivl="4" rp="2" gr="2">
+<q>Jakie zmienne trzeba zdefiniować w klasie dziedziczącej po klasie CreateView?</q>
+<a><![CDATA[model = <nazwa modelu z pliku models.py>
+template_name = '<nazwa>.html'
+fields = '__all__']]></a>
 </item>
 
 <item id="1562314125" tmtrpt="325" stmtrpt="325" livl="2" rllivl="2" ivl="15" rp="1" gr="5">
@@ -175,11 +161,27 @@ wymagany import:
 from django.views.generic.edit import CreateView, UpdateView, DeleteView</a>
 </item>
 
+<item id="1562324135" tmtrpt="325" stmtrpt="325" livl="2" rllivl="4" ivl="5" rp="3" gr="3">
+<q>Jak określić położenie katalogu dla plików statycznych?</q>
+<a>settings.py
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
+</item>
+
 <item id="1562314296" tmtrpt="326" stmtrpt="326" livl="2" rllivl="2" ivl="16" rp="1" gr="5">
 <q>Jaki jest tag szablonowy dla bloku?</q>
 <a><![CDATA[{% block <nazwa> %}
 
 {% endblock %}]]></a>
+</item>
+
+<item id="1562496781" tmtrpt="326" stmtrpt="326" livl="4" rllivl="4" ivl="6" rp="3" gr="3">
+<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie DeleteView?</q>
+<a><![CDATA[model = <nazwa modelu z pliku models.py>
+template_name = '<nazwa>.html'
+success_url = reverse_lazy('<nazwa>')
+
+from django.urls import reverse_lazy]]></a>
 </item>
 
 <item id="1562494098" tmtrpt="327" stmtrpt="317" livl="6" rllivl="5" ivl="11" rp="1" gr="3">
@@ -265,125 +267,66 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView</a>
 <a><![CDATA[django-admin startproject <nazwa projektu>]]></a>
 </item>
 
+<item id="1562314369" tmtrpt="374" stmtrpt="374" livl="10" rllivl="10" ivl="54" rp="2" gr="5">
+<q>Jak przekazać zmienną do dokumentu html?</q>
+<a><![CDATA[{{ <nazwa zmiennej> }}]]></a>
+</item>
+
 </category>
 
 <category name="Arduino">
 
-<item id="1563094968" tmtrpt="317" stmtrpt="317" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jakie są możliwe tryby pracy pinów?</q>
-<a>INPUT
-OUTPUT
-INPUT_PULLUP</a>
+<item id="1563397944" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="1">
+<q>Jakie parametry chrakteryzują sygnał PWM?</q>
+<a><![CDATA[Amplituda
+Okres sygnału
+Częstotliwość sygnału
+Wypełnienie sygnału <img>img\pwm_1.png</img>]]></a>
 </item>
 
-<item id="1563095077" tmtrpt="317" stmtrpt="317" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jaka zmienna jest przypisana do 13 pinu?</q>
-<a>LED_BUILTIN</a>
+<item id="1563398117" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Co to jest wypełnienie w sygnale PWM?"</q>
+<a>Jest to procent czasu przez jaki sygnał ma potencjał wysoki?</a>
 </item>
 
-<item id="1563001244" tmtrpt="318" stmtrpt="318" livl="2" rllivl="0" ivl="2" rp="0" gr="3">
-<q>Jaka funkcja zwraca ilość bajtów, które zostały odebrane i czekają na obsługę przez Arduino</q>
-<a>Serial.available()</a>
+<item id="1563398585" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Ile wejść cyfrowych ma Arduino Mega 2560?</q>
+<a>54 wejść input/output</a>
 </item>
 
-<item id="1562828761" tmtrpt="318" stmtrpt="317" livl="1" rllivl="0" ivl="2" rp="0" gr="3">
-<q>Jakie piny w Arduino obsługują UART?</q>
-<a><![CDATA[<b>Tx</b> - wysyłanie danych (w Arduino - pin 1)
-<b>Rx</b> -odbieranie danych (w Arduino - pin 0 )]]></a>
+<item id="1563398669" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Ile wejść cyfrowych w Arduino Mega 2560 może być użytych jako wyjścia PWM?</q>
+<a>14</a>
 </item>
 
-<item id="1562828378" tmtrpt="318" stmtrpt="317" livl="1" rllivl="0" ivl="2" rp="0" gr="3">
-<q>Co to jest UART?</q>
-<a>Universal asynchronous receiver-transmitter
-Uniwersalny asynchroniczny nadajnik-odbiornik
-Szeregowy interfejs komunikacyjny.
-</a>
+<item id="1563398722" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Ile wejść analogowych posiada Arduino Mega 2560?</q>
+<a>16</a>
 </item>
 
-<item id="1563094868" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
-<q>Jakie są możliwe stany pinów?</q>
-<a>HIGH, LOW</a>
+<item id="1563398774" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Ile portów UART posiada Arduino Mega?</q>
+<a>4</a>
 </item>
 
-<item id="1563095015" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
-<q>Do jakiego pinu podłączona jest dioda dla użytkowanika?</q>
-<a>13</a>
+<item id="1563398983" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Co oznacza znak "~" na płytce Arduino Uno?</q>
+<a>Wyjście, które może generować sygnał PWM.</a>
 </item>
 
-<item id="1563206942" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Co to jest ADC?</q>
-<a>Analog Digital Converter</a>
+<item id="1563399053" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Ilu bitowy jest sygnał PWM w Arduino?</q>
+<a>8-bitowy</a>
 </item>
 
-<item id="1563206986" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Do czego służy ADC?</q>
-<a>Do przetwarzania sygnału analogowego?</a>
+<item id="1563399118" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jaki zakres wartości możemy uzyskać z 8 bitów?</q>
+<a>0 - 255 </a>
 </item>
 
-<item id="1563207070" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Ile jest wejść analogowych?</q>
-<a>6 od A0 do A5</a>
-</item>
-
-<item id="1563208237" tmtrpt="318" stmtrpt="318" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jaka funkcja umożliwia odczyt z pinów ADC (piny A0-A5)?</q>
-<a><![CDATA[<b>analoRead(<pin>)</b>]]></a>
-</item>
-
-<item id="1562829249" tmtrpt="319" stmtrpt="319" livl="0" rllivl="1" ivl="2" rp="1" gr="3">
-<q>Co to jest USART?</q>
-<a>szeregowy interfejs komunikacyjny
-Universal Synchronous and Asynchronous Reciever and Transmitter
-</a>
-</item>
-
-<item id="1563309805" tmtrpt="319" stmtrpt="319" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Ilu bitowy przetwornik ADC jest w ARDUINO UNO?</q>
-<a>10-bitowy</a>
-</item>
-
-<item id="1563311954" tmtrpt="319" stmtrpt="319" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jaka jest częstotliwość sygnału PWM generowana przez ARDUINO?</q>
-<a>490/sekundę</a>
-</item>
-
-<item id="1563002205" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="4" rp="0" gr="5">
-<q>Jak przypisać czytelną nazwę i  umożliwić zmianę w jednym miejscu zmianę zmiennej w całym programie ?</q>
-<a><![CDATA[dyrektywa <b>#define</b>]]></a>
-</item>
-
-<item id="1563001360" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="4" rp="0" gr="5">
-<q>Jaka funkcja kopiuje dane z bufora do momentu napotkania znaku terminatora?</q>
-<a>Serial.readStringUntil(terminator)</a>
-</item>
-
-<item id="1562963528" tmtrpt="320" stmtrpt="318" livl="2" rllivl="0" ivl="4" rp="0" gr="4">
-<q>Jak funkcja wstrzymuje działanie programu na okrślony czas?</q>
-<a><![CDATA[delay(<czas>)
-1s = 1000]]></a>
-</item>
-
-<item id="1562828677" tmtrpt="320" stmtrpt="317" livl="2" rllivl="1" ivl="4" rp="0" gr="3">
-<q>Na czym opiera się zasada działania UART?</q>
-<a><![CDATA[Jego zasada działania opiera się na szeregowym wysłaniu ciągu bitów, które następnie składane są w informację. Pojedyncza ramka (w uproszczeniu bajt) danych jest nadawany w poniższej postaci:
-
-Transmisja rozpoczyna się od bitu startu, zaznaczonego na rysunku jako <b>BS</b>. Zawsze jest to bit będący logicznym zerem. Następnie, zależnie od konfiguracji, następuje po sobie 7, 8 lub 9 bitów danych (tutaj zaznaczone jako B0-B7), które są wysyłaną informacją. Bit stopu (zaznaczony tutaj jako bit <b>BK</b>) to bit będący logiczną jedynką - mówi o końcu transmisji.<img>img\KursArduino_2_001.png-300x75.png</img>]]></a>
-</item>
-
-<item id="1562829062" tmtrpt="320" stmtrpt="320" livl="1" rllivl="1" ivl="3" rp="2" gr="3">
-<q>Od jakich parametrów zależy transmisja UART? </q>
-<a>baud-rate - prędkość przesyłu danych, bitów/sekundę (np. 9600, 115200)
-</a>
-</item>
-
-<item id="1563309909" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
-<q>Jaki zakres napięć występuje w ARDUINO UNO? </q>
-<a>0 - 5 V</a>
-</item>
-
-<item id="1563309978" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
-<q>Jaki zakres wartości daje przetwornik 10-bitowy?</q>
-<a>0 - 1023</a>
+<item id="1563399421" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jaka funkcja generuje sygnał PWM na określonym wyjściu?</q>
+<a><![CDATA[analogWrite( <pin>, <wypełnienie> )]]></a>
 </item>
 
 <item id="1562846397" tmtrpt="321" stmtrpt="321" livl="0" rllivl="1" ivl="6" rp="0" gr="5">
@@ -391,9 +334,26 @@ Transmisja rozpoczyna się od bitu startu, zaznaczonego na rysunku jako <b>BS</b
 <a>Należy wysłać liczby w tej samej linii oddzielonych znakiem tabulatora, a na ich końcu powinien pojawić się znak nowej linii.</a>
 </item>
 
+<item id="1563311954" tmtrpt="321" stmtrpt="321" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
+<q>Jaka jest częstotliwość sygnału PWM generowana przez ARDUINO?</q>
+<a>490/sekundę</a>
+</item>
+
 <item id="1562963416" tmtrpt="322" stmtrpt="318" livl="2" rllivl="0" ivl="6" rp="0" gr="5">
 <q>Jak zmienić stan pinu cyfrowego?</q>
 <a><![CDATA[digitalWrite(<pin>, <stan>)]]></a>
+</item>
+
+<item id="1563309805" tmtrpt="322" stmtrpt="322" livl="0" rllivl="1" ivl="2" rp="0" gr="3">
+<q>Ilu bitowy przetwornik ADC jest w ARDUINO UNO?</q>
+<a>10-bitowy</a>
+</item>
+
+<item id="1562828677" tmtrpt="322" stmtrpt="322" livl="4" rllivl="4" ivl="2" rp="1" gr="2">
+<q>Na czym opiera się zasada działania UART?</q>
+<a><![CDATA[Jego zasada działania opiera się na szeregowym wysłaniu ciągu bitów, które następnie składane są w informację. Pojedyncza ramka (w uproszczeniu bajt) danych jest nadawany w poniższej postaci:
+
+Transmisja rozpoczyna się od bitu startu, zaznaczonego na rysunku jako <b>BS</b>. Zawsze jest to bit będący logicznym zerem. Następnie, zależnie od konfiguracji, następuje po sobie 7, 8 lub 9 bitów danych (tutaj zaznaczone jako B0-B7), które są wysyłaną informacją. Bit stopu (zaznaczony tutaj jako bit <b>BK</b>) to bit będący logiczną jedynką - mówi o końcu transmisji.<img>img\KursArduino_2_001.png-300x75.png</img>]]></a>
 </item>
 
 <item id="1562846316" tmtrpt="323" stmtrpt="323" livl="0" rllivl="1" ivl="8" rp="0" gr="5">
@@ -405,6 +365,26 @@ random( <górny zakres> )]]></a>
 <item id="1562846177" tmtrpt="323" stmtrpt="323" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
 <q>Jaka funkcja umożliwia ustawinie wartości początkowej dla algorytmu generowania liczb pseudolosowych?</q>
 <a><![CDATA[randomSeed(<wartość początkowa>);]]></a>
+</item>
+
+<item id="1563208237" tmtrpt="323" stmtrpt="323" livl="0" rllivl="2" ivl="3" rp="0" gr="3">
+<q>Jaka funkcja umożliwia odczyt z pinów ADC (piny A0-A5)?</q>
+<a><![CDATA[<b>analogRead( <pin> )</b>]]></a>
+</item>
+
+<item id="1563207070" tmtrpt="323" stmtrpt="323" livl="0" rllivl="2" ivl="3" rp="0" gr="3">
+<q>Ile jest wejść analogowych w ARDUINO UNO?</q>
+<a>6 od A0 do A5</a>
+</item>
+
+<item id="1563206942" tmtrpt="323" stmtrpt="323" livl="0" rllivl="2" ivl="3" rp="0" gr="3">
+<q>Co to jest ADC?</q>
+<a>Analog Digital Converter</a>
+</item>
+
+<item id="1563206986" tmtrpt="323" stmtrpt="323" livl="0" rllivl="2" ivl="3" rp="0" gr="3">
+<q>Do czego służy ADC?</q>
+<a>Do przetwarzania sygnału analogowego na cyfrowy.</a>
 </item>
 
 <item id="1562844794" tmtrpt="324" stmtrpt="324" livl="1" rllivl="1" ivl="9" rp="1" gr="5">
@@ -426,6 +406,19 @@ void loop(){
 </a>
 </item>
 
+<item id="1562829062" tmtrpt="325" stmtrpt="325" livl="3" rllivl="3" ivl="5" rp="3" gr="3">
+<q>Od jakich parametrów zależy transmisja UART? </q>
+<a>baud-rate - prędkość przesyłu danych, bitów/sekundę (np. 9600, 115200)
+</a>
+</item>
+
+<item id="1562829249" tmtrpt="326" stmtrpt="326" livl="2" rllivl="3" ivl="6" rp="2" gr="3">
+<q>Co to jest USART?</q>
+<a>szeregowy interfejs komunikacyjny
+Universal Synchronous and Asynchronous Reciever and Transmitter
+</a>
+</item>
+
 <item id="1562844737" tmtrpt="327" stmtrpt="319" livl="4" rllivl="1" ivl="11" rp="0" gr="4">
 <q>Jakie polecenie ustawia prędkość transmisji?</q>
 <a>Serial.begin(9600)</a>
@@ -434,6 +427,73 @@ void loop(){
 <item id="1562963004" tmtrpt="327" stmtrpt="327" livl="1" rllivl="1" ivl="10" rp="1" gr="5">
 <q>Jaka funkcja inicjuje piny cyfrowe?</q>
 <a><![CDATA[pinMode(<nazwa pinu>, <tryb>)]]></a>
+</item>
+
+<item id="1562828761" tmtrpt="328" stmtrpt="328" livl="2" rllivl="4" ivl="8" rp="1" gr="3">
+<q>Jakie piny w Arduino obsługują UART?</q>
+<a><![CDATA[<b>Tx</b> - wysyłanie danych ( w Arduino - pin 1 )
+<b>Rx</b> - odbieranie danych ( w Arduino - pin 0 )]]></a>
+</item>
+
+<item id="1562963528" tmtrpt="328" stmtrpt="328" livl="4" rllivl="4" ivl="8" rp="1" gr="3">
+<q>Jak funkcja wstrzymuje działanie programu na okrślony czas?</q>
+<a><![CDATA[delay( <czas> )
+1s = 1000]]></a>
+</item>
+
+<item id="1563309909" tmtrpt="329" stmtrpt="329" livl="1" rllivl="1" ivl="9" rp="1" gr="5">
+<q>Jaki zakres napięć występuje w ARDUINO UNO? </q>
+<a>0 - 5 V</a>
+</item>
+
+<item id="1563309978" tmtrpt="329" stmtrpt="329" livl="1" rllivl="1" ivl="9" rp="1" gr="5">
+<q>Jaki zakres wartości daje przetwornik 10-bitowy?</q>
+<a>0 - 1023</a>
+</item>
+
+<item id="1563001360" tmtrpt="329" stmtrpt="329" livl="4" rllivl="4" ivl="9" rp="1" gr="3">
+<q>Jaka funkcja kopiuje dane z bufora do momentu napotkania znaku terminatora?</q>
+<a><![CDATA[Serial.readStringUntil( <terminator> )]]></a>
+</item>
+
+<item id="1563095015" tmtrpt="330" stmtrpt="330" livl="1" rllivl="3" ivl="10" rp="1" gr="4">
+<q>Do jakiego pinu podłączona jest dioda dla użytkowanika na płytce Arduino?</q>
+<a>13</a>
+</item>
+
+<item id="1563095077" tmtrpt="331" stmtrpt="331" livl="0" rllivl="3" ivl="11" rp="0" gr="5">
+<q>Jaka zmienna jest przypisana do 13 pinu?</q>
+<a>LED_BUILTIN</a>
+</item>
+
+<item id="1563094968" tmtrpt="332" stmtrpt="332" livl="0" rllivl="3" ivl="12" rp="0" gr="5">
+<q>Jakie są możliwe tryby pracy pinów?</q>
+<a>INPUT
+OUTPUT
+INPUT_PULLUP</a>
+</item>
+
+<item id="1562828378" tmtrpt="334" stmtrpt="334" livl="2" rllivl="4" ivl="14" rp="1" gr="4">
+<q>Co to jest UART?</q>
+<a>Universal asynchronous receiver-transmitter
+Uniwersalny asynchroniczny nadajnik-odbiornik
+Szeregowy interfejs komunikacyjny.
+</a>
+</item>
+
+<item id="1563094868" tmtrpt="335" stmtrpt="335" livl="1" rllivl="3" ivl="15" rp="1" gr="5">
+<q>Jakie są możliwe stany pinów?</q>
+<a>HIGH, LOW</a>
+</item>
+
+<item id="1563002205" tmtrpt="338" stmtrpt="338" livl="4" rllivl="4" ivl="18" rp="1" gr="4">
+<q>Jak przypisać czytelną nazwę i  umożliwić zmianę w jednym miejscu zmianę zmiennej w całym programie ?</q>
+<a><![CDATA[umożliwia to dyrektywa <b>#define</b>]]></a>
+</item>
+
+<item id="1563001244" tmtrpt="343" stmtrpt="343" livl="2" rllivl="4" ivl="23" rp="1" gr="5">
+<q>Jaka funkcja zwraca ilość bajtów, które zostały odebrane i czekają na obsługę przez Arduino</q>
+<a>Serial.available()</a>
 </item>
 
 </category>
