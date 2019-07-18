@@ -274,6 +274,28 @@ template_name</a>
 
 <category name="Arduino">
 
+<item id="1563472968" tmtrpt="321" stmtrpt="321" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Co to jest serwomechanizm?</q>
+<a>Serwomechanizm to silnik, przekładnia oraz dedykowany sterownik zamknięty w jednej budowie.</a>
+</item>
+
+<item id="1563473279" tmtrpt="321" stmtrpt="321" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Ile ma standardowy okres sygnału dla serwa?</q>
+<a>20 ms</a>
+</item>
+
+<item id="1563473519" tmtrpt="321" stmtrpt="321" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>W jakich granichach mieści się wypełnienie sygnału dla serwa?</q>
+<a>5 - 10 %</a>
+</item>
+
+<item id="1563473687" tmtrpt="321" stmtrpt="321" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jakie przewody są wyprowadzone z serwomechanizmu?</q>
+<a>masa (czarny, brązowy)
+zasilanie (czerwony)
+sygnał sterujący (żółty/pomarończowy)</a>
+</item>
+
 <item id="1562963416" tmtrpt="322" stmtrpt="318" livl="2" rllivl="0" ivl="6" rp="0" gr="5">
 <q>Jak zmienić stan pinu cyfrowego?</q>
 <a><![CDATA[digitalWrite(<pin>, <stan>)]]></a>
