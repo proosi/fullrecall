@@ -67,34 +67,6 @@ LEGEND:
 
 <category name="Django">
 
-<item id="1563397674" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>W jakiej sekcji settings.py dołączamy tworzone aplikacje?</q>
-<a><![CDATA[INSTALLED_APP = [
-    '<moja app>',
-]]]></a>
-</item>
-
-<item id="1562496540" tmtrpt="321" stmtrpt="321" livl="1" rllivl="2" ivl="8" rp="1" gr="4">
-<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie UpdateView?</q>
-<a><![CDATA[model = <nazwa modelu z pliku models.py>
-fields =['<nazwa zmiennej>', '<nazwa zmiennej>', itd] lub '__all__'
-template_name = '<nazwa>.html']]></a>
-</item>
-
-<item id="1562615709" tmtrpt="321" stmtrpt="321" livl="0" rllivl="2" ivl="8" rp="0" gr="5">
-<q>Jaki tag szablonowy ustawia katalog na stronie? </q>
-<a><![CDATA[{% load '<nazwa katalogu>' %}]]></a>
-</item>
-
-<item id="1562367088" tmtrpt="321" stmtrpt="321" livl="3" rllivl="4" ivl="6" rp="3" gr="3">
-<q>Jaka metoda powinna być zdefiniowana w modelu do przekierowania na inną stronę?</q>
-<a><![CDATA[get_absolute_url(self):
-    return reverse('<nazwa strony>', args)
-
-trzeba importować metodę reverse()
-from django.urls import reverse]]></a>
-</item>
-
 <item id="1562144643" tmtrpt="322" stmtrpt="322" livl="2" rllivl="2" ivl="7" rp="4" gr="4">
 <q>Do czego służy URLConfs?</q>
 <a><![CDATA[Określa pod jakim adresem dana treść ma być wyświetlona.
@@ -122,6 +94,20 @@ przykład
 <link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
 </item>
 
+<item id="1563397674" tmtrpt="323" stmtrpt="323" livl="0" rllivl="1" ivl="2" rp="0" gr="3">
+<q>W jakiej sekcji settings.py dołączamy tworzone aplikacje?</q>
+<a><![CDATA[INSTALLED_APP = [ '<moja app>', ]]]></a>
+</item>
+
+<item id="1562367088" tmtrpt="323" stmtrpt="323" livl="6" rllivl="6" ivl="2" rp="4" gr="2">
+<q>Jaka metoda powinna być zdefiniowana w modelu do przekierowania na inną stronę?</q>
+<a><![CDATA[get_absolute_url(self):
+    return reverse('<nazwa strony>', args)
+
+trzeba importować metodę reverse()
+from django.urls import reverse]]></a>
+</item>
+
 <item id="1562311022" tmtrpt="324" stmtrpt="324" livl="2" rllivl="2" ivl="14" rp="1" gr="5">
 <q>Co zwraca klasa generyczna DetailView?</q>
 <a>Obiekt self.object na którym działa widok.</a>
@@ -139,9 +125,10 @@ przykład
 
 <item id="1562496313" tmtrpt="324" stmtrpt="324" livl="6" rllivl="7" ivl="4" rp="2" gr="2">
 <q>Jakie zmienne trzeba zdefiniować w klasie dziedziczącej po klasie CreateView?</q>
-<a><![CDATA[model = <nazwa modelu z pliku models.py>
-template_name = '<nazwa>.html'
-fields = '__all__']]></a>
+<a>model
+fields
+template_name
+</a>
 </item>
 
 <item id="1562314125" tmtrpt="325" stmtrpt="325" livl="2" rllivl="2" ivl="15" rp="1" gr="5">
@@ -177,11 +164,22 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
 
 <item id="1562496781" tmtrpt="326" stmtrpt="326" livl="4" rllivl="4" ivl="6" rp="3" gr="3">
 <q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie DeleteView?</q>
-<a><![CDATA[model = <nazwa modelu z pliku models.py>
-template_name = '<nazwa>.html'
-success_url = reverse_lazy('<nazwa>')
+<a>model
+template_name
+success_url
+</a>
+</item>
 
-from django.urls import reverse_lazy]]></a>
+<item id="1562496540" tmtrpt="326" stmtrpt="326" livl="8" rllivl="8" ivl="5" rp="2" gr="2">
+<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie UpdateView?</q>
+<a>model
+fields
+template_name</a>
+</item>
+
+<item id="1562615709" tmtrpt="326" stmtrpt="326" livl="8" rllivl="8" ivl="5" rp="1" gr="2">
+<q>Jaki tag szablonowy ustawia katalog na stronie? </q>
+<a><![CDATA[{% load '<nazwa katalogu>' %}]]></a>
 </item>
 
 <item id="1562494098" tmtrpt="327" stmtrpt="317" livl="6" rllivl="5" ivl="11" rp="1" gr="3">
@@ -276,69 +274,6 @@ from django.urls import reverse_lazy]]></a>
 
 <category name="Arduino">
 
-<item id="1563397944" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="1">
-<q>Jakie parametry chrakteryzują sygnał PWM?</q>
-<a><![CDATA[Amplituda
-Okres sygnału
-Częstotliwość sygnału
-Wypełnienie sygnału <img>img\pwm_1.png</img>]]></a>
-</item>
-
-<item id="1563398117" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Co to jest wypełnienie w sygnale PWM?"</q>
-<a>Jest to procent czasu przez jaki sygnał ma potencjał wysoki?</a>
-</item>
-
-<item id="1563398585" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Ile wejść cyfrowych ma Arduino Mega 2560?</q>
-<a>54 wejść input/output</a>
-</item>
-
-<item id="1563398669" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Ile wejść cyfrowych w Arduino Mega 2560 może być użytych jako wyjścia PWM?</q>
-<a>14</a>
-</item>
-
-<item id="1563398722" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Ile wejść analogowych posiada Arduino Mega 2560?</q>
-<a>16</a>
-</item>
-
-<item id="1563398774" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Ile portów UART posiada Arduino Mega?</q>
-<a>4</a>
-</item>
-
-<item id="1563398983" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Co oznacza znak "~" na płytce Arduino Uno?</q>
-<a>Wyjście, które może generować sygnał PWM.</a>
-</item>
-
-<item id="1563399053" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Ilu bitowy jest sygnał PWM w Arduino?</q>
-<a>8-bitowy</a>
-</item>
-
-<item id="1563399118" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jaki zakres wartości możemy uzyskać z 8 bitów?</q>
-<a>0 - 255 </a>
-</item>
-
-<item id="1563399421" tmtrpt="320" stmtrpt="320" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jaka funkcja generuje sygnał PWM na określonym wyjściu?</q>
-<a><![CDATA[analogWrite( <pin>, <wypełnienie> )]]></a>
-</item>
-
-<item id="1562846397" tmtrpt="321" stmtrpt="321" livl="0" rllivl="1" ivl="6" rp="0" gr="5">
-<q>Jak zrobić wykres kilku wartości w Kreślarce?</q>
-<a>Należy wysłać liczby w tej samej linii oddzielonych znakiem tabulatora, a na ich końcu powinien pojawić się znak nowej linii.</a>
-</item>
-
-<item id="1563311954" tmtrpt="321" stmtrpt="321" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
-<q>Jaka jest częstotliwość sygnału PWM generowana przez ARDUINO?</q>
-<a>490/sekundę</a>
-</item>
-
 <item id="1562963416" tmtrpt="322" stmtrpt="318" livl="2" rllivl="0" ivl="6" rp="0" gr="5">
 <q>Jak zmienić stan pinu cyfrowego?</q>
 <a><![CDATA[digitalWrite(<pin>, <stan>)]]></a>
@@ -354,6 +289,31 @@ Wypełnienie sygnału <img>img\pwm_1.png</img>]]></a>
 <a><![CDATA[Jego zasada działania opiera się na szeregowym wysłaniu ciągu bitów, które następnie składane są w informację. Pojedyncza ramka (w uproszczeniu bajt) danych jest nadawany w poniższej postaci:
 
 Transmisja rozpoczyna się od bitu startu, zaznaczonego na rysunku jako <b>BS</b>. Zawsze jest to bit będący logicznym zerem. Następnie, zależnie od konfiguracji, następuje po sobie 7, 8 lub 9 bitów danych (tutaj zaznaczone jako B0-B7), które są wysyłaną informacją. Bit stopu (zaznaczony tutaj jako bit <b>BK</b>) to bit będący logiczną jedynką - mówi o końcu transmisji.<img>img\KursArduino_2_001.png-300x75.png</img>]]></a>
+</item>
+
+<item id="1563398722" tmtrpt="322" stmtrpt="322" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
+<q>Ile wejść analogowych posiada Arduino Mega 2560?</q>
+<a>16</a>
+</item>
+
+<item id="1563398669" tmtrpt="322" stmtrpt="322" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
+<q>Ile wejść cyfrowych w Arduino Mega 2560 może być użytych jako wyjścia PWM?</q>
+<a>14</a>
+</item>
+
+<item id="1563398117" tmtrpt="322" stmtrpt="322" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
+<q>Co to jest wypełnienie w sygnale PWM?"</q>
+<a>Jest to procent czasu przez jaki sygnał ma potencjał wysoki?</a>
+</item>
+
+<item id="1563398983" tmtrpt="322" stmtrpt="322" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
+<q>Co oznacza znak "~" na płytce Arduino Uno?</q>
+<a>Wyjście, które może generować sygnał PWM.</a>
+</item>
+
+<item id="1563399053" tmtrpt="322" stmtrpt="322" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
+<q>Ilu bitowy jest sygnał PWM w Arduino?</q>
+<a>8-bitowy</a>
 </item>
 
 <item id="1562846316" tmtrpt="323" stmtrpt="323" livl="0" rllivl="1" ivl="8" rp="0" gr="5">
@@ -387,6 +347,19 @@ random( <górny zakres> )]]></a>
 <a>Do przetwarzania sygnału analogowego na cyfrowy.</a>
 </item>
 
+<item id="1563398774" tmtrpt="323" stmtrpt="323" livl="0" rllivl="1" ivl="2" rp="0" gr="3">
+<q>Ile portów UART posiada Arduino Mega?</q>
+<a>4</a>
+</item>
+
+<item id="1563397944" tmtrpt="323" stmtrpt="323" livl="0" rllivl="1" ivl="2" rp="0" gr="3">
+<q>Jakie parametry chrakteryzują sygnał PWM?</q>
+<a><![CDATA[Amplituda sygnału
+Okres sygnału
+Częstotliwość sygnału
+Wypełnienie sygnału<img>img\pwm_1.png</img>]]></a>
+</item>
+
 <item id="1562844794" tmtrpt="324" stmtrpt="324" livl="1" rllivl="1" ivl="9" rp="1" gr="5">
 <q>Jakie polecenie drukuje w porcie szeregowym?</q>
 <a>Serial.println("drukowany tekst")</a>
@@ -406,10 +379,35 @@ void loop(){
 </a>
 </item>
 
+<item id="1563311954" tmtrpt="324" stmtrpt="324" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
+<q>Jaka jest częstotliwość sygnału PWM generowana przez ARDUINO?</q>
+<a>490/sekundę</a>
+</item>
+
 <item id="1562829062" tmtrpt="325" stmtrpt="325" livl="3" rllivl="3" ivl="5" rp="3" gr="3">
 <q>Od jakich parametrów zależy transmisja UART? </q>
 <a>baud-rate - prędkość przesyłu danych, bitów/sekundę (np. 9600, 115200)
 </a>
+</item>
+
+<item id="1563399118" tmtrpt="325" stmtrpt="325" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
+<q>Jaki zakres wartości możemy uzyskać z 8 bitów?</q>
+<a>0 - 255</a>
+</item>
+
+<item id="1563398585" tmtrpt="325" stmtrpt="325" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
+<q>Ile wejść cyfrowych ma Arduino Mega 2560?</q>
+<a>54 wejść input/output</a>
+</item>
+
+<item id="1563399421" tmtrpt="325" stmtrpt="325" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
+<q>Jaka funkcja generuje sygnał PWM na określonym wyjściu?</q>
+<a><![CDATA[analogWrite( <pin>, <wypełnienie> )]]></a>
+</item>
+
+<item id="1562846397" tmtrpt="325" stmtrpt="325" livl="6" rllivl="6" ivl="4" rp="1" gr="2">
+<q>Jak zrobić wykres kilku wartości w Kreślarce?</q>
+<a>Należy wysłać liczby w tej samej linii oddzielonych znakiem tabulatora, a na ich końcu powinien pojawić się znak nowej linii.</a>
 </item>
 
 <item id="1562829249" tmtrpt="326" stmtrpt="326" livl="2" rllivl="3" ivl="6" rp="2" gr="3">
