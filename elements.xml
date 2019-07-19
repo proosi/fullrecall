@@ -67,33 +67,6 @@ LEGEND:
 
 <category name="Django">
 
-<item id="1562144643" tmtrpt="322" stmtrpt="322" livl="2" rllivl="2" ivl="7" rp="4" gr="4">
-<q>Do czego służy URLConfs?</q>
-<a><![CDATA[Określa pod jakim adresem dana treść ma być wyświetlona.
-Adresy i zawartość są mapowane w tablicy 
-
-<span style="color:#f00">urlpatterns = [
-
-]
-</span>
-<span style="color:#f00">path()</span> wymaga: <span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> path
-    <span style="color:#f00">path</span>(<wyrażenie regularne>,  <co ma być wyświetlone>, <alias strony>)
-lub
-    <span style="color:#f00">path</span>(<wyrażenie regularne>,<span style="color:#f00"> include</span>(<urls app>))
-<span style="color:#f00">include()</span> wymaga: <span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> include]]></a>
-</item>
-
-<item id="1562314507" tmtrpt="322" stmtrpt="322" livl="4" rllivl="5" ivl="2" rp="4" gr="2">
-<q>Jaki jest tag szablonowy dla plików statycznych?</q>
-<a><![CDATA[{%  load <nazwa katalogu> %}
-
-przykład
-
-{% load static%}
-
-<link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
-</item>
-
 <item id="1563397674" tmtrpt="323" stmtrpt="323" livl="0" rllivl="1" ivl="2" rp="0" gr="3">
 <q>W jakiej sekcji settings.py dołączamy tworzone aplikacje?</q>
 <a><![CDATA[INSTALLED_APP = [ '<moja app>', ]]]></a>
@@ -106,6 +79,17 @@ przykład
 
 trzeba importować metodę reverse()
 from django.urls import reverse]]></a>
+</item>
+
+<item id="1562314507" tmtrpt="323" stmtrpt="323" livl="2" rllivl="2" ivl="1" rp="5" gr="2">
+<q>Jaki jest tag szablonowy dla plików statycznych?</q>
+<a><![CDATA[{%  load <nazwa katalogu> %}
+
+przykład
+
+{% load static%}
+
+<link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
 </item>
 
 <item id="1562311022" tmtrpt="324" stmtrpt="324" livl="2" rllivl="2" ivl="14" rp="1" gr="5">
@@ -153,6 +137,22 @@ from django.views.generic.edit import CreateView, UpdateView, DeleteView</a>
 <a>settings.py
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
+</item>
+
+<item id="1562144643" tmtrpt="325" stmtrpt="325" livl="7" rllivl="7" ivl="3" rp="5" gr="2">
+<q>Do czego służy URLConfs?</q>
+<a><![CDATA[Określa pod jakim adresem dana treść ma być wyświetlona.
+Adresy i zawartość są mapowane w tablicy 
+
+<span style="color:#f00">urlpatterns = [
+
+]
+</span>
+<span style="color:#f00">path()</span> wymaga: <span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> path
+    <span style="color:#f00">path</span>(<wyrażenie regularne>,  <co ma być wyświetlone>, <alias strony>)
+lub
+    <span style="color:#f00">path</span>(<wyrażenie regularne>,<span style="color:#f00"> include</span>(<urls app>))
+<span style="color:#f00">include()</span> wymaga: <span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> include]]></a>
 </item>
 
 <item id="1562314296" tmtrpt="326" stmtrpt="326" livl="2" rllivl="2" ivl="16" rp="1" gr="5">
@@ -274,68 +274,26 @@ template_name</a>
 
 <category name="Arduino">
 
-<item id="1563472968" tmtrpt="321" stmtrpt="321" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Co to jest serwomechanizm?</q>
-<a>Serwomechanizm to silnik, przekładnia oraz dedykowany sterownik zamknięty w jednej budowie.</a>
+<item id="1563542201" tmtrpt="322" stmtrpt="322" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jąką biblotekę dodajemy, żeby oprogramować serwomechanizm?</q>
+<a>Servo.h</a>
 </item>
 
-<item id="1563473279" tmtrpt="321" stmtrpt="321" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Ile ma standardowy okres sygnału dla serwa?</q>
-<a>20 ms</a>
+<item id="1563542535" tmtrpt="322" stmtrpt="322" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jaka metoda służy do podłączenia serwomechanizmu pod pin?</q>
+<a><![CDATA[<nazwa obiektu Servo>.attach( <numer pinu> )]]></a>
 </item>
 
-<item id="1563473519" tmtrpt="321" stmtrpt="321" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>W jakich granichach mieści się wypełnienie sygnału dla serwa?</q>
-<a>5 - 10 %</a>
+<item id="1563542739" tmtrpt="322" stmtrpt="322" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
+<q>Jaka metoda służy do wysyłania wartości do serwomechanizmu?</q>
+<a><![CDATA[<nazwa obiekyu Servo>.write( <wartość> )
+
+]]></a>
 </item>
 
-<item id="1563473687" tmtrpt="321" stmtrpt="321" livl="0" rllivl="0" ivl="0" rp="0" gr="2">
-<q>Jakie przewody są wyprowadzone z serwomechanizmu?</q>
-<a>masa (czarny, brązowy)
-zasilanie (czerwony)
-sygnał sterujący (żółty/pomarończowy)</a>
-</item>
-
-<item id="1562963416" tmtrpt="322" stmtrpt="318" livl="2" rllivl="0" ivl="6" rp="0" gr="5">
-<q>Jak zmienić stan pinu cyfrowego?</q>
-<a><![CDATA[digitalWrite(<pin>, <stan>)]]></a>
-</item>
-
-<item id="1563309805" tmtrpt="322" stmtrpt="322" livl="0" rllivl="1" ivl="2" rp="0" gr="3">
-<q>Ilu bitowy przetwornik ADC jest w ARDUINO UNO?</q>
-<a>10-bitowy</a>
-</item>
-
-<item id="1562828677" tmtrpt="322" stmtrpt="322" livl="4" rllivl="4" ivl="2" rp="1" gr="2">
-<q>Na czym opiera się zasada działania UART?</q>
-<a><![CDATA[Jego zasada działania opiera się na szeregowym wysłaniu ciągu bitów, które następnie składane są w informację. Pojedyncza ramka (w uproszczeniu bajt) danych jest nadawany w poniższej postaci:
-
-Transmisja rozpoczyna się od bitu startu, zaznaczonego na rysunku jako <b>BS</b>. Zawsze jest to bit będący logicznym zerem. Następnie, zależnie od konfiguracji, następuje po sobie 7, 8 lub 9 bitów danych (tutaj zaznaczone jako B0-B7), które są wysyłaną informacją. Bit stopu (zaznaczony tutaj jako bit <b>BK</b>) to bit będący logiczną jedynką - mówi o końcu transmisji.<img>img\KursArduino_2_001.png-300x75.png</img>]]></a>
-</item>
-
-<item id="1563398722" tmtrpt="322" stmtrpt="322" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
-<q>Ile wejść analogowych posiada Arduino Mega 2560?</q>
-<a>16</a>
-</item>
-
-<item id="1563398669" tmtrpt="322" stmtrpt="322" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
-<q>Ile wejść cyfrowych w Arduino Mega 2560 może być użytych jako wyjścia PWM?</q>
-<a>14</a>
-</item>
-
-<item id="1563398117" tmtrpt="322" stmtrpt="322" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
-<q>Co to jest wypełnienie w sygnale PWM?"</q>
-<a>Jest to procent czasu przez jaki sygnał ma potencjał wysoki?</a>
-</item>
-
-<item id="1563398983" tmtrpt="322" stmtrpt="322" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
-<q>Co oznacza znak "~" na płytce Arduino Uno?</q>
-<a>Wyjście, które może generować sygnał PWM.</a>
-</item>
-
-<item id="1563399053" tmtrpt="322" stmtrpt="322" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
-<q>Ilu bitowy jest sygnał PWM w Arduino?</q>
-<a>8-bitowy</a>
+<item id="1563542820" tmtrpt="322" stmtrpt="322" livl="0" rllivl="0" ivl="0" rp="0" gr="1">
+<q>Jak metoda odczytuje aktualny kąt serwomechanizmu?</q>
+<a><![CDATA[<nazwa obiektu Servo>.read()]]></a>
 </item>
 
 <item id="1562846316" tmtrpt="323" stmtrpt="323" livl="0" rllivl="1" ivl="8" rp="0" gr="5">
@@ -382,6 +340,30 @@ Częstotliwość sygnału
 Wypełnienie sygnału<img>img\pwm_1.png</img>]]></a>
 </item>
 
+<item id="1562828677" tmtrpt="323" stmtrpt="323" livl="2" rllivl="2" ivl="1" rp="2" gr="2">
+<q>Na czym opiera się zasada działania UART?</q>
+<a><![CDATA[Jego zasada działania opiera się na szeregowym wysłaniu ciągu bitów, które następnie składane są w informację. Pojedyncza ramka (w uproszczeniu bajt) danych jest nadawany w poniższej postaci:
+
+Transmisja rozpoczyna się od bitu startu, zaznaczonego na rysunku jako <b>BS</b>. Zawsze jest to bit będący logicznym zerem. Następnie, zależnie od konfiguracji, następuje po sobie 7, 8 lub 9 bitów danych (tutaj zaznaczone jako B0-B7), które są wysyłaną informacją. Bit stopu (zaznaczony tutaj jako bit <b>BK</b>) to bit będący logiczną jedynką - mówi o końcu transmisji.<img>img\KursArduino_2_001.png-300x75.png</img>]]></a>
+</item>
+
+<item id="1563472968" tmtrpt="323" stmtrpt="323" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
+<q>Co to jest serwomechanizm?</q>
+<a>Serwomechanizm jest to silnik, przekładnia oraz dedykowany sterownik zamknięty w jednej budowie.</a>
+</item>
+
+<item id="1563473687" tmtrpt="323" stmtrpt="323" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
+<q>Jakie przewody są wyprowadzone z serwomechanizmu?</q>
+<a>masa - (czarny, brązowy)
+zasilanie - (czerwony)
+sygnał sterujący - (żółty/pomarończowy)</a>
+</item>
+
+<item id="1563398117" tmtrpt="323" stmtrpt="323" livl="0" rllivl="0" ivl="1" rp="1" gr="3">
+<q>Co to jest wypełnienie w sygnale PWM?"</q>
+<a>Jest to procent czasu przez jaki sygnał ma wysoki potencjał.</a>
+</item>
+
 <item id="1562844794" tmtrpt="324" stmtrpt="324" livl="1" rllivl="1" ivl="9" rp="1" gr="5">
 <q>Jakie polecenie drukuje w porcie szeregowym?</q>
 <a>Serial.println("drukowany tekst")</a>
@@ -404,6 +386,11 @@ void loop(){
 <item id="1563311954" tmtrpt="324" stmtrpt="324" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
 <q>Jaka jest częstotliwość sygnału PWM generowana przez ARDUINO?</q>
 <a>490/sekundę</a>
+</item>
+
+<item id="1563473279" tmtrpt="324" stmtrpt="324" livl="0" rllivl="1" ivl="2" rp="0" gr="3">
+<q>Ile ma standardowy okres sygnału dla serwa?</q>
+<a>20 ms</a>
 </item>
 
 <item id="1562829062" tmtrpt="325" stmtrpt="325" livl="3" rllivl="3" ivl="5" rp="3" gr="3">
@@ -432,11 +419,31 @@ void loop(){
 <a>Należy wysłać liczby w tej samej linii oddzielonych znakiem tabulatora, a na ich końcu powinien pojawić się znak nowej linii.</a>
 </item>
 
+<item id="1563398669" tmtrpt="325" stmtrpt="325" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
+<q>Ile wejść cyfrowych w Arduino Mega 2560 może być użytych jako wyjścia PWM?</q>
+<a>14</a>
+</item>
+
+<item id="1563398722" tmtrpt="325" stmtrpt="325" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
+<q>Ile wejść analogowych posiada Arduino Mega 2560?</q>
+<a>16</a>
+</item>
+
+<item id="1563398983" tmtrpt="325" stmtrpt="325" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
+<q>Co oznacza znak "~" na płytce Arduino Uno?</q>
+<a>Tak oznaczone wyjście może generować sygnał PWM.</a>
+</item>
+
 <item id="1562829249" tmtrpt="326" stmtrpt="326" livl="2" rllivl="3" ivl="6" rp="2" gr="3">
 <q>Co to jest USART?</q>
 <a>szeregowy interfejs komunikacyjny
 Universal Synchronous and Asynchronous Reciever and Transmitter
 </a>
+</item>
+
+<item id="1563473519" tmtrpt="326" stmtrpt="326" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
+<q>W jakich granichach mieści się wypełnienie sygnału dla serwa?</q>
+<a>5 - 10 %</a>
 </item>
 
 <item id="1562844737" tmtrpt="327" stmtrpt="319" livl="4" rllivl="1" ivl="11" rp="0" gr="4">
@@ -459,6 +466,11 @@ Universal Synchronous and Asynchronous Reciever and Transmitter
 <q>Jak funkcja wstrzymuje działanie programu na okrślony czas?</q>
 <a><![CDATA[delay( <czas> )
 1s = 1000]]></a>
+</item>
+
+<item id="1563399053" tmtrpt="328" stmtrpt="328" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Ilu bitowy jest sygnał PWM w Arduino?</q>
+<a>8-bitowy</a>
 </item>
 
 <item id="1563309909" tmtrpt="329" stmtrpt="329" livl="1" rllivl="1" ivl="9" rp="1" gr="5">
@@ -493,12 +505,22 @@ OUTPUT
 INPUT_PULLUP</a>
 </item>
 
+<item id="1563309805" tmtrpt="332" stmtrpt="332" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Ilu bitowy przetwornik ADC jest w ARDUINO UNO?</q>
+<a>10-bitowy</a>
+</item>
+
 <item id="1562828378" tmtrpt="334" stmtrpt="334" livl="2" rllivl="4" ivl="14" rp="1" gr="4">
 <q>Co to jest UART?</q>
 <a>Universal asynchronous receiver-transmitter
 Uniwersalny asynchroniczny nadajnik-odbiornik
 Szeregowy interfejs komunikacyjny.
 </a>
+</item>
+
+<item id="1562963416" tmtrpt="334" stmtrpt="334" livl="6" rllivl="6" ivl="12" rp="1" gr="3">
+<q>Jak zmienić stan pinu cyfrowego?</q>
+<a><![CDATA[digitalWrite( <pin>, <stan> )]]></a>
 </item>
 
 <item id="1563094868" tmtrpt="335" stmtrpt="335" livl="1" rllivl="3" ivl="15" rp="1" gr="5">
