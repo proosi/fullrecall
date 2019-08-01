@@ -67,28 +67,6 @@ LEGEND:
 
 <category name="Django">
 
-<item id="1562144643" tmtrpt="334" stmtrpt="334" livl="1" rllivl="2" ivl="3" rp="9" gr="4">
-<q>Do czego służy URLConfs?</q>
-<a>Określa pod jakim adresem zostanie wyświetlona dana treść.
-</a>
-</item>
-
-<item id="1562492957" tmtrpt="334" stmtrpt="334" livl="6" rllivl="6" ivl="3" rp="3" gr="2">
-<q>Jakie klasy generyczne służą do edycji widoków?</q>
-<a>from django.views.generic.edit import CreateView, UpdateView, DeleteView
-CreateView - tworzy nowy widok
-UpdateView - edytuje istniejący widok
-DeleteView - kasuje istniejący widok</a>
-</item>
-
-<item id="1562367088" tmtrpt="334" stmtrpt="334" livl="2" rllivl="2" ivl="3" rp="8" gr="3">
-<q>Jaka metoda powinna być zdefiniowana w modelu do przekierowania na inną stronę?</q>
-<a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> reverse
-get_absolute_url(self):
-    return reverse('<nazwa strony>', args)
-]]></a>
-</item>
-
 <item id="1562314507" tmtrpt="334" stmtrpt="334" livl="1" rllivl="1" ivl="1" rp="12" gr="3">
 <q>Jaki jest tag szablonowy dla plików statycznych?</q>
 <a><![CDATA[{% static '<ścieżka/nazwa pliku>' %}
@@ -100,17 +78,25 @@ przykład
 <link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
 </item>
 
-<item id="1562324135" tmtrpt="334" stmtrpt="334" livl="1" rllivl="1" ivl="1" rp="9" gr="2">
-<q>Jak określić położenie katalogu dla plików statycznych?</q>
-<a>settings.py
-
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
-</item>
-
 <item id="1564341113" tmtrpt="335" stmtrpt="335" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
 <q>Jakiego importu wymaga funkcja path()?
 </q>
 <a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> path]]></a>
+</item>
+
+<item id="1562367088" tmtrpt="335" stmtrpt="335" livl="3" rllivl="3" ivl="1" rp="9" gr="2">
+<q>Jaka metoda powinna być zdefiniowana w modelu do przekierowania na inną stronę?</q>
+<a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> reverse
+get_absolute_url(self):
+    return reverse('<nazwa strony>', args)
+]]></a>
+</item>
+
+<item id="1562324135" tmtrpt="335" stmtrpt="335" livl="1" rllivl="1" ivl="1" rp="10" gr="2">
+<q>Jak określić położenie katalogu dla plików statycznych?</q>
+<a>settings.py
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
 </item>
 
 <item id="1564341178" tmtrpt="336" stmtrpt="336" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
@@ -160,6 +146,14 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
 <a><![CDATA[{% load '<nazwa katalogu>' %}]]></a>
 </item>
 
+<item id="1562492957" tmtrpt="338" stmtrpt="338" livl="3" rllivl="3" ivl="4" rp="4" gr="3">
+<q>Jakie klasy generyczne służą do edycji widoków?</q>
+<a>from django.views.generic.edit import CreateView, UpdateView, DeleteView
+CreateView - tworzy nowy widok
+UpdateView - edytuje istniejący widok
+DeleteView - kasuje istniejący widok</a>
+</item>
+
 <item id="1562142043" tmtrpt="339" stmtrpt="339" livl="4" rllivl="4" ivl="28" rp="1" gr="5">
 <q>Jak nazywa się plik konfiguracyjny projektu?</q>
 <a><![CDATA[<nazwa projektu>/settings.py]]></a>
@@ -168,6 +162,11 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
 <item id="1562145444" tmtrpt="339" stmtrpt="339" livl="5" rllivl="5" ivl="24" rp="3" gr="5">
 <q>Do czego służy pliki urls.py dla aplikacji?</q>
 <a><![CDATA[Plik <nazwa app>/urls.py definiuje adresy url dla aplikacji.]]></a>
+</item>
+
+<item id="1562144643" tmtrpt="339" stmtrpt="339" livl="3" rllivl="3" ivl="5" rp="10" gr="4">
+<q>Do czego służy URLConfs?</q>
+<a>Określa pod jakim adresem zostanie wyświetlona dana treść.</a>
 </item>
 
 <item id="1562148509" tmtrpt="340" stmtrpt="340" livl="4" rllivl="4" ivl="29" rp="1" gr="5">
@@ -302,30 +301,6 @@ Uniwersalny asynchroniczny nadajnik-odbiornik
 </a>
 </item>
 
-<item id="1562963416" tmtrpt="334" stmtrpt="334" livl="6" rllivl="6" ivl="12" rp="1" gr="3">
-<q>Jak zmienić stan pinu cyfrowego?</q>
-<a><![CDATA[digitalWrite( <pin>, <stan> )]]></a>
-</item>
-
-<item id="1563473687" tmtrpt="334" stmtrpt="334" livl="3" rllivl="4" ivl="7" rp="2" gr="3">
-<q>Jakie przewody są wyprowadzone z serwomechanizmu?</q>
-<a>masa - (czarny, brązowy)
-zasilanie - (czerwony)
-sygnał sterujący - (żółty, pomarończowy)</a>
-</item>
-
-<item id="1562828677" tmtrpt="334" stmtrpt="334" livl="3" rllivl="4" ivl="5" rp="5" gr="3">
-<q>Jak zbudowana jest ramka danych wysyłanych przez UART?</q>
-<a><![CDATA[Bitu startu - <b>BS</b>. Zawsze jest logicznym zerem.
-7, 8 lub 9 bitów danych - B0-B7 wysyłana informacja.
-Bit stopu - <b>BK.</b> Zawsze jest logiczną jedynką - mówi o końcu transmisji.<img>img\KursArduino_2_001.png-300x75.png</img>]]></a>
-</item>
-
-<item id="1564343460" tmtrpt="334" stmtrpt="334" livl="1" rllivl="1" ivl="1" rp="2" gr="2">
-<q>Na czym polega przesyłanie danych przez UART?</q>
-<a>Na szeregowym wysyłaniu ciągu bitów, które następnie składane są w ramki tworząc informację.</a>
-</item>
-
 <item id="1563094868" tmtrpt="335" stmtrpt="335" livl="1" rllivl="3" ivl="15" rp="1" gr="5">
 <q>Jakie są możliwe stany pinów?</q>
 <a>HIGH, LOW</a>
@@ -371,6 +346,11 @@ Bit stopu - <b>BK.</b> Zawsze jest logiczną jedynką - mówi o końcu transmisj
 <a>Tak oznaczone wyjście może generować sygnał PWM.</a>
 </item>
 
+<item id="1564343460" tmtrpt="337" stmtrpt="337" livl="1" rllivl="1" ivl="3" rp="3" gr="3">
+<q>Na czym polega przesyłanie danych przez UART?</q>
+<a>Na szeregowym wysyłaniu ciągu bitów, które następnie składane są w ramki tworząc informację.</a>
+</item>
+
 <item id="1563002205" tmtrpt="338" stmtrpt="338" livl="4" rllivl="4" ivl="18" rp="1" gr="4">
 <q>Jak przypisać czytelną nazwę i  umożliwić zmianę w jednym miejscu zmianę zmiennej w całym programie ?</q>
 <a><![CDATA[Umożliwia to dyrektywa <b>#define</b>]]></a>
@@ -402,6 +382,13 @@ random( <górny zakres> )]]></a>
 <item id="1563398669" tmtrpt="341" stmtrpt="341" livl="3" rllivl="3" ivl="16" rp="2" gr="5">
 <q>Ile wejść cyfrowych w Arduino Mega 2560 może być użytych jako wyjścia PWM?</q>
 <a>14</a>
+</item>
+
+<item id="1562828677" tmtrpt="341" stmtrpt="341" livl="5" rllivl="5" ivl="7" rp="6" gr="3">
+<q>Jak zbudowana jest ramka danych wysyłanych przez UART?</q>
+<a><![CDATA[Bitu startu - <b>BS</b>. Zawsze jest logicznym zerem.
+7, 8 lub 9 bitów danych - B0-B7 wysyłana informacja.
+Bit stopu - <b>BK.</b> Zawsze jest logiczną jedynką - mówi o końcu transmisji.<img>img\KursArduino_2_001.png-300x75.png</img>]]></a>
 </item>
 
 <item id="1562844668" tmtrpt="342" stmtrpt="342" livl="9" rllivl="10" ivl="17" rp="2" gr="3">
@@ -512,11 +499,23 @@ Wypełnienie sygnału<img>img\pwm_1.png</img>]]></a>
 <a>8-bitowy</a>
 </item>
 
+<item id="1562963416" tmtrpt="355" stmtrpt="355" livl="12" rllivl="12" ivl="21" rp="2" gr="3">
+<q>Jak zmienić stan pinu cyfrowego?</q>
+<a><![CDATA[digitalWrite( <pin>, <stan> )]]></a>
+</item>
+
 <item id="1563094968" tmtrpt="356" stmtrpt="356" livl="12" rllivl="12" ivl="24" rp="1" gr="3">
 <q>Jakie są możliwe tryby pracy pinów?</q>
 <a>INPUT
 OUTPUT
 INPUT_PULLUP</a>
+</item>
+
+<item id="1563473687" tmtrpt="357" stmtrpt="357" livl="7" rllivl="7" ivl="23" rp="3" gr="4">
+<q>Jakie przewody są wyprowadzone z serwomechanizmu?</q>
+<a>masa - (czarny, brązowy)
+zasilanie - (czerwony)
+sygnał sterujący - (żółty, pomarańczowy)</a>
 </item>
 
 <item id="1562844794" tmtrpt="361" stmtrpt="361" livl="9" rllivl="10" ivl="36" rp="2" gr="4">
