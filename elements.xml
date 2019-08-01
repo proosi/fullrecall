@@ -67,38 +67,6 @@ LEGEND:
 
 <category name="Django">
 
-<item id="1562314507" tmtrpt="334" stmtrpt="334" livl="1" rllivl="1" ivl="1" rp="12" gr="3">
-<q>Jaki jest tag szablonowy dla plików statycznych?</q>
-<a><![CDATA[{% static '<ścieżka/nazwa pliku>' %}
-
-przykład
-
-{% load static %}
-
-<link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
-</item>
-
-<item id="1564341113" tmtrpt="335" stmtrpt="335" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
-<q>Jakiego importu wymaga funkcja path()?
-</q>
-<a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> path]]></a>
-</item>
-
-<item id="1562367088" tmtrpt="335" stmtrpt="335" livl="3" rllivl="3" ivl="1" rp="9" gr="2">
-<q>Jaka metoda powinna być zdefiniowana w modelu do przekierowania na inną stronę?</q>
-<a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> reverse
-get_absolute_url(self):
-    return reverse('<nazwa strony>', args)
-]]></a>
-</item>
-
-<item id="1562324135" tmtrpt="335" stmtrpt="335" livl="1" rllivl="1" ivl="1" rp="10" gr="2">
-<q>Jak określić położenie katalogu dla plików statycznych?</q>
-<a>settings.py
-
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
-</item>
-
 <item id="1564341178" tmtrpt="336" stmtrpt="336" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
 <q>Jakich argumentów potrzebuje funkcja path?</q>
 <a><![CDATA[<span style="color:#f00">path</span>( <wyrażenie regularne>,  <co ma być wyświetlone>, <alias strony> )]]></a>
@@ -136,9 +104,35 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
 <a><![CDATA[Plik <nazwa projektu>/urls.py definiuje adresy url dla projektu.]]></a>
 </item>
 
+<item id="1562324135" tmtrpt="336" stmtrpt="336" livl="1" rllivl="1" ivl="1" rp="11" gr="2">
+<q>Jak określić położenie katalogu dla plików statycznych?</q>
+<a>settings.py
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
+</item>
+
 <item id="1562311022" tmtrpt="337" stmtrpt="337" livl="8" rllivl="8" ivl="4" rp="3" gr="2">
 <q>Co zwraca klasa generyczna DetailView?</q>
 <a>Obiekt self.object, na którym działa widok.</a>
+</item>
+
+<item id="1562367088" tmtrpt="337" stmtrpt="337" livl="1" rllivl="1" ivl="2" rp="10" gr="3">
+<q>Jaka metoda powinna być zdefiniowana w modelu do przekierowania na inną stronę?</q>
+<a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> reverse
+get_absolute_url(self):
+    return reverse('<nazwa strony>', args)
+]]></a>
+</item>
+
+<item id="1562314507" tmtrpt="337" stmtrpt="337" livl="1" rllivl="2" ivl="2" rp="13" gr="3">
+<q>Jaki jest tag szablonowy dla plików statycznych?</q>
+<a><![CDATA[{% static '<ścieżka/nazwa pliku>' %}
+
+przykład
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
 </item>
 
 <item id="1562615709" tmtrpt="338" stmtrpt="338" livl="5" rllivl="6" ivl="11" rp="2" gr="3">
@@ -221,6 +215,12 @@ template_name
 </a>
 </item>
 
+<item id="1564341113" tmtrpt="347" stmtrpt="347" livl="3" rllivl="3" ivl="12" rp="2" gr="4">
+<q>Jakiego importu wymaga funkcja path()?
+</q>
+<a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> path]]></a>
+</item>
+
 <item id="1562141464" tmtrpt="348" stmtrpt="348" livl="6" rllivl="6" ivl="35" rp="2" gr="5">
 <q>Jakie polecenie uruchamia server w Django?</q>
 <a>python manage.py runserver</a>
@@ -291,25 +291,6 @@ template_name
 </category>
 
 <category name="Arduino">
-
-<item id="1562828378" tmtrpt="334" stmtrpt="334" livl="2" rllivl="4" ivl="14" rp="1" gr="4">
-<q>Co to jest UART?</q>
-<a>Szeregowy interfejs komunikacyjny.
-Universal asynchronous receiver-transmitter
-Uniwersalny asynchroniczny nadajnik-odbiornik
-
-</a>
-</item>
-
-<item id="1563094868" tmtrpt="335" stmtrpt="335" livl="1" rllivl="3" ivl="15" rp="1" gr="5">
-<q>Jakie są możliwe stany pinów?</q>
-<a>HIGH, LOW</a>
-</item>
-
-<item id="1563399421" tmtrpt="335" stmtrpt="335" livl="2" rllivl="2" ivl="8" rp="2" gr="4">
-<q>Jaka funkcja generuje sygnał PWM na określonym wyjściu?</q>
-<a><![CDATA[analogWrite( <pin>, <wypełnienie> )]]></a>
-</item>
 
 <item id="1563208237" tmtrpt="336" stmtrpt="336" livl="3" rllivl="3" ivl="13" rp="1" gr="4">
 <q>Jaka funkcja umożliwia odczyt z pinów ADC (piny A0-A5)?</q>
@@ -432,12 +413,14 @@ void loop(){
 
 <item id="1563206986" tmtrpt="344" stmtrpt="344" livl="3" rllivl="3" ivl="21" rp="1" gr="5">
 <q>Do czego służy ADC?</q>
-<a>Do przetwarzania sygnału analogowego na cyfrowy.</a>
+<a>Do przetwarzania sygnału analogowego na cyfrowy.
+Do próbkowania napięcia podanego na wejście układu i przetwarzanie go na postać cyfrową.</a>
 </item>
 
 <item id="1563206942" tmtrpt="344" stmtrpt="344" livl="3" rllivl="3" ivl="21" rp="1" gr="5">
 <q>Co to jest ADC?</q>
-<a>Analog Digital Converter</a>
+<a>Analog Digital Converter
+Przetwornik analogowo-cyfrowy</a>
 </item>
 
 <item id="1562963004" tmtrpt="344" stmtrpt="344" livl="10" rllivl="10" ivl="17" rp="2" gr="3">
@@ -474,6 +457,11 @@ void loop(){
 <item id="1563542820" tmtrpt="348" stmtrpt="348" livl="4" rllivl="5" ivl="21" rp="1" gr="4">
 <q>Jak metoda odczytuje aktualny kąt serwomechanizmu?</q>
 <a><![CDATA[<nazwa obiektu Servo>.read()]]></a>
+</item>
+
+<item id="1563399421" tmtrpt="348" stmtrpt="348" livl="8" rllivl="8" ivl="13" rp="3" gr="3">
+<q>Jaka funkcja generuje sygnał PWM na określonym wyjściu?</q>
+<a><![CDATA[analogWrite( <pin>, <wypełnienie> )]]></a>
 </item>
 
 <item id="1562844737" tmtrpt="349" stmtrpt="349" livl="11" rllivl="11" ivl="22" rp="1" gr="3">
@@ -557,6 +545,18 @@ sygnał sterujący - (żółty, pomarańczowy)</a>
 <item id="1563095015" tmtrpt="383" stmtrpt="383" livl="10" rllivl="11" ivl="52" rp="2" gr="5">
 <q>Do jakiego pinu podłączona jest dioda dla użytkowanika na płytce Arduino?</q>
 <a>13</a>
+</item>
+
+<item id="1563094868" tmtrpt="388" stmtrpt="388" livl="15" rllivl="15" ivl="53" rp="2" gr="4">
+<q>Jakie są możliwe stany pinów?</q>
+<a>HIGH, LOW</a>
+</item>
+
+<item id="1562828378" tmtrpt="389" stmtrpt="389" livl="14" rllivl="15" ivl="54" rp="2" gr="4">
+<q>Co to jest UART?</q>
+<a>Szeregowy interfejs komunikacyjny
+Universal asynchronous receiver-transmitter
+Uniwersalny asynchroniczny nadajnik-odbiornik</a>
 </item>
 
 </category>
