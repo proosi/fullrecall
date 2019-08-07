@@ -67,74 +67,6 @@ LEGEND:
 
 <category name="Django">
 
-<item id="1564341178" tmtrpt="336" stmtrpt="336" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
-<q>Jakich argumentów potrzebuje funkcja path?</q>
-<a><![CDATA[<span style="color:#f00">path</span>( <wyrażenie regularne>,  <co ma być wyświetlone>, <alias strony> )]]></a>
-</item>
-
-<item id="1562494771" tmtrpt="336" stmtrpt="336" livl="2" rllivl="2" ivl="3" rp="5" gr="3">
-<q>Jak definiujemy formularz HTML do wprowadzania danych przez użytkownika?</q>
-<a><![CDATA[<form action="" method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <input type="submit" value="Save" />
-</form>]]></a>
-</item>
-
-<item id="1564341286" tmtrpt="336" stmtrpt="336" livl="1" rllivl="1" ivl="3" rp="2" gr="3">
-<q>Jak dołączyć cały plik urls.py aplikacji w urls.py projektu?
-</q>
-<a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> include
-<span style="color:#f00">path</span>(<wyrażenie regularne>,<span style="color:#f0f"> include</span>(<urls app>))]]></a>
-</item>
-
-<item id="1564340895" tmtrpt="336" stmtrpt="336" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
-<q>W jaki sposób są kojarzone adres i treść do wyświetlenia?
-</q>
-<a><![CDATA[Adresy i treść do wyświetlenia są mapowane w tablicy:
-<span style="color:#f00">urlpatterns = [
-    path(),</span>
-<span style="color:#f00">    path(),</span>
-<span style="color:#f00">    ...
-]</span>]]></a>
-</item>
-
-<item id="1564341445" tmtrpt="336" stmtrpt="336" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
-<q> Do czego służy plik urls.py projektu? </q>
-<a><![CDATA[Plik <nazwa projektu>/urls.py definiuje adresy url dla projektu.]]></a>
-</item>
-
-<item id="1562324135" tmtrpt="336" stmtrpt="336" livl="1" rllivl="1" ivl="1" rp="11" gr="2">
-<q>Jak określić położenie katalogu dla plików statycznych?</q>
-<a>settings.py
-
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
-</item>
-
-<item id="1562311022" tmtrpt="337" stmtrpt="337" livl="8" rllivl="8" ivl="4" rp="3" gr="2">
-<q>Co zwraca klasa generyczna DetailView?</q>
-<a>Obiekt self.object, na którym działa widok.</a>
-</item>
-
-<item id="1562367088" tmtrpt="337" stmtrpt="337" livl="1" rllivl="1" ivl="2" rp="10" gr="3">
-<q>Jaka metoda powinna być zdefiniowana w modelu do przekierowania na inną stronę?</q>
-<a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> reverse
-get_absolute_url(self):
-    return reverse('<nazwa strony>', args)
-]]></a>
-</item>
-
-<item id="1562314507" tmtrpt="337" stmtrpt="337" livl="1" rllivl="2" ivl="2" rp="13" gr="3">
-<q>Jaki jest tag szablonowy dla plików statycznych?</q>
-<a><![CDATA[{% static '<ścieżka/nazwa pliku>' %}
-
-przykład
-
-{% load static %}
-
-<link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
-</item>
-
 <item id="1562615709" tmtrpt="338" stmtrpt="338" livl="5" rllivl="6" ivl="11" rp="2" gr="3">
 <q>Jaki tag szablonowy ustawia katalog na stronie? </q>
 <a><![CDATA[{% load '<nazwa katalogu>' %}]]></a>
@@ -163,6 +95,25 @@ DeleteView - kasuje istniejący widok</a>
 <a>Określa pod jakim adresem zostanie wyświetlona dana treść.</a>
 </item>
 
+<item id="1562367088" tmtrpt="339" stmtrpt="339" livl="2" rllivl="2" ivl="2" rp="11" gr="3">
+<q>Jaka metoda powinna być zdefiniowana w modelu do przekierowania na inną stronę?</q>
+<a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> reverse
+get_absolute_url(self):
+    return reverse('<nazwa strony>', args)
+]]></a>
+</item>
+
+<item id="1562314507" tmtrpt="339" stmtrpt="339" livl="2" rllivl="2" ivl="2" rp="14" gr="3">
+<q>Jaki jest tag szablonowy dla plików statycznych?</q>
+<a><![CDATA[{% static '<ścieżka/nazwa pliku>' %}
+
+przykład
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
+</item>
+
 <item id="1562148509" tmtrpt="340" stmtrpt="340" livl="4" rllivl="4" ivl="29" rp="1" gr="5">
 <q>Jak oznacza się komentarz w HTML?</q>
 <a><![CDATA[<!-- treść komentarza -->]]></a>
@@ -180,9 +131,41 @@ fields
 template_name</a>
 </item>
 
+<item id="1562324135" tmtrpt="340" stmtrpt="340" livl="1" rllivl="2" ivl="3" rp="12" gr="4">
+<q>Jak określić położenie katalogu dla plików statycznych?</q>
+<a>settings.py
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
+</item>
+
 <item id="1562232704" tmtrpt="342" stmtrpt="342" livl="4" rllivl="5" ivl="29" rp="1" gr="5">
 <q>Jakie polecenie tworzy super user'a?</q>
 <a>python manage.py createsuperuser</a>
+</item>
+
+<item id="1562494771" tmtrpt="342" stmtrpt="342" livl="3" rllivl="4" ivl="5" rp="6" gr="3">
+<q>Jak definiujemy formularz HTML do wprowadzania danych przez użytkownika?</q>
+<a><![CDATA[<form action="" method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="Save" />
+</form>]]></a>
+</item>
+
+<item id="1564340895" tmtrpt="343" stmtrpt="343" livl="3" rllivl="4" ivl="6" rp="2" gr="3">
+<q>W jaki sposób są kojarzone adres i treść do wyświetlenia?
+</q>
+<a><![CDATA[Adresy i treść do wyświetlenia są mapowane w tablicy:
+<span style="color:#f00">urlpatterns = [
+    path(),</span>
+<span style="color:#f00">    path(),</span>
+<span style="color:#f00">    ...
+]</span>]]></a>
+</item>
+
+<item id="1562311022" tmtrpt="344" stmtrpt="344" livl="4" rllivl="4" ivl="7" rp="4" gr="3">
+<q>Co zwraca klasa generyczna DetailView?</q>
+<a>Obiekt self.object, na którym działa widok.</a>
 </item>
 
 <item id="1562231869" tmtrpt="345" stmtrpt="345" livl="4" rllivl="5" ivl="32" rp="1" gr="5">
@@ -236,9 +219,21 @@ template_name
 <a>W self.object_list zwraca listę obiektów  (usually, but not necessarily a queryset). </a>
 </item>
 
+<item id="1564341286" tmtrpt="349" stmtrpt="349" livl="3" rllivl="4" ivl="12" rp="3" gr="4">
+<q>Jak dołączyć cały plik urls.py aplikacji w urls.py projektu?
+</q>
+<a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> include
+<span style="color:#f00">path</span>(<wyrażenie regularne>,<span style="color:#f0f"> include</span>(<urls app>))]]></a>
+</item>
+
 <item id="1562314022" tmtrpt="350" stmtrpt="350" livl="6" rllivl="6" ivl="35" rp="2" gr="5">
 <q>Jaki jest szablonowy tag dla adresu url?</q>
 <a><![CDATA[{%  url '<nazwa>' %}]]></a>
+</item>
+
+<item id="1564341445" tmtrpt="351" stmtrpt="351" livl="3" rllivl="4" ivl="14" rp="2" gr="4">
+<q> Do czego służy plik urls.py projektu? </q>
+<a><![CDATA[Plik <nazwa projektu>/urls.py definiuje adresy url dla projektu.]]></a>
 </item>
 
 <item id="1562141231" tmtrpt="355" stmtrpt="318" livl="8" rllivl="6" ivl="39" rp="2" gr="5">
@@ -251,6 +246,11 @@ template_name
 <a><![CDATA[{% block <nazwa> %}
 
 {% endblock %}]]></a>
+</item>
+
+<item id="1564341178" tmtrpt="357" stmtrpt="357" livl="4" rllivl="5" ivl="20" rp="1" gr="4">
+<q>Jakich argumentów potrzebuje funkcja path?</q>
+<a><![CDATA[<span style="color:#f00">path</span>(<wyrażenie regularne>,  <co ma być wyświetlone>, <alias strony>)]]></a>
 </item>
 
 <item id="1562314125" tmtrpt="359" stmtrpt="359" livl="8" rllivl="8" ivl="26" rp="3" gr="4">
@@ -292,46 +292,6 @@ template_name
 
 <category name="Arduino">
 
-<item id="1563208237" tmtrpt="336" stmtrpt="336" livl="3" rllivl="3" ivl="13" rp="1" gr="4">
-<q>Jaka funkcja umożliwia odczyt z pinów ADC (piny A0-A5)?</q>
-<a><![CDATA[<b>analogRead( <pin> )</b>]]></a>
-</item>
-
-<item id="1563542535" tmtrpt="336" stmtrpt="336" livl="4" rllivl="5" ivl="9" rp="1" gr="3">
-<q>Jaka metoda służy do podłączenia serwomechanizmu pod pin?</q>
-<a><![CDATA[<nazwa obiektu Servo>.attach( <numer pinu> )]]></a>
-</item>
-
-<item id="1562846397" tmtrpt="336" stmtrpt="336" livl="7" rllivl="7" ivl="4" rp="3" gr="2">
-<q>Jak zrobić wykres kilku wartości w Kreślarce?</q>
-<a>Należy wysłać w jednej linii kilka liczb oddzielonych znakiem tabulatora, a na końcu linii powinien pojawić się znak nowej linii.</a>
-</item>
-
-<item id="1563472968" tmtrpt="336" stmtrpt="336" livl="6" rllivl="6" ivl="3" rp="3" gr="2">
-<q>Co to jest serwomechanizm?</q>
-<a>Silnik, przekładnia oraz dedykowany sterownik zamknięty w jednej budowie.</a>
-</item>
-
-<item id="1563207070" tmtrpt="337" stmtrpt="337" livl="3" rllivl="3" ivl="14" rp="1" gr="4">
-<q>Ile jest wejść analogowych w ARDUINO UNO?</q>
-<a>6 - od A0 do A5</a>
-</item>
-
-<item id="1563542201" tmtrpt="337" stmtrpt="337" livl="2" rllivl="3" ivl="12" rp="1" gr="4">
-<q>Jąką biblotekę dodajemy, żeby oprogramować serwomechanizm?</q>
-<a>Servo.h</a>
-</item>
-
-<item id="1563398983" tmtrpt="337" stmtrpt="337" livl="3" rllivl="3" ivl="12" rp="2" gr="4">
-<q>Co oznacza znak "~" na płytce Arduino Uno?</q>
-<a>Tak oznaczone wyjście może generować sygnał PWM.</a>
-</item>
-
-<item id="1564343460" tmtrpt="337" stmtrpt="337" livl="1" rllivl="1" ivl="3" rp="3" gr="3">
-<q>Na czym polega przesyłanie danych przez UART?</q>
-<a>Na szeregowym wysyłaniu ciągu bitów, które następnie składane są w ramki tworząc informację.</a>
-</item>
-
 <item id="1563002205" tmtrpt="338" stmtrpt="338" livl="4" rllivl="4" ivl="18" rp="1" gr="4">
 <q>Jak przypisać czytelną nazwę i  umożliwić zmianę w jednym miejscu zmianę zmiennej w całym programie ?</q>
 <a><![CDATA[Umożliwia to dyrektywa <b>#define</b>]]></a>
@@ -370,6 +330,11 @@ random( <górny zakres> )]]></a>
 <a><![CDATA[Bitu startu - <b>BS</b>. Zawsze jest logicznym zerem.
 7, 8 lub 9 bitów danych - B0-B7 wysyłana informacja.
 Bit stopu - <b>BK.</b> Zawsze jest logiczną jedynką - mówi o końcu transmisji.<img>img\KursArduino_2_001.png-300x75.png</img>]]></a>
+</item>
+
+<item id="1564343460" tmtrpt="341" stmtrpt="341" livl="3" rllivl="3" ivl="4" rp="4" gr="3">
+<q>Na czym polega przesyłanie danych przez UART?</q>
+<a>Na szeregowym wysyłaniu ciągu bitów, które następnie składane są w ramki tworząc informację.</a>
 </item>
 
 <item id="1562844668" tmtrpt="342" stmtrpt="342" livl="9" rllivl="10" ivl="17" rp="2" gr="3">
@@ -411,6 +376,11 @@ void loop(){
 <a>54 wejść input/output</a>
 </item>
 
+<item id="1563472968" tmtrpt="343" stmtrpt="343" livl="3" rllivl="4" ivl="6" rp="4" gr="3">
+<q>Co to jest serwomechanizm?</q>
+<a>Silnik, przekładnia oraz dedykowany sterownik zamknięty w jednej budowie.</a>
+</item>
+
 <item id="1563206986" tmtrpt="344" stmtrpt="344" livl="3" rllivl="3" ivl="21" rp="1" gr="5">
 <q>Do czego służy ADC?</q>
 <a>Do przetwarzania sygnału analogowego na cyfrowy.
@@ -442,6 +412,11 @@ Przetwornik analogowo-cyfrowy</a>
 <item id="1563311954" tmtrpt="345" stmtrpt="345" livl="3" rllivl="4" ivl="20" rp="2" gr="5">
 <q>Jaka jest częstotliwość sygnału PWM generowana przez ARDUINO?</q>
 <a>490/sekundę</a>
+</item>
+
+<item id="1562846397" tmtrpt="345" stmtrpt="345" livl="4" rllivl="5" ivl="8" rp="4" gr="3">
+<q>Jak zrobić wykres kilku wartości w Kreślarce?</q>
+<a>Należy wysłać w jednej linii kilka wartości oddzielonych znakiem tabulatora, a na końcu linii powinien pojawić się znak nowej linii.</a>
 </item>
 
 <item id="1563542739" tmtrpt="347" stmtrpt="347" livl="4" rllivl="5" ivl="20" rp="1" gr="4">
@@ -482,6 +457,11 @@ Wypełnienie sygnału<img>img\pwm_1.png</img>]]></a>
 <a>Jest to procent czasu przez jaki sygnał ma wysoki potencjał.</a>
 </item>
 
+<item id="1563542535" tmtrpt="354" stmtrpt="354" livl="9" rllivl="10" ivl="17" rp="2" gr="3">
+<q>Jaka metoda służy do podłączenia serwomechanizmu pod pin?</q>
+<a><![CDATA[<nazwa obiektu Servo>.attach(<pin>)]]></a>
+</item>
+
 <item id="1563399053" tmtrpt="355" stmtrpt="355" livl="6" rllivl="7" ivl="26" rp="2" gr="4">
 <q>Ilu bitowy jest sygnał PWM w Arduino?</q>
 <a>8-bitowy</a>
@@ -517,6 +497,11 @@ sygnał sterujący - (żółty, pomarańczowy)</a>
 1s = 1000]]></a>
 </item>
 
+<item id="1563207070" tmtrpt="361" stmtrpt="361" livl="14" rllivl="14" ivl="24" rp="2" gr="3">
+<q>Ile jest wejść analogowych w ARDUINO UNO?</q>
+<a>6 - od A0 do A5</a>
+</item>
+
 <item id="1563309978" tmtrpt="362" stmtrpt="362" livl="9" rllivl="9" ivl="33" rp="2" gr="4">
 <q>Jaki zakres wartości daje przetwornik 10-bitowy?</q>
 <a>0 - 1023</a>
@@ -525,6 +510,11 @@ sygnał sterujący - (żółty, pomarańczowy)</a>
 <item id="1563309805" tmtrpt="369" stmtrpt="369" livl="10" rllivl="10" ivl="37" rp="2" gr="4">
 <q>Ilu bitowy przetwornik ADC jest w ARDUINO UNO?</q>
 <a>10-bitowy</a>
+</item>
+
+<item id="1563398983" tmtrpt="375" stmtrpt="375" livl="12" rllivl="12" ivl="38" rp="3" gr="4">
+<q>Co oznacza znak "~" na płytce Arduino Uno?</q>
+<a>Tak oznaczone wyjście może generować sygnał PWM.</a>
 </item>
 
 <item id="1563095077" tmtrpt="377" stmtrpt="377" livl="11" rllivl="11" ivl="46" rp="1" gr="4">
@@ -552,11 +542,21 @@ sygnał sterujący - (żółty, pomarańczowy)</a>
 <a>HIGH, LOW</a>
 </item>
 
+<item id="1563208237" tmtrpt="388" stmtrpt="388" livl="13" rllivl="14" ivl="51" rp="2" gr="4">
+<q>Jaka funkcja umożliwia odczyt z pinów ADC (piny A0-A5)?</q>
+<a><![CDATA[<b>analogRead( <pin> )</b>]]></a>
+</item>
+
 <item id="1562828378" tmtrpt="389" stmtrpt="389" livl="14" rllivl="15" ivl="54" rp="2" gr="4">
 <q>Co to jest UART?</q>
 <a>Szeregowy interfejs komunikacyjny
 Universal asynchronous receiver-transmitter
 Uniwersalny asynchroniczny nadajnik-odbiornik</a>
+</item>
+
+<item id="1563542201" tmtrpt="399" stmtrpt="399" livl="12" rllivl="12" ivl="62" rp="2" gr="5">
+<q>Jąką biblotekę dodajemy, żeby oprogramować serwomechanizm?</q>
+<a>Servo.h</a>
 </item>
 
 </category>
