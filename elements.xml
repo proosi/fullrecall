@@ -67,31 +67,6 @@ LEGEND:
 
 <category name="Django">
 
-<item id="1562232704" tmtrpt="342" stmtrpt="342" livl="4" rllivl="5" ivl="29" rp="1" gr="5">
-<q>Jakie polecenie tworzy super user'a?</q>
-<a>python manage.py createsuperuser</a>
-</item>
-
-<item id="1562494771" tmtrpt="342" stmtrpt="342" livl="3" rllivl="4" ivl="5" rp="6" gr="3">
-<q>Jak definiujemy formularz HTML do wprowadzania danych przez użytkownika?</q>
-<a><![CDATA[<form action="" method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <input type="submit" value="Save" />
-</form>]]></a>
-</item>
-
-<item id="1562314507" tmtrpt="342" stmtrpt="342" livl="2" rllivl="4" ivl="1" rp="15" gr="2">
-<q>Jaki jest tag szablonowy dla plików statycznych?</q>
-<a><![CDATA[{% static '<ścieżka/nazwa pliku>' %}
-
-przykład
-
-{% load static %}
-
-<link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
-</item>
-
 <item id="1564340895" tmtrpt="343" stmtrpt="343" livl="3" rllivl="4" ivl="6" rp="2" gr="3">
 <q>W jaki sposób są kojarzone adres i treść do wyświetlenia?
 </q>
@@ -121,6 +96,17 @@ get_absolute_url(self):
 <a>settings.py
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
+</item>
+
+<item id="1562314507" tmtrpt="344" stmtrpt="344" livl="1" rllivl="1" ivl="2" rp="16" gr="4">
+<q>Jaki jest tag szablonowy dla plików statycznych?</q>
+<a><![CDATA[{% static '<ścieżka/nazwa pliku>' %}
+
+przykład
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
 </item>
 
 <item id="1562231869" tmtrpt="345" stmtrpt="345" livl="4" rllivl="5" ivl="32" rp="1" gr="5">
@@ -201,6 +187,15 @@ template_name</a>
 <item id="1564341445" tmtrpt="351" stmtrpt="351" livl="3" rllivl="4" ivl="14" rp="2" gr="4">
 <q> Do czego służy plik urls.py projektu? </q>
 <a><![CDATA[Plik <nazwa projektu>/urls.py definiuje adresy url dla projektu.]]></a>
+</item>
+
+<item id="1562494771" tmtrpt="353" stmtrpt="353" livl="5" rllivl="5" ivl="11" rp="7" gr="4">
+<q>Jak definiujemy formularz HTML do wprowadzania danych przez użytkownika?</q>
+<a><![CDATA[<form action="" method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="Save" />
+</form>]]></a>
 </item>
 
 <item id="1562141231" tmtrpt="355" stmtrpt="318" livl="8" rllivl="6" ivl="39" rp="2" gr="5">
@@ -288,33 +283,14 @@ DeleteView - kasuje istniejący widok</a>
 <a><![CDATA[<!-- treść komentarza -->]]></a>
 </item>
 
+<item id="1562232704" tmtrpt="480" stmtrpt="480" livl="29" rllivl="29" ivl="138" rp="2" gr="5">
+<q>Jakie polecenie tworzy super user'a?</q>
+<a>python manage.py createsuperuser</a>
+</item>
+
 </category>
 
 <category name="Arduino">
-
-<item id="1562844668" tmtrpt="342" stmtrpt="342" livl="9" rllivl="10" ivl="17" rp="2" gr="3">
-<q>Jaki jest szablon programów dla Arduino?</q>
-<a>void setup(){
-
-}
-
-void loop(){
-
-}
-
-
-</a>
-</item>
-
-<item id="1563398722" tmtrpt="342" stmtrpt="342" livl="3" rllivl="3" ivl="17" rp="2" gr="5">
-<q>Ile wejść analogowych posiada Arduino Mega 2560?</q>
-<a>16</a>
-</item>
-
-<item id="1563473279" tmtrpt="342" stmtrpt="342" livl="2" rllivl="3" ivl="17" rp="1" gr="5">
-<q>Ile ma standardowy okres sygnału dla serwa?</q>
-<a>20 ms</a>
-</item>
 
 <item id="1563001244" tmtrpt="343" stmtrpt="343" livl="2" rllivl="4" ivl="23" rp="1" gr="5">
 <q>Jaka funkcja zwraca ilość bajtów, które zostały odebrane i czekają na obsługę przez Arduino</q>
@@ -547,6 +523,22 @@ Uniwersalny asynchroniczny nadajnik-odbiornik</a>
 <a>14</a>
 </item>
 
+<item id="1562844668" tmtrpt="394" stmtrpt="394" livl="17" rllivl="17" ivl="52" rp="3" gr="4">
+<q>Jaki jest szablon programów dla Arduino?</q>
+<a>void setup(){
+
+}
+
+void loop(){
+
+}</a>
+</item>
+
+<item id="1563398722" tmtrpt="394" stmtrpt="394" livl="17" rllivl="17" ivl="52" rp="3" gr="4">
+<q>Ile wejść analogowych posiada Arduino Mega 2560?</q>
+<a>16</a>
+</item>
+
 <item id="1563542201" tmtrpt="399" stmtrpt="399" livl="12" rllivl="12" ivl="62" rp="2" gr="5">
 <q>Jąką biblotekę dodajemy, żeby oprogramować serwomechanizm?</q>
 <a>Servo.h</a>
@@ -557,6 +549,11 @@ Uniwersalny asynchroniczny nadajnik-odbiornik</a>
 <a><![CDATA[random(  <zakres dolny>, <zakres górny> )
 lub
 random( <górny zakres> )]]></a>
+</item>
+
+<item id="1563473279" tmtrpt="402" stmtrpt="402" livl="17" rllivl="17" ivl="60" rp="2" gr="4">
+<q>Ile ma standardowy okres sygnału dla serwa?</q>
+<a>20 ms</a>
 </item>
 
 </category>
