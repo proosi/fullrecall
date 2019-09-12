@@ -67,30 +67,6 @@ LEGEND:
 
 <category name="Django">
 
-<item id="1562330120" tmtrpt="362" stmtrpt="362" livl="18" rllivl="18" ivl="31" rp="2" gr="3">
-<q>Jak zdefiniować liczbę mnoga dla "modelu" w panelu administracyjnym?</q>
-<a><![CDATA[class Meta():
-    verbose_name_plural = "<nazwa modelu w liczbie mnogiej>"]]></a>
-</item>
-
-<item id="1562324135" tmtrpt="363" stmtrpt="363" livl="3" rllivl="14" ivl="2" rp="15" gr="2">
-<q>Jak określić położenie katalogu dla plików statycznych?</q>
-<a>settings.py
-
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
-</item>
-
-<item id="1562314507" tmtrpt="363" stmtrpt="363" livl="4" rllivl="14" ivl="2" rp="18" gr="2">
-<q>Jaki jest tag szablonowy dla plików statycznych?</q>
-<a><![CDATA[{% static '<ścieżka/nazwa pliku>' %}
-
-przykład
-
-{% load static %}
-
-<link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
-</item>
-
 <item id="1562367088" tmtrpt="365" stmtrpt="365" livl="3" rllivl="14" ivl="4" rp="14" gr="3">
 <q>Jaka metoda powinna być zdefiniowana w modelu do przekierowania na inną stronę?</q>
 <a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> reverse
@@ -112,6 +88,17 @@ get_absolute_url(self):
 </form>]]></a>
 </item>
 
+<item id="1562314507" tmtrpt="366" stmtrpt="366" livl="2" rllivl="3" ivl="2" rp="19" gr="3">
+<q>Jaki jest tag szablonowy dla plików statycznych?</q>
+<a><![CDATA[{% static '<ścieżka/nazwa pliku>' %}
+
+przykład
+
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
+</item>
+
 <item id="1562494098" tmtrpt="367" stmtrpt="367" livl="11" rllivl="11" ivl="40" rp="2" gr="4">
 <q>Jak zabezpieczyć stronę przed Cross-Site Request Forgery?</q>
 <a>Należy wstawić tag
@@ -122,6 +109,13 @@ get_absolute_url(self):
 <item id="1562144643" tmtrpt="367" stmtrpt="367" livl="5" rllivl="14" ivl="6" rp="13" gr="3">
 <q>Do czego służy URLConfs?</q>
 <a>Określa pod jakim adresem zostanie wyświetlona dana treść.</a>
+</item>
+
+<item id="1562324135" tmtrpt="367" stmtrpt="367" livl="2" rllivl="3" ivl="3" rp="16" gr="4">
+<q>Jak określić położenie katalogu dla plików statycznych?</q>
+<a>settings.py
+
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
 </item>
 
 <item id="1562496781" tmtrpt="371" stmtrpt="371" livl="20" rllivl="20" ivl="24" rp="5" gr="3">
@@ -239,6 +233,12 @@ template_name</a>
 <a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> path]]></a>
 </item>
 
+<item id="1562330120" tmtrpt="411" stmtrpt="411" livl="31" rllivl="33" ivl="47" rp="3" gr="3">
+<q>Jak zdefiniować liczbę mnoga dla "modelu" w panelu administracyjnym?</q>
+<a><![CDATA[class Meta():
+    verbose_name_plural = "<nazwa modelu w liczbie mnogiej>"]]></a>
+</item>
+
 <item id="1562231251" tmtrpt="416" stmtrpt="416" livl="25" rllivl="26" ivl="75" rp="3" gr="4">
 <q>W jakim pliku definiuje się pola bazy danych?</q>
 <a><![CDATA[<nazwa app>/model.py]]></a>
@@ -289,11 +289,6 @@ template_name</a>
 </category>
 
 <category name="Arduino">
-
-<item id="1563309978" tmtrpt="362" stmtrpt="362" livl="9" rllivl="9" ivl="33" rp="2" gr="4">
-<q>Jaki zakres wartości daje przetwornik 10-bitowy?</q>
-<a>0 - 1023</a>
-</item>
 
 <item id="1563472968" tmtrpt="368" stmtrpt="368" livl="6" rllivl="10" ivl="21" rp="5" gr="4">
 <q>Co to jest serwomechanizm?</q>
@@ -552,6 +547,11 @@ Przetwornik analogowo-cyfrowy</a>
 <item id="1562844737" tmtrpt="462" stmtrpt="462" livl="22" rllivl="34" ivl="101" rp="2" gr="4">
 <q>Jakie polecenie ustawia prędkość transmisji?</q>
 <a>Serial.begin(9600)</a>
+</item>
+
+<item id="1563309978" tmtrpt="464" stmtrpt="464" livl="33" rllivl="35" ivl="100" rp="3" gr="4">
+<q>Jaki zakres wartości daje przetwornik 10-bitowy?</q>
+<a>0 - 1023</a>
 </item>
 
 </category>
