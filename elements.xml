@@ -56,24 +56,14 @@ LEGEND:
 
 <category name="Angular">
 
-<item id="1585861097" tmtrpt="585" stmtrpt="585" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
-<q>W jakim języku napisany jest Angular?</q>
-<a>TypeScript</a>
-</item>
-
-<item id="1585861625" tmtrpt="587" stmtrpt="587" livl="0" rllivl="1" ivl="6" rp="0" gr="5">
-<q>Co oznacza skrót MIT?</q>
-<a>Massachusetts Institute of Technology</a>
-</item>
-
-<item id="1585861172" tmtrpt="588" stmtrpt="588" livl="0" rllivl="1" ivl="7" rp="0" gr="5">
-<q>Przez jaką firmę jest wspierany i rozwijan Angular?</q>
-<a>Google</a>
-</item>
-
 <item id="1535724780" tmtrpt="596" stmtrpt="586" livl="1" rllivl="2" ivl="13" rp="1" gr="5">
 <q>Co to jest Angular?</q>
 <a>Otwarty framework i platforma do tworzenia SPA (Single Page Application).</a>
+</item>
+
+<item id="1585861625" tmtrpt="596" stmtrpt="587" livl="6" rllivl="4" ivl="11" rp="0" gr="3">
+<q>Co oznacza skrót MIT?</q>
+<a>Massachusetts Institute of Technology</a>
 </item>
 
 <item id="1585861606" tmtrpt="599" stmtrpt="599" livl="2" rllivl="2" ivl="16" rp="1" gr="5">
@@ -81,30 +71,67 @@ LEGEND:
 <a>Licencja MIT</a>
 </item>
 
+<item id="1585861097" tmtrpt="614" stmtrpt="614" livl="4" rllivl="4" ivl="29" rp="1" gr="5">
+<q>W jakim języku napisany jest Angular?</q>
+<a>TypeScript</a>
+</item>
+
+<item id="1585861172" tmtrpt="624" stmtrpt="588" livl="7" rllivl="4" ivl="39" rp="0" gr="5">
+<q>Przez jaką firmę jest wspierany i rozwijan Angular?</q>
+<a>Google</a>
+</item>
+
 </category>
 
 <category name="Django">
 
-<item id="1562145444" tmtrpt="584" stmtrpt="584" livl="66" rllivl="219" ivl="24" rp="5" gr="1">
-<q>Do czego służy pliki urls.py dla aplikacji?</q>
-<a><![CDATA[Plik <nazwa app>/urls.py definiuje adresy url dla aplikacji.]]></a>
+<item id="1562494771" tmtrpt="585" stmtrpt="588" livl="1" rllivl="0" ivl="0" rp="10" gr="1">
+<q>Jak definiujemy formularz HTML do wprowadzania danych przez użytkownika?</q>
+<a><![CDATA[<form action="" method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="Save" />
+</form>]]></a>
 </item>
 
-<item id="1562324135" tmtrpt="584" stmtrpt="581" livl="4" rllivl="5" ivl="5" rp="18" gr="4">
+<item id="1562496781" tmtrpt="587" stmtrpt="591" livl="31" rllivl="25" ivl="2" rp="7" gr="1">
+<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie DeleteView?</q>
+<a>model
+success_url
+template_name</a>
+</item>
+
+<item id="1562330120" tmtrpt="588" stmtrpt="587" livl="27" rllivl="25" ivl="3" rp="4" gr="1">
+<q>Jak zdefiniować liczbę mnoga dla "modelu" w panelu administracyjnym?</q>
+<a><![CDATA[class Meta():
+    verbose_name_plural = "<nazwa modelu w liczbie mnogiej>"]]></a>
+</item>
+
+<item id="1562324135" tmtrpt="589" stmtrpt="588" livl="4" rllivl="1" ivl="4" rp="19" gr="4">
 <q>Jak określić położenie katalogu dla plików statycznych?</q>
 <a>settings.py
 
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
 </item>
 
-<item id="1562367088" tmtrpt="585" stmtrpt="584" livl="0" rllivl="0" ivl="2" rp="25" gr="5">
+<item id="1586191636" tmtrpt="589" stmtrpt="588" livl="2" rllivl="0" ivl="4" rp="1" gr="4">
+<q>Gdzie znajduje się plik urls.py?</q>
+<a><![CDATA[Katalog <nazwa app>/urls.py.]]></a>
+</item>
+
+<item id="1562311022" tmtrpt="590" stmtrpt="590" livl="11" rllivl="183" ivl="30" rp="8" gr="1">
+<q>Co zwraca klasa generyczna DetailView?</q>
+<a>Obiekt self.object, na którym działa widok.</a>
+</item>
+
+<item id="1562367088" tmtrpt="590" stmtrpt="590" livl="2" rllivl="2" ivl="5" rp="26" gr="5">
 <q>Jaka metoda powinna być zdefiniowana w modelu do przekierowania na inną stronę?</q>
 <a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> reverse
 get_absolute_url(self):
     return reverse('<nazwa strony>', args)]]></a>
 </item>
 
-<item id="1562314507" tmtrpt="586" stmtrpt="586" livl="4" rllivl="8" ivl="7" rp="26" gr="4">
+<item id="1562314507" tmtrpt="590" stmtrpt="586" livl="7" rllivl="6" ivl="5" rp="26" gr="3">
 <q>Jaki jest tag szablonowy dla plików statycznych?</q>
 <a><![CDATA[{% static '<ścieżka/nazwa pliku>' %}
 
@@ -115,61 +142,14 @@ przykład
 <link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
 </item>
 
-<item id="1562141296" tmtrpt="587" stmtrpt="587" livl="61" rllivl="231" ivl="27" rp="4" gr="1">
-<q>Jakie polecenie tworzy aplikację w Django?</q>
-<a><![CDATA[django-admin startapp <nazwa aplikacji>]]></a>
-</item>
-
-<item id="1562330120" tmtrpt="587" stmtrpt="587" livl="47" rllivl="196" ivl="27" rp="4" gr="1">
-<q>Jak zdefiniować liczbę mnoga dla "modelu" w panelu administracyjnym?</q>
-<a><![CDATA[class Meta():
-    verbose_name_plural = "<nazwa modelu w liczbie mnogiej>"]]></a>
-</item>
-
-<item id="1562494771" tmtrpt="588" stmtrpt="588" livl="8" rllivl="183" ivl="28" rp="10" gr="1">
-<q>Jak definiujemy formularz HTML do wprowadzania danych przez użytkownika?</q>
-<a><![CDATA[<form action="" method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <input type="submit" value="Save" />
-</form>]]></a>
-</item>
-
-<item id="1563397674" tmtrpt="588" stmtrpt="588" livl="37" rllivl="199" ivl="28" rp="4" gr="1">
-<q>W jakiej sekcji settings.py dołączamy tworzone aplikacje?</q>
-<a><![CDATA[INSTALLED_APP = [ '<moja app>', ]]]></a>
-</item>
-
-<item id="1564341178" tmtrpt="588" stmtrpt="588" livl="39" rllivl="199" ivl="28" rp="3" gr="1">
-<q>Jakich argumentów potrzebuje funkcja path?</q>
-<a><![CDATA[<span style="color:#f00">path</span>(<wyrażenie regularne>,  <co ma być wyświetlone>, <alias strony>)]]></a>
-</item>
-
-<item id="1562142150" tmtrpt="589" stmtrpt="589" livl="5" rllivl="6" ivl="15" rp="7" gr="5">
-<q>W jakim pliku definiujemy co ma być wyświetlone na stronie?</q>
-<a>views.py</a>
-</item>
-
-<item id="1562311022" tmtrpt="590" stmtrpt="590" livl="11" rllivl="183" ivl="30" rp="8" gr="1">
-<q>Co zwraca klasa generyczna DetailView?</q>
-<a>Obiekt self.object, na którym działa widok.</a>
-</item>
-
-<item id="1562141231" tmtrpt="590" stmtrpt="577" livl="17" rllivl="11" ivl="19" rp="4" gr="3">
-<q>Jakie polecenie rozpoczyna projekt w Django?</q>
-<a><![CDATA[django-admin startproject <nazwa projektu>]]></a>
-</item>
-
-<item id="1562496781" tmtrpt="591" stmtrpt="591" livl="12" rllivl="183" ivl="31" rp="7" gr="1">
-<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie DeleteView?</q>
-<a>model
-success_url
-template_name</a>
-</item>
-
 <item id="1562231869" tmtrpt="591" stmtrpt="577" livl="17" rllivl="11" ivl="20" rp="3" gr="3">
 <q>Jakie polecenie aktualizuje bazę danych?</q>
 <a><![CDATA[python manage.py migrate <nazwa app>]]></a>
+</item>
+
+<item id="1562141231" tmtrpt="591" stmtrpt="591" livl="19" rllivl="14" ivl="6" rp="5" gr="2">
+<q>Jakie polecenie rozpoczyna projekt w Django?</q>
+<a><![CDATA[django-admin startproject <nazwa projektu>]]></a>
 </item>
 
 <item id="1562141464" tmtrpt="592" stmtrpt="592" livl="24" rllivl="199" ivl="32" rp="4" gr="1">
@@ -205,6 +185,16 @@ template_name</a>
 <a>Określa pod jakim adresem zostanie wyświetlona dana treść.</a>
 </item>
 
+<item id="1564341178" tmtrpt="597" stmtrpt="588" livl="28" rllivl="25" ivl="12" rp="3" gr="2">
+<q>Jakich argumentów potrzebuje funkcja path?</q>
+<a><![CDATA[<span style="color:#f00">path</span>(<wyrażenie regularne>,  <co ma być wyświetlone>, <alias strony>)]]></a>
+</item>
+
+<item id="1562142150" tmtrpt="598" stmtrpt="589" livl="15" rllivl="11" ivl="13" rp="7" gr="3">
+<q>W jakim pliku definiujemy co ma być wyświetlone na stronie?</q>
+<a>views.py</a>
+</item>
+
 <item id="1562615709" tmtrpt="600" stmtrpt="600" livl="8" rllivl="8" ivl="21" rp="8" gr="5">
 <q>Jaki tag szablonowy ustawia katalog na stronie? </q>
 <a><![CDATA[{% load '<nazwa katalogu>' %}]]></a>
@@ -218,6 +208,21 @@ template_name</a>
 <item id="1562231251" tmtrpt="608" stmtrpt="584" livl="24" rllivl="19" ivl="29" rp="4" gr="3">
 <q>W jakim pliku definiuje się pola bazy danych?</q>
 <a><![CDATA[<nazwa app>/model.py]]></a>
+</item>
+
+<item id="1562145444" tmtrpt="612" stmtrpt="612" livl="24" rllivl="24" ivl="28" rp="6" gr="3">
+<q>Do czego służy pliki urls.py dla aplikacji?</q>
+<a>Definiuje adresy url dla aplikacji.</a>
+</item>
+
+<item id="1563397674" tmtrpt="620" stmtrpt="588" livl="28" rllivl="25" ivl="35" rp="4" gr="3">
+<q>W jakiej sekcji settings.py dołączamy tworzone aplikacje?</q>
+<a><![CDATA[INSTALLED_APP = [ '<moja app>', ]]]></a>
+</item>
+
+<item id="1562141296" tmtrpt="620" stmtrpt="587" livl="27" rllivl="25" ivl="35" rp="4" gr="3">
+<q>Jakie polecenie tworzy aplikację w Django?</q>
+<a><![CDATA[django-admin startapp <nazwa aplikacji>]]></a>
 </item>
 
 <item id="1562494098" tmtrpt="639" stmtrpt="639" livl="130" rllivl="183" ivl="79" rp="4" gr="2">
@@ -308,33 +313,12 @@ template_name</a>
 
 <category name="Arduino">
 
-<item id="1563398722" tmtrpt="587" stmtrpt="587" livl="52" rllivl="218" ivl="27" rp="4" gr="1">
-<q>Ile wejść analogowych posiada Arduino Mega 2560?</q>
-<a>16</a>
-</item>
-
-<item id="1562844668" tmtrpt="588" stmtrpt="588" livl="52" rllivl="218" ivl="28" rp="4" gr="1">
-<q>Jaki jest szablon programów dla Arduino?</q>
-<a>void setup(){
-
-}
-
-void loop(){
-
-}</a>
-</item>
-
-<item id="1563398117" tmtrpt="589" stmtrpt="589" livl="16" rllivl="183" ivl="29" rp="7" gr="1">
-<q>Co to jest wypełnienie w sygnale PWM?</q>
-<a>Jest to procent czasu przez jaki sygnał ma wysoki potencjał.</a>
-</item>
-
-<item id="1563398774" tmtrpt="589" stmtrpt="586" livl="26" rllivl="19" ivl="10" rp="4" gr="2">
+<item id="1563398774" tmtrpt="586" stmtrpt="586" livl="10" rllivl="6" ivl="1" rp="4" gr="1">
 <q>Ile portów UART posiada Arduino Mega?</q>
 <a>4</a>
 </item>
 
-<item id="1563473519" tmtrpt="589" stmtrpt="585" livl="25" rllivl="19" ivl="10" rp="3" gr="2">
+<item id="1563473519" tmtrpt="596" stmtrpt="596" livl="10" rllivl="6" ivl="11" rp="4" gr="3">
 <q>W jakich granicach mieści się wypełnienie sygnału dla serwa?</q>
 <a>5 - 10 %</a>
 </item>
@@ -351,9 +335,19 @@ Universal asynchronous receiver-transmitter
 Uniwersalny asynchroniczny nadajnik-odbiornik</a>
 </item>
 
+<item id="1563398117" tmtrpt="612" stmtrpt="589" livl="29" rllivl="25" ivl="27" rp="7" gr="3">
+<q>Co to jest wypełnienie w sygnale PWM?</q>
+<a>Jest to procent czasu przez jaki sygnał ma wysoki potencjał.</a>
+</item>
+
 <item id="1563001360" tmtrpt="614" stmtrpt="586" livl="28" rllivl="21" ivl="35" rp="3" gr="3">
 <q>Jaka funkcja kopiuje dane z bufora do momentu napotkania znaku terminatora?</q>
 <a><![CDATA[Serial.readStringUntil( <terminator> )]]></a>
+</item>
+
+<item id="1563398722" tmtrpt="620" stmtrpt="587" livl="27" rllivl="25" ivl="35" rp="4" gr="3">
+<q>Ile wejść analogowych posiada Arduino Mega 2560?</q>
+<a>16</a>
 </item>
 
 <item id="1562828677" tmtrpt="625" stmtrpt="625" livl="10" rllivl="183" ivl="65" rp="11" gr="2">
@@ -407,6 +401,17 @@ Universal Synchronous and Asynchronous Reciever and Transmitter</a>
 <item id="1563542535" tmtrpt="655" stmtrpt="655" livl="66" rllivl="199" ivl="95" rp="4" gr="2">
 <q>Jaka metoda służy do podłączenia serwomechanizmu pod pin?</q>
 <a><![CDATA[<nazwa obiektu Servo>.attach(<pin>)]]></a>
+</item>
+
+<item id="1562844668" tmtrpt="655" stmtrpt="588" livl="28" rllivl="25" ivl="70" rp="4" gr="4">
+<q>Jaki jest szablon programów dla Arduino?</q>
+<a>void setup(){
+
+}
+
+void loop(){
+
+}</a>
 </item>
 
 <item id="1563094968" tmtrpt="662" stmtrpt="662" livl="24" rllivl="183" ivl="102" rp="4" gr="2">
