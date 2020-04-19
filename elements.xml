@@ -56,27 +56,27 @@ LEGEND:
 
 <category name="Angular">
 
-<item id="1535724780" tmtrpt="596" stmtrpt="586" livl="1" rllivl="2" ivl="13" rp="1" gr="5">
-<q>Co to jest Angular?</q>
-<a>Otwarty framework i platforma do tworzenia SPA (Single Page Application).</a>
-</item>
-
-<item id="1585861625" tmtrpt="596" stmtrpt="587" livl="6" rllivl="4" ivl="11" rp="0" gr="3">
-<q>Co oznacza skrót MIT?</q>
-<a>Massachusetts Institute of Technology</a>
-</item>
-
-<item id="1585861606" tmtrpt="599" stmtrpt="599" livl="2" rllivl="2" ivl="16" rp="1" gr="5">
-<q>Na jakiej licencji jest wydany Angular?</q>
-<a>Licencja MIT</a>
-</item>
-
-<item id="1585861097" tmtrpt="614" stmtrpt="614" livl="4" rllivl="4" ivl="29" rp="1" gr="5">
+<item id="1587054125" tmtrpt="598" stmtrpt="598" livl="0" rllivl="0" ivl="4" rp="0" gr="5">
 <q>W jakim języku napisany jest Angular?</q>
 <a>TypeScript</a>
 </item>
 
-<item id="1585861172" tmtrpt="624" stmtrpt="588" livl="7" rllivl="4" ivl="39" rp="0" gr="5">
+<item id="1587054106" tmtrpt="606" stmtrpt="606" livl="2" rllivl="2" ivl="9" rp="1" gr="4">
+<q>Na jakiej licencji jest wydany Angular?</q>
+<a>Licencja MIT</a>
+</item>
+
+<item id="1587054025" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Co oznacza skrót MIT?</q>
+<a>Massachusetts Institute of Technology</a>
+</item>
+
+<item id="1587054077" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Co to jest Angular?</q>
+<a>Otwarty framework i platforma do tworzenia SPA (Single Page Application).</a>
+</item>
+
+<item id="1587054114" tmtrpt="616" stmtrpt="616" livl="3" rllivl="3" ivl="19" rp="1" gr="5">
 <q>Przez jaką firmę jest wspierany i rozwijan Angular?</q>
 <a>Google</a>
 </item>
@@ -85,53 +85,23 @@ LEGEND:
 
 <category name="Django">
 
-<item id="1562494771" tmtrpt="585" stmtrpt="588" livl="1" rllivl="0" ivl="0" rp="10" gr="1">
-<q>Jak definiujemy formularz HTML do wprowadzania danych przez użytkownika?</q>
-<a><![CDATA[<form action="" method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <input type="submit" value="Save" />
-</form>]]></a>
+<item id="1587054983" tmtrpt="598" stmtrpt="598" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
+<q>Jak nazywa się plik konfiguracyjny projektu?</q>
+<a><![CDATA[<nazwa projektu>/settings.py]]></a>
 </item>
 
-<item id="1562496781" tmtrpt="587" stmtrpt="591" livl="31" rllivl="25" ivl="2" rp="7" gr="1">
-<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie DeleteView?</q>
-<a>model
-success_url
-template_name</a>
+<item id="1587058185" tmtrpt="599" stmtrpt="599" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
+<q>Jakiego importu wymaga funkcja path()?
+</q>
+<a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> path]]></a>
 </item>
 
-<item id="1562330120" tmtrpt="588" stmtrpt="587" livl="27" rllivl="25" ivl="3" rp="4" gr="1">
-<q>Jak zdefiniować liczbę mnoga dla "modelu" w panelu administracyjnym?</q>
-<a><![CDATA[class Meta():
-    verbose_name_plural = "<nazwa modelu w liczbie mnogiej>"]]></a>
+<item id="1587054201" tmtrpt="599" stmtrpt="599" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
+<q> Do czego służy plik urls.py projektu? </q>
+<a>Definiuje adresy url dla projektu.</a>
 </item>
 
-<item id="1562324135" tmtrpt="589" stmtrpt="588" livl="4" rllivl="1" ivl="4" rp="19" gr="4">
-<q>Jak określić położenie katalogu dla plików statycznych?</q>
-<a>settings.py
-
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
-</item>
-
-<item id="1586191636" tmtrpt="589" stmtrpt="588" livl="2" rllivl="0" ivl="4" rp="1" gr="4">
-<q>Gdzie znajduje się plik urls.py?</q>
-<a><![CDATA[Katalog <nazwa app>/urls.py.]]></a>
-</item>
-
-<item id="1562311022" tmtrpt="590" stmtrpt="590" livl="11" rllivl="183" ivl="30" rp="8" gr="1">
-<q>Co zwraca klasa generyczna DetailView?</q>
-<a>Obiekt self.object, na którym działa widok.</a>
-</item>
-
-<item id="1562367088" tmtrpt="590" stmtrpt="590" livl="2" rllivl="2" ivl="5" rp="26" gr="5">
-<q>Jaka metoda powinna być zdefiniowana w modelu do przekierowania na inną stronę?</q>
-<a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> reverse
-get_absolute_url(self):
-    return reverse('<nazwa strony>', args)]]></a>
-</item>
-
-<item id="1562314507" tmtrpt="590" stmtrpt="586" livl="7" rllivl="6" ivl="5" rp="26" gr="3">
+<item id="1587055838" tmtrpt="599" stmtrpt="599" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
 <q>Jaki jest tag szablonowy dla plików statycznych?</q>
 <a><![CDATA[{% static '<ścieżka/nazwa pliku>' %}
 
@@ -142,97 +112,192 @@ przykład
 <link rel="stylesheet" href="{% static 'css/base.css' %}">]]></a>
 </item>
 
-<item id="1562231869" tmtrpt="591" stmtrpt="577" livl="17" rllivl="11" ivl="20" rp="3" gr="3">
-<q>Jakie polecenie aktualizuje bazę danych?</q>
-<a><![CDATA[python manage.py migrate <nazwa app>]]></a>
+<item id="1587055188" tmtrpt="599" stmtrpt="599" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
+<q>Jak przekazać zmienną do dokumentu html?</q>
+<a><![CDATA[{{ <nazwa zmiennej> }}]]></a>
 </item>
 
-<item id="1562141231" tmtrpt="591" stmtrpt="591" livl="19" rllivl="14" ivl="6" rp="5" gr="2">
-<q>Jakie polecenie rozpoczyna projekt w Django?</q>
-<a><![CDATA[django-admin startproject <nazwa projektu>]]></a>
+<item id="1587056329" tmtrpt="599" stmtrpt="599" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
+<q>Jakie polecenie tworzy super user'a?</q>
+<a>python manage.py createsuperuser</a>
 </item>
 
-<item id="1562141464" tmtrpt="592" stmtrpt="592" livl="24" rllivl="199" ivl="32" rp="4" gr="1">
-<q>Jakie polecenie uruchamia server w Django?</q>
-<a>python manage.py runserver</a>
-</item>
-
-<item id="1564341286" tmtrpt="592" stmtrpt="592" livl="6" rllivl="9" ivl="13" rp="9" gr="4">
-<q>Jak dołączyć cały plik urls.py aplikacji w urls.py projektu?
-</q>
-<a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> include
-<span style="color:#f00">path</span>(<wyrażenie regularne>,<span style="color:#f0f"> include</span>(<urls app>))]]></a>
-</item>
-
-<item id="1564340895" tmtrpt="593" stmtrpt="593" livl="20" rllivl="199" ivl="33" rp="5" gr="1">
-<q>W jaki sposób są kojarzone adres i treść do wyświetlenia w django?
-</q>
-<a><![CDATA[Adresy i treść do wyświetlenia są mapowane w tablicy:
-<span style="color:#f00">urlpatterns = [
-    path(),</span>
-<span style="color:#f00">    path(),</span>
-<span style="color:#f00">    ...
-]</span>]]></a>
-</item>
-
-<item id="1562231815" tmtrpt="593" stmtrpt="582" livl="22" rllivl="11" ivl="22" rp="3" gr="3">
-<q>Jakie polecenie przygotowuje aktualizację bazy danych?</q>
-<a><![CDATA[python manage.py makemigrations <nazwa app>]]></a>
-</item>
-
-<item id="1562144643" tmtrpt="597" stmtrpt="597" livl="6" rllivl="183" ivl="37" rp="15" gr="2">
-<q>Do czego służy URLConfs?</q>
-<a>Określa pod jakim adresem zostanie wyświetlona dana treść.</a>
-</item>
-
-<item id="1564341178" tmtrpt="597" stmtrpt="588" livl="28" rllivl="25" ivl="12" rp="3" gr="2">
-<q>Jakich argumentów potrzebuje funkcja path?</q>
-<a><![CDATA[<span style="color:#f00">path</span>(<wyrażenie regularne>,  <co ma być wyświetlone>, <alias strony>)]]></a>
-</item>
-
-<item id="1562142150" tmtrpt="598" stmtrpt="589" livl="15" rllivl="11" ivl="13" rp="7" gr="3">
-<q>W jakim pliku definiujemy co ma być wyświetlone na stronie?</q>
-<a>views.py</a>
-</item>
-
-<item id="1562615709" tmtrpt="600" stmtrpt="600" livl="8" rllivl="8" ivl="21" rp="8" gr="5">
-<q>Jaki tag szablonowy ustawia katalog na stronie? </q>
-<a><![CDATA[{% load '<nazwa katalogu>' %}]]></a>
-</item>
-
-<item id="1562314216" tmtrpt="607" stmtrpt="582" livl="22" rllivl="19" ivl="28" rp="4" gr="3">
+<item id="1587055680" tmtrpt="599" stmtrpt="599" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
 <q>Jaki jest tag szablonowy dla dziedziczenia?</q>
 <a><![CDATA[{%  extends '<nazwa pliku>' %}]]></a>
 </item>
 
-<item id="1562231251" tmtrpt="608" stmtrpt="584" livl="24" rllivl="19" ivl="29" rp="4" gr="3">
+<item id="1587055597" tmtrpt="599" stmtrpt="599" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
+<q>Jaki jest szablonowy tag dla pętli for?</q>
+<a><![CDATA[{% for <iterator> in <jakaś lista> %}
+
+{% endfor %}]]></a>
+</item>
+
+<item id="1587056427" tmtrpt="599" stmtrpt="599" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
+<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie UpdateView?</q>
+<a>model
+fields
+template_name</a>
+</item>
+
+<item id="1587056356" tmtrpt="599" stmtrpt="599" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
+<q>Jakie polecenie uruchamia server w Django?</q>
+<a>python manage.py runserver</a>
+</item>
+
+<item id="1587055275" tmtrpt="602" stmtrpt="602" livl="1" rllivl="1" ivl="5" rp="2" gr="4">
+<q>Jak zabezpieczyć stronę przed Cross-Site Request Forgery?</q>
+<a><![CDATA[Należy wstawić tag
+
+<b>{% csrf_token %}</b>]]></a>
+</item>
+
+<item id="1587056305" tmtrpt="602" stmtrpt="602" livl="1" rllivl="1" ivl="5" rp="2" gr="4">
+<q>Jakie polecenie tworzy aplikację w Django?</q>
+<a><![CDATA[<b>django-admin startapp <nazwa aplikacji></b>]]></a>
+</item>
+
+<item id="1587054623" tmtrpt="602" stmtrpt="602" livl="1" rllivl="1" ivl="5" rp="2" gr="4">
+<q>Do czego służy URLConfs?</q>
+<a>Określa pod jakim adresem zostanie wyświetlona dana treść.</a>
+</item>
+
+<item id="1587054568" tmtrpt="602" stmtrpt="602" livl="1" rllivl="1" ivl="5" rp="2" gr="4">
+<q>Co zwraca klasa generyczna LiestView?</q>
+<a>Listę obiektów jako self.object_list (usually, but not necessarily a queryset).</a>
+</item>
+
+<item id="1587055872" tmtrpt="602" stmtrpt="602" livl="1" rllivl="1" ivl="5" rp="2" gr="4">
+<q>Jaki tag szablonowy ustawia katalog na stronie? </q>
+<a><![CDATA[<b>{% load '<nazwa katalogu>' %}</b>]]></a>
+</item>
+
+<item id="1587055521" tmtrpt="602" stmtrpt="602" livl="1" rllivl="1" ivl="5" rp="2" gr="4">
+<q>Jaki jest szablonowy tag dla adresu url?</q>
+<a><![CDATA[<b>{%  url '<nazwa strony>' %}</b>]]></a>
+</item>
+
+<item id="1587058344" tmtrpt="602" stmtrpt="602" livl="1" rllivl="1" ivl="5" rp="2" gr="4">
+<q>W jakiej sekcji settings.py dołączamy tworzone aplikacje?</q>
+<a><![CDATA[<b>INSTALLED_APP = [ '<nazwa app>', ]</b>]]></a>
+</item>
+
+<item id="1587058284" tmtrpt="602" stmtrpt="602" livl="1" rllivl="1" ivl="5" rp="2" gr="4">
+<q>W jaki sposób są kojarzone adres i treść do wyświetlenia w django?
+</q>
+<a><![CDATA[Adresy i treść do wyświetlenia są mapowane w tablicy:
+
+<b><span style="color:#000">urlpatterns = [
+    path(),
+    path(),
+    ...
+]</b></span>]]></a>
+</item>
+
+<item id="1587212099" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Gdzie znajduje się plik z adresami url dla projektu - urls.py? </q>
+<a><![CDATA[<b><nazwa projektu>/urls.py</b>]]></a>
+</item>
+
+<item id="1587058374" tmtrpt="606" stmtrpt="606" livl="2" rllivl="2" ivl="9" rp="1" gr="4">
 <q>W jakim pliku definiuje się pola bazy danych?</q>
 <a><![CDATA[<nazwa app>/model.py]]></a>
 </item>
 
-<item id="1562145444" tmtrpt="612" stmtrpt="612" livl="24" rllivl="24" ivl="28" rp="6" gr="3">
+<item id="1587054249" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Co zwraca klasa generyczna DetailView?</q>
+<a>Obiekt self.object, na którym działa widok.</a>
+</item>
+
+<item id="1587054689" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Gdzie znajduje się plik urls.py aplikacji?</q>
+<a><![CDATA[<nazwa app>/urls.py]]></a>
+</item>
+
+<item id="1587055130" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jak oznacza się komentarz w HTML?</q>
+<a><![CDATA[<!-- treść komentarza -->]]></a>
+</item>
+
+<item id="1587055378" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jak zdefiniować liczbę mnoga dla "modelu" w panelu administracyjnym?</q>
+<a><![CDATA[class Meta():
+    verbose_name_plural = "<nazwa modelu w liczbie mnogiej>"]]></a>
+</item>
+
+<item id="1587054653" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
 <q>Do czego służy pliki urls.py dla aplikacji?</q>
 <a>Definiuje adresy url dla aplikacji.</a>
 </item>
 
-<item id="1563397674" tmtrpt="620" stmtrpt="588" livl="28" rllivl="25" ivl="35" rp="4" gr="3">
-<q>W jakiej sekcji settings.py dołączamy tworzone aplikacje?</q>
-<a><![CDATA[INSTALLED_APP = [ '<moja app>', ]]]></a>
+<item id="1587056203" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jakie polecenie aktualizuje bazę danych?</q>
+<a><![CDATA[python manage.py migrate <nazwa app>]]></a>
 </item>
 
-<item id="1562141296" tmtrpt="620" stmtrpt="587" livl="27" rllivl="25" ivl="35" rp="4" gr="3">
-<q>Jakie polecenie tworzy aplikację w Django?</q>
-<a><![CDATA[django-admin startapp <nazwa aplikacji>]]></a>
+<item id="1587055476" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jaka metoda powinna być zdefiniowana w modelu do przekierowania na inną stronę?</q>
+<a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> reverse
+get_absolute_url(self):
+    return reverse( '<nazwa strony>', args )]]></a>
 </item>
 
-<item id="1562494098" tmtrpt="639" stmtrpt="639" livl="130" rllivl="183" ivl="79" rp="4" gr="2">
-<q>Jak zabezpieczyć stronę przed Cross-Site Request Forgery?</q>
-<a>Należy wstawić tag
+<item id="1587055071" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jak określić położenie katalogu dla plików statycznych?</q>
+<a>settings.py
 
-{% csrf_token %}</a>
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]</a>
 </item>
 
-<item id="1562492957" tmtrpt="653" stmtrpt="653" livl="20" rllivl="197" ivl="95" rp="7" gr="2">
+<item id="1587056381" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie DeleteView?</q>
+<a>model
+success_url
+template_name</a>
+</item>
+
+<item id="1587054871" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jak definiujemy formularz HTML do wprowadzania danych przez użytkownika?</q>
+<a><![CDATA[<form action="" method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" value="Save" />
+</form>]]></a>
+</item>
+
+<item id="1587056271" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jakie polecenie rozpoczyna projekt w Django?</q>
+<a><![CDATA[django-admin startproject <nazwa projektu>]]></a>
+</item>
+
+<item id="1587058160" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jakie zmienne trzeba zdefiniować w klasie dziedziczącej po klasie CreateView?</q>
+<a>model
+fields
+template_name</a>
+</item>
+
+<item id="1587055634" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jaki jest tag szablonowy dla bloku?</q>
+<a><![CDATA[{% block <nazwa bloku> %}
+
+{% endblock %}]]></a>
+</item>
+
+<item id="1587054962" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jak dołączyć cały plik urls.py aplikacji w urls.py projektu?
+</q>
+<a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> include
+<span style="color:#f00">path</span>( <wyrażenie regularne>,<span style="color:#f0f"> include</span>( <urls app> ))]]></a>
+</item>
+
+<item id="1587055956" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jakich argumentów potrzebuje funkcja path?</q>
+<a><![CDATA[<b><span style="color:#000">path</span>( <wyrażenie regularne>,  <adres strony>, <alias strony> )</b>]]></a>
+</item>
+
+<item id="1587056165" tmtrpt="610" stmtrpt="610" livl="2" rllivl="2" ivl="13" rp="1" gr="5">
 <q>Jakie klasy generyczne służą do edycji widoków?</q>
 <a>from django.views.generic.edit import CreateView, UpdateView, DeleteView
 CreateView - tworzy nowy widok
@@ -240,170 +305,233 @@ UpdateView - edytuje istniejący widok
 DeleteView - kasuje istniejący widok</a>
 </item>
 
-<item id="1564341113" tmtrpt="660" stmtrpt="660" livl="62" rllivl="213" ivl="100" rp="4" gr="2">
-<q>Jakiego importu wymaga funkcja path()?
-</q>
-<a><![CDATA[<span style="color:#f0f">from</span> django.urls <span style="color:#f0f">import</span> path]]></a>
+<item id="1587058401" tmtrpt="612" stmtrpt="612" livl="2" rllivl="2" ivl="15" rp="1" gr="5">
+<q>W jakim pliku definiujemy co ma być wyświetlone na stronie?</q>
+<a>views.py</a>
 </item>
 
-<item id="1562148509" tmtrpt="660" stmtrpt="660" livl="98" rllivl="219" ivl="100" rp="3" gr="2">
-<q>Jak oznacza się komentarz w HTML?</q>
-<a><![CDATA[<!-- treść komentarza -->]]></a>
-</item>
-
-<item id="1562496540" tmtrpt="663" stmtrpt="663" livl="53" rllivl="213" ivl="103" rp="5" gr="2">
-<q>Jakie zmienne definiujemy w klasie dziedziczącej po klasie UpdateView?</q>
-<a>model
-fields
-template_name</a>
-</item>
-
-<item id="1562314022" tmtrpt="668" stmtrpt="668" livl="23" rllivl="199" ivl="108" rp="4" gr="2">
-<q>Jaki jest szablonowy tag dla adresu url?</q>
-<a><![CDATA[{%  url '<nazwa>' %}]]></a>
-</item>
-
-<item id="1564341445" tmtrpt="668" stmtrpt="668" livl="32" rllivl="199" ivl="108" rp="4" gr="2">
-<q> Do czego służy plik urls.py projektu? </q>
-<a><![CDATA[Plik <nazwa projektu>/urls.py definiuje adresy url dla projektu.]]></a>
-</item>
-
-<item id="1562310837" tmtrpt="671" stmtrpt="671" livl="23" rllivl="199" ivl="111" rp="4" gr="2">
-<q>Co zwraca klasa generyczna LiestView?</q>
-<a>Listę obiektów jako self.object_list  (usually, but not necessarily a queryset). </a>
-</item>
-
-<item id="1562496313" tmtrpt="767" stmtrpt="767" livl="19" rllivl="197" ivl="209" rp="6" gr="3">
-<q>Jakie zmienne trzeba zdefiniować w klasie dziedziczącej po klasie CreateView?</q>
-<a>model
-fields
-template_name</a>
-</item>
-
-<item id="1562314125" tmtrpt="793" stmtrpt="793" livl="36" rllivl="199" ivl="233" rp="5" gr="3">
-<q>Jaki jest szablonowy tag dla pętli for?</q>
-<a><![CDATA[{% for <iterator> in <jakaś lista> %}
-
-{% endfor %}]]></a>
-</item>
-
-<item id="1562314369" tmtrpt="801" stmtrpt="801" livl="84" rllivl="183" ivl="241" rp="4" gr="3">
-<q>Jak przekazać zmienną do dokumentu html?</q>
-<a><![CDATA[{{ <nazwa zmiennej> }}]]></a>
-</item>
-
-<item id="1562314296" tmtrpt="827" stmtrpt="827" livl="95" rllivl="199" ivl="267" rp="4" gr="3">
-<q>Jaki jest tag szablonowy dla bloku?</q>
-<a><![CDATA[{% block <nazwa> %}
-
-{% endblock %}]]></a>
-</item>
-
-<item id="1562142043" tmtrpt="846" stmtrpt="846" livl="96" rllivl="219" ivl="286" rp="3" gr="3">
-<q>Jak nazywa się plik konfiguracyjny projektu?</q>
-<a><![CDATA[<nazwa projektu>/settings.py]]></a>
-</item>
-
-<item id="1562232704" tmtrpt="855" stmtrpt="855" livl="138" rllivl="218" ivl="295" rp="3" gr="3">
-<q>Jakie polecenie tworzy super user'a?</q>
-<a>python manage.py createsuperuser</a>
+<item id="1587056240" tmtrpt="614" stmtrpt="614" livl="2" rllivl="2" ivl="17" rp="1" gr="5">
+<q>Jakie polecenie przygotowuje aktualizację bazy danych?</q>
+<a><![CDATA[python manage.py makemigrations <nazwa app>]]></a>
 </item>
 
 </category>
 
 <category name="Arduino">
 
-<item id="1563398774" tmtrpt="586" stmtrpt="586" livl="10" rllivl="6" ivl="1" rp="4" gr="1">
-<q>Ile portów UART posiada Arduino Mega?</q>
-<a>4</a>
+<item id="1587058987" tmtrpt="598" stmtrpt="598" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
+<q>Ile ma standardowy okres sygnału dla serwa?</q>
+<a>20 ms</a>
 </item>
 
-<item id="1563473519" tmtrpt="596" stmtrpt="596" livl="10" rllivl="6" ivl="11" rp="4" gr="3">
-<q>W jakich granicach mieści się wypełnienie sygnału dla serwa?</q>
-<a>5 - 10 %</a>
+<item id="1587058972" tmtrpt="599" stmtrpt="599" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
+<q>Ile jest wejść analogowych w ARDUINO UNO?</q>
+<a>6 - od A0 do A5</a>
 </item>
 
-<item id="1562963416" tmtrpt="600" stmtrpt="582" livl="6" rllivl="8" ivl="21" rp="4" gr="4">
+<item id="1587058774" tmtrpt="599" stmtrpt="599" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
+<q>Co to jest serwomechanizm?</q>
+<a>Silnik, przekładnia oraz dedykowany sterownik zamknięty w jednej obudowie.</a>
+</item>
+
+<item id="1587060778" tmtrpt="599" stmtrpt="599" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
+<q>Jak zrobić wykres kilku wartości w Kreślarce?</q>
+<a>Należy wysłać w jednej linii kilka wartości oddzielonych znakiem tabulatora. Linia musi być zakończona znakiem końca linii.</a>
+</item>
+
+<item id="1587061182" tmtrpt="599" stmtrpt="599" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
+<q>Jaka funkcja umożliwia ustawinie wartości początkowej dla algorytmu generowania liczb pseudolosowych?</q>
+<a><![CDATA[randomSeed( <wartość początkowa> )]]></a>
+</item>
+
+<item id="1587059384" tmtrpt="599" stmtrpt="599" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
 <q>Jak zmienić stan pinu cyfrowego?</q>
 <a><![CDATA[digitalWrite( <pin>, <stan> )]]></a>
 </item>
 
-<item id="1562828378" tmtrpt="611" stmtrpt="587" livl="27" rllivl="19" ivl="32" rp="3" gr="3">
+<item id="1587062710" tmtrpt="599" stmtrpt="599" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
+<q>Jaki zakres wartości możemy uzyskać z 8 bitów?</q>
+<a>0 - 255</a>
+</item>
+
+<item id="1587059044" tmtrpt="599" stmtrpt="599" livl="1" rllivl="1" ivl="3" rp="1" gr="3">
+<q>Ile wejść cyfrowych w Arduino Mega 2560 może być użytych jako wyjścia PWM?</q>
+<a>14</a>
+</item>
+
+<item id="1587211671" tmtrpt="602" stmtrpt="602" livl="1" rllivl="1" ivl="5" rp="1" gr="4">
+<q>Jakie są możliwe tryby pracy pinów?</q>
+<a><![CDATA[<b>INPUT
+OUTPUT
+INPUT_PULLUP</b>]]></a>
+</item>
+
+<item id="1587211866" tmtrpt="602" stmtrpt="602" livl="1" rllivl="1" ivl="5" rp="1" gr="4">
+<q>Od jakiego parametru zależy transmisja UART? </q>
+<a><![CDATA[<b>baud-rate</b> - prędkość przesyłu danych w bitach/sekundę ( np. 9600, 115200 )]]></a>
+</item>
+
+<item id="1587059333" tmtrpt="602" stmtrpt="602" livl="1" rllivl="1" ivl="5" rp="2" gr="4">
+<q>Jak zbudowana jest ramka danych wysyłanych przez UART?</q>
+<a><![CDATA[<b>BS - </b>Bit startu. Logiczne 0. Rozpoczęcie transmisji.
+<b>B0-B7</b> - 7, 8 lub 9 bitów danych. Przesyłana informacja.
+<b>BK - </b>Bit stopu<b>.</b> Logiczna 1. Koniec transmisji.<img>img\KursArduino_2_001.png-300x75.png</img>]]></a>
+</item>
+
+<item id="1587059030" tmtrpt="602" stmtrpt="602" livl="1" rllivl="1" ivl="5" rp="2" gr="4">
+<q>Ile wejść cyfrowych ma Arduino Mega 2560?</q>
+<a>54 wejść input/output</a>
+</item>
+
+<item id="1587059005" tmtrpt="602" stmtrpt="602" livl="1" rllivl="1" ivl="5" rp="2" gr="4">
+<q>Ile wejść analogowych posiada Arduino Mega 2560?</q>
+<a>16</a>
+</item>
+
+<item id="1587211783" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Na czym polega przesyłanie danych przez UART?</q>
+<a>Na szeregowym przsyłaniu ciągu bitów, które następnie grupowane są w ramki tworząc informację.</a>
+</item>
+
+<item id="1587211633" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jakie są możliwe stany pinów?</q>
+<a><![CDATA[<b>HIGH
+LOW</b>]]></a>
+</item>
+
+<item id="1587211692" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jąką biblotekę dodajemy, żeby oprogramować serwomechanizm?</q>
+<a><![CDATA[<b>Servo.h</b>]]></a>
+</item>
+
+<item id="1587211973" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>W jakich granicach mieści się wypełnienie sygnału dla serwa?</q>
+<a><![CDATA[<b>5 - 10 %</b>]]></a>
+</item>
+
+<item id="1587058933" tmtrpt="606" stmtrpt="606" livl="2" rllivl="2" ivl="9" rp="1" gr="4">
+<q>Do czego służy ADC?</q>
+<a>Do przetwarzania sygnału analogowego na cyfrowy.
+Do próbkowania napięcia podawanego na wejście układu i przetwarzanie go na postać cyfrową.</a>
+</item>
+
+<item id="1587058827" tmtrpt="606" stmtrpt="606" livl="2" rllivl="2" ivl="9" rp="1" gr="4">
+<q>Co to jest wypełnienie w sygnale PWM?</q>
+<a>Jest to procent czasu przez jaki sygnał ma wysoki potencjał.</a>
+</item>
+
+<item id="1587059204" tmtrpt="606" stmtrpt="606" livl="2" rllivl="2" ivl="9" rp="1" gr="4">
+<q>Jaka metoda odczytuje aktualny kąt serwomechanizmu?</q>
+<a><![CDATA[<nazwa obiektu Servo>.read()]]></a>
+</item>
+
+<item id="1587060991" tmtrpt="606" stmtrpt="606" livl="2" rllivl="2" ivl="9" rp="1" gr="4">
+<q>Jaka funkcja inicjuje piny cyfrowe?</q>
+<a><![CDATA[pinMode( <nazwa pinu>, <tryb> )]]></a>
+</item>
+
+<item id="1587060905" tmtrpt="606" stmtrpt="606" livl="2" rllivl="2" ivl="9" rp="1" gr="4">
+<q>Jaka funkcja generuje sygnał PWM na określonym wyjściu?</q>
+<a><![CDATA[<b>analogWrite( <pin <span style="color:#f01">A0-A5</span> >, <wypełnienie> )</b>]]></a>
+</item>
+
+<item id="1587059322" tmtrpt="606" stmtrpt="606" livl="2" rllivl="2" ivl="9" rp="1" gr="4">
+<q>Co umożliwia przypisanie czytelnej nazwy i  zmianę w jednym miejscu zmiennej w całym programie ?</q>
+<a><![CDATA[Dyrektywa 
+<b>#define</b>]]></a>
+</item>
+
+<item id="1587062694" tmtrpt="606" stmtrpt="606" livl="2" rllivl="2" ivl="9" rp="1" gr="4">
+<q>Jaki zakres wartości daje przetwornik 10-bitowy?</q>
+<a>0 - 1023</a>
+</item>
+
+<item id="1587058663" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
 <q>Co to jest UART?</q>
 <a>Szeregowy interfejs komunikacyjny
 Universal asynchronous receiver-transmitter
 Uniwersalny asynchroniczny nadajnik-odbiornik</a>
 </item>
 
-<item id="1563398117" tmtrpt="612" stmtrpt="589" livl="29" rllivl="25" ivl="27" rp="7" gr="3">
-<q>Co to jest wypełnienie w sygnale PWM?</q>
-<a>Jest to procent czasu przez jaki sygnał ma wysoki potencjał.</a>
+<item id="1587059066" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Ilu bitowy jest sygnał PWM w Arduino?</q>
+<a>8-bitowy</a>
 </item>
 
-<item id="1563001360" tmtrpt="614" stmtrpt="586" livl="28" rllivl="21" ivl="35" rp="3" gr="3">
-<q>Jaka funkcja kopiuje dane z bufora do momentu napotkania znaku terminatora?</q>
-<a><![CDATA[Serial.readStringUntil( <terminator> )]]></a>
-</item>
-
-<item id="1563398722" tmtrpt="620" stmtrpt="587" livl="27" rllivl="25" ivl="35" rp="4" gr="3">
-<q>Ile wejść analogowych posiada Arduino Mega 2560?</q>
-<a>16</a>
-</item>
-
-<item id="1562828677" tmtrpt="625" stmtrpt="625" livl="10" rllivl="183" ivl="65" rp="11" gr="2">
-<q>Jak zbudowana jest ramka danych wysyłanych przez UART?</q>
-<a><![CDATA[<b>BS - </b>Bitu startu. Zawsze jest logicznym zerem.
-<b>B0-B7</b> - 7, 8 lub 9 bitów danych. Wysyłana informacja.
-<b>BK - </b>Bit stopu<b>.</b> Zawsze jest logiczną jedynką. Oznacza koniec transmisji.<img>img\KursArduino_2_001.png-300x75.png</img>]]></a>
-</item>
-
-<item id="1563472968" tmtrpt="636" stmtrpt="636" livl="56" rllivl="183" ivl="76" rp="7" gr="2">
-<q>Co to jest serwomechanizm?</q>
-<a>Silnik, przekładnia oraz dedykowany sterownik zamknięty w jednej obudowie.</a>
-</item>
-
-<item id="1564343460" tmtrpt="638" stmtrpt="638" livl="30" rllivl="183" ivl="78" rp="8" gr="2">
-<q>Na czym polega przesyłanie danych przez UART?</q>
-<a>Na szeregowym wysyłaniu ciągu bitów, które następnie składane są w ramki tworząc informację.</a>
-</item>
-
-<item id="1563398983" tmtrpt="638" stmtrpt="638" livl="99" rllivl="183" ivl="78" rp="5" gr="2">
+<item id="1587058496" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
 <q>Co oznacza znak "~" na płytce Arduino Uno?</q>
-<a>Tak oznaczone wyjście może generować sygnał PWM.</a>
+<a>Wyjście może generować sygnał PWM.</a>
 </item>
 
-<item id="1562829249" tmtrpt="645" stmtrpt="645" livl="46" rllivl="182" ivl="85" rp="6" gr="2">
+<item id="1587058730" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
 <q>Co to jest USART?</q>
 <a>Szeregowy interfejs komunikacyjny
 Universal Synchronous and Asynchronous Reciever and Transmitter</a>
 </item>
 
-<item id="1563399421" tmtrpt="649" stmtrpt="649" livl="58" rllivl="199" ivl="89" rp="5" gr="2">
-<q>Jaka funkcja generuje sygnał PWM na określonym wyjściu?</q>
-<a><![CDATA[analogWrite( <pin>, <wypełnienie> )]]></a>
+<item id="1587058999" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Ile portów UART posiada Arduino Mega?</q>
+<a>4</a>
 </item>
 
-<item id="1563309978" tmtrpt="649" stmtrpt="649" livl="100" rllivl="196" ivl="89" rp="4" gr="2">
-<q>Jaki zakres wartości daje przetwornik 10-bitowy?</q>
-<a>0 - 1023</a>
+<item id="1587061137" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jaka funkcja umożliwia odczyt z pinów ADC (piny A0-A5)?</q>
+<a><![CDATA[<b>analogRead( <piny A0-A5> )</b>]]></a>
 </item>
 
-<item id="1563095077" tmtrpt="650" stmtrpt="650" livl="187" rllivl="188" ivl="85" rp="3" gr="2">
-<q>Jaka zmienna jest przypisana do 13 pinu?</q>
-<a>LED_BUILTIN</a>
+<item id="1587059108" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jak funkcja wstrzymuje działanie programu na okrślony czas?</q>
+<a><![CDATA[<b>delay( <czas> )</b>
+1000 = 1s]]></a>
 </item>
 
-<item id="1562844737" tmtrpt="653" stmtrpt="653" livl="101" rllivl="199" ivl="93" rp="3" gr="2">
+<item id="1587059078" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Ilu bitowy przetwornik ADC jest w ARDUINO UNO?</q>
+<a>10-bitowy</a>
+</item>
+
+<item id="1587061215" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jaka funkcja zwraca ilość bajtów, które zostały odebrane i czekają na obsługę przez Arduino</q>
+<a>Serial.available()</a>
+</item>
+
+<item id="1587062855" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jakie parametry chrakteryzują sygnał PWM?</q>
+<a><![CDATA[Amplituda sygnału
+Okres sygnału
+Częstotliwość sygnału
+Wypełnienie sygnału<img>img\pwm_1.png</img>]]></a>
+</item>
+
+<item id="1587060862" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jaka funkcja generuje liczby pseudolosowe?</q>
+<a><![CDATA[<b>random(  <zakres dolny>, <zakres górny> )</b>
+lub
+<b>random( <zakres górny> )</b>]]></a>
+</item>
+
+<item id="1587061266" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jaka jest częstotliwość sygnału PWM generowana przez ARDUINO?</q>
+<a>490/sekundę</a>
+</item>
+
+<item id="1587061325" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jaka metoda służy do podłączenia serwomechanizmu pod pin?</q>
+<a><![CDATA[<nazwa obiektu Servo>.attach( <pin> )]]></a>
+</item>
+
+<item id="1587063279" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jakie piny w Arduino obsługują UART?</q>
+<a><![CDATA[<b>pin 0 - Rx</b> - odbieranie danych
+<b>pin 1</b> - <b>Tx</b> - wysyłanie danych]]></a>
+</item>
+
+<item id="1587063342" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
 <q>Jakie polecenie ustawia prędkość transmisji?</q>
 <a>Serial.begin(9600)</a>
 </item>
 
-<item id="1563542535" tmtrpt="655" stmtrpt="655" livl="66" rllivl="199" ivl="95" rp="4" gr="2">
-<q>Jaka metoda służy do podłączenia serwomechanizmu pod pin?</q>
-<a><![CDATA[<nazwa obiektu Servo>.attach(<pin>)]]></a>
-</item>
-
-<item id="1562844668" tmtrpt="655" stmtrpt="588" livl="28" rllivl="25" ivl="70" rp="4" gr="4">
+<item id="1587062631" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
 <q>Jaki jest szablon programów dla Arduino?</q>
 <a>void setup(){
 
@@ -414,168 +542,291 @@ void loop(){
 }</a>
 </item>
 
-<item id="1563094968" tmtrpt="662" stmtrpt="662" livl="24" rllivl="183" ivl="102" rp="4" gr="2">
-<q>Jakie są możliwe tryby pracy pinów?</q>
-<a>INPUT
-OUTPUT
-INPUT_PULLUP</a>
-</item>
-
-<item id="1563397944" tmtrpt="664" stmtrpt="664" livl="43" rllivl="199" ivl="104" rp="4" gr="2">
-<q>Jakie parametry chrakteryzują sygnał PWM?</q>
-<a><![CDATA[Amplituda sygnału
-Okres sygnału
-Częstotliwość sygnału
-Wypełnienie sygnału<img>img\pwm_1.png</img>]]></a>
-</item>
-
-<item id="1563399053" tmtrpt="664" stmtrpt="664" livl="46" rllivl="199" ivl="104" rp="4" gr="2">
-<q>Ilu bitowy jest sygnał PWM w Arduino?</q>
-<a>8-bitowy</a>
-</item>
-
-<item id="1563542739" tmtrpt="665" stmtrpt="665" livl="33" rllivl="211" ivl="107" rp="3" gr="2">
+<item id="1587062304" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
 <q>Jaka metoda służy do wysyłania wartości do serwomechanizmu?</q>
-<a><![CDATA[<nazwa obiektu Servo>.write( <wartość> )]]></a>
+<a><![CDATA[<b><nazwa obiektu Servo>.write( <wartość> )</b>]]></a>
 </item>
 
-<item id="1563398669" tmtrpt="666" stmtrpt="666" livl="49" rllivl="219" ivl="106" rp="4" gr="2">
-<q>Ile wejść cyfrowych w Arduino Mega 2560 może być użytych jako wyjścia PWM?</q>
-<a>14</a>
-</item>
-
-<item id="1562846316" tmtrpt="667" stmtrpt="667" livl="61" rllivl="219" ivl="107" rp="3" gr="2">
-<q>Jaka funkcja generuje liczby pseudolosowe?</q>
-<a><![CDATA[random(  <zakres dolny>, <zakres górny> )
-lub
-random( <zakres górny> )]]></a>
-</item>
-
-<item id="1563398585" tmtrpt="668" stmtrpt="668" livl="34" rllivl="212" ivl="110" rp="3" gr="2">
-<q>Ile wejść cyfrowych ma Arduino Mega 2560?</q>
-<a>54 wejść input/output</a>
-</item>
-
-<item id="1563206986" tmtrpt="671" stmtrpt="671" livl="39" rllivl="213" ivl="111" rp="3" gr="2">
-<q>Do czego służy ADC?</q>
-<a>Do przetwarzania sygnału analogowego na cyfrowy.
-Do próbkowania napięcia podanego na wejście układu i przetwarzanie go na postać cyfrową.</a>
-</item>
-
-<item id="1563208237" tmtrpt="671" stmtrpt="671" livl="51" rllivl="223" ivl="111" rp="3" gr="2">
-<q>Jaka funkcja umożliwia odczyt z pinów ADC (piny A0-A5)?</q>
-<a><![CDATA[<b>analogRead( <numer pinu> )</b>]]></a>
-</item>
-
-<item id="1563001244" tmtrpt="674" stmtrpt="674" livl="43" rllivl="213" ivl="114" rp="3" gr="2">
-<q>Jaka funkcja zwraca ilość bajtów, które zostały odebrane i czekają na obsługę przez Arduino</q>
-<a>Serial.available()</a>
-</item>
-
-<item id="1562829062" tmtrpt="739" stmtrpt="739" livl="14" rllivl="183" ivl="179" rp="10" gr="4">
-<q>Od jakich parametrów zależy transmisja UART? </q>
-<a>baud-rate - prędkość przesyłu danych w bitach/sekundę ( np. 9600, 115200 )</a>
-</item>
-
-<item id="1562846397" tmtrpt="745" stmtrpt="745" livl="31" rllivl="183" ivl="185" rp="7" gr="3">
-<q>Jak zrobić wykres kilku wartości w Kreślarce?</q>
-<a>Należy wysłać w jednej linii kilka wartości oddzielonych znakiem tabulatora, a na końcu linii powinien pojawić się znak nowej linii.</a>
-</item>
-
-<item id="1562963004" tmtrpt="780" stmtrpt="780" livl="41" rllivl="183" ivl="220" rp="5" gr="3">
-<q>Jaka funkcja inicjuje piny cyfrowe?</q>
-<a><![CDATA[pinMode( <nazwa pinu>, <tryb> )]]></a>
-</item>
-
-<item id="1563542820" tmtrpt="785" stmtrpt="785" livl="18" rllivl="197" ivl="227" rp="3" gr="3">
-<q>Jak metoda odczytuje aktualny kąt serwomechanizmu?</q>
-<a><![CDATA[<nazwa obiektu Servo>.read()]]></a>
-</item>
-
-<item id="1563473687" tmtrpt="787" stmtrpt="787" livl="35" rllivl="199" ivl="227" rp="5" gr="3">
+<item id="1587063442" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
 <q>Jakie przewody są wyprowadzone z serwomechanizmu?</q>
 <a>masa - czarny, brązowy
 zasilanie - czerwony
 sygnał sterujący - żółty, pomarańczowy</a>
 </item>
 
-<item id="1563309805" tmtrpt="792" stmtrpt="792" livl="65" rllivl="183" ivl="232" rp="4" gr="3">
-<q>Ilu bitowy przetwornik ADC jest w ARDUINO UNO?</q>
-<a>10-bitowy</a>
+<item id="1587061100" tmtrpt="607" stmtrpt="607" livl="2" rllivl="2" ivl="10" rp="1" gr="4">
+<q>Jaka funkcja kopiuje dane z bufora do momentu napotkania znaku terminatora?</q>
+<a><![CDATA[<b>Serial.readStringUntil( <terminator> )</b>]]></a>
 </item>
 
-<item id="1562828761" tmtrpt="794" stmtrpt="794" livl="34" rllivl="199" ivl="234" rp="5" gr="3">
-<q>Jakie piny w Arduino obsługują UART?</q>
-<a><![CDATA[<b>Rx</b> - odbieranie danych ( w Arduino - pin 0 )
-<b>Tx</b> - wysyłanie danych ( w Arduino - pin 1 )]]></a>
-</item>
-
-<item id="1563002205" tmtrpt="797" stmtrpt="797" livl="102" rllivl="183" ivl="237" rp="4" gr="3">
-<q>Jak przypisać czytelną nazwę i  umożliwić zmianę w jednym miejscu zmianę zmiennej w całym programie ?</q>
-<a><![CDATA[Umożliwia to dyrektywa <b>#define</b>]]></a>
-</item>
-
-<item id="1562846177" tmtrpt="803" stmtrpt="803" livl="34" rllivl="211" ivl="245" rp="4" gr="3">
-<q>Jaka funkcja umożliwia ustawinie wartości początkowej dla algorytmu generowania liczb pseudolosowych?</q>
-<a><![CDATA[randomSeed( <wartość początkowa> );]]></a>
-</item>
-
-<item id="1563207070" tmtrpt="804" stmtrpt="804" livl="36" rllivl="199" ivl="244" rp="4" gr="3">
-<q>Ile jest wejść analogowych w ARDUINO UNO?</q>
-<a>6 - od A0 do A5</a>
-</item>
-
-<item id="1562963528" tmtrpt="809" stmtrpt="809" livl="47" rllivl="199" ivl="249" rp="4" gr="3">
-<q>Jak funkcja wstrzymuje działanie programu na okrślony czas?</q>
-<a><![CDATA[delay(<czas>)
-1000 = 1s]]></a>
-</item>
-
-<item id="1562844794" tmtrpt="814" stmtrpt="814" livl="54" rllivl="199" ivl="254" rp="4" gr="3">
-<q>Jakie polecenie drukuje w porcie szeregowym?</q>
-<a>Serial.println( "tekst" )</a>
-</item>
-
-<item id="1563542201" tmtrpt="837" stmtrpt="837" livl="62" rllivl="223" ivl="277" rp="3" gr="3">
-<q>Jąką biblotekę dodajemy, żeby oprogramować serwomechanizm?</q>
-<a>Servo.h</a>
-</item>
-
-<item id="1563206942" tmtrpt="839" stmtrpt="839" livl="81" rllivl="213" ivl="279" rp="3" gr="3">
+<item id="1587058562" tmtrpt="611" stmtrpt="611" livl="2" rllivl="2" ivl="14" rp="1" gr="5">
 <q>Co to jest ADC?</q>
 <a>Analog Digital Converter
 Przetwornik analogowo-cyfrowy</a>
 </item>
 
-<item id="1563399118" tmtrpt="842" stmtrpt="842" livl="72" rllivl="213" ivl="282" rp="3" gr="3">
-<q>Jaki zakres wartości możemy uzyskać z 8 bitów?</q>
-<a>0 - 255</a>
+<item id="1587062330" tmtrpt="611" stmtrpt="611" livl="2" rllivl="2" ivl="14" rp="1" gr="5">
+<q>Jaka zmienna jest przypisana do 13 pinu?</q>
+<a>LED_BUILTIN</a>
 </item>
 
-<item id="1563094868" tmtrpt="846" stmtrpt="846" livl="53" rllivl="225" ivl="286" rp="3" gr="3">
-<q>Jakie są możliwe stany pinów?</q>
-<a>HIGH, LOW</a>
+<item id="1587063313" tmtrpt="615" stmtrpt="615" livl="2" rllivl="2" ivl="18" rp="1" gr="5">
+<q>Jakie polecenie drukuje w porcie szeregowym?</q>
+<a>Serial.println( "tekst" )</a>
 </item>
 
-<item id="1563311954" tmtrpt="998" stmtrpt="998" livl="64" rllivl="213" ivl="438" rp="4" gr="4">
-<q>Jaka jest częstotliwość sygnału PWM generowana przez ARDUINO?</q>
-<a>490/sekundę</a>
-</item>
-
-<item id="1563095015" tmtrpt="1119" stmtrpt="1119" livl="52" rllivl="229" ivl="559" rp="3" gr="5">
-<q>Do jakiego pinu podłączona jest dioda dla użytkowanika na płytce Arduino?</q>
-<a>13</a>
-</item>
-
-<item id="1563473279" tmtrpt="1157" stmtrpt="1157" livl="60" rllivl="218" ivl="597" rp="3" gr="5">
-<q>Ile ma standardowy okres sygnału dla serwa?</q>
-<a>20 ms</a>
-</item>
-
-<item id="1563309909" tmtrpt="1165" stmtrpt="1165" livl="51" rllivl="229" ivl="607" rp="3" gr="5">
+<item id="1587062663" tmtrpt="616" stmtrpt="616" livl="3" rllivl="3" ivl="19" rp="1" gr="5">
 <q>Jaki zakres napięć występuje w ARDUINO UNO? </q>
 <a>0 - 5 V</a>
 </item>
+
+<item id="1587058942" tmtrpt="618" stmtrpt="618" livl="3" rllivl="3" ivl="21" rp="1" gr="5">
+<q>Do jakiego pinu podłączona jest dioda LED_BUILT dla użytkowanika na płytce Arduino?</q>
+<a>13</a>
+</item>
+
+</category>
+
+<category name="Java">
+
+<category name="Jar">
+
+<item id="1587211994" tmtrpt="602" stmtrpt="602" livl="1" rllivl="1" ivl="5" rp="1" gr="4">
+<q>Jaka opcja polecenia "jar" aktualizuje archiwum.</q>
+<a><![CDATA[<b>u</b>]]></a>
+</item>
+
+<item id="1587211998" tmtrpt="602" stmtrpt="602" livl="1" rllivl="1" ivl="5" rp="1" gr="4">
+<q>Jaka opcja polecenia "jar" tworzy lub nadpisuje nagłówek Main-Class w MANIFEST.MF? </q>
+<a><![CDATA[<b>e</b>]]></a>
+</item>
+
+<item id="1587211984" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jak musi być zakończony plik tekstowy z informacjami dla pliku MANIFEST.MF</q>
+<a>Musi być zakończony znakiem końca linii i znakiem powrotu karetki.</a>
+</item>
+
+<item id="1587211996" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jaka opcja polecenia "jar" oznacza tworzenie pliku JAR.</q>
+<a><![CDATA[<b>c</b>]]></a>
+</item>
+
+<item id="1587211992" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jaka opcja polecenia "jar"  oznacza, że w wyniku działania powstanie plik a nie strumień stdout?</q>
+<a><![CDATA[<b>f</b>]]></a>
+</item>
+
+<item id="1587212004" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jaka opcja polecenia "jar" wysyła komunikaty na ekran?</q>
+<a><![CDATA[<b>v</b>]]></a>
+</item>
+
+<item id="1587212009" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jaka opcja polecenia java uruchamia aplikację z archiwum JAR?</q>
+<a><![CDATA[<b>-jar</b>]]></a>
+</item>
+
+<item id="1587212015" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jakie nagłówki trzeba zdefiniować w MANIFEST.MF żeby przekazać informacje o potrzebnym pakiecie?</q>
+<a>Name:
+Specification-Title:
+Specification-Version:
+Specification-Vendor:
+Implementation-Title:
+Implementation-Version:
+Implementation-Vendor:</a>
+</item>
+
+<item id="1587211988" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jak wygląda podstawowa postać polecenia "jar"? </q>
+<a><![CDATA[<b>jar cf jar-file input-file(s)</b>]]></a>
+</item>
+
+<item id="1587212013" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jakie jest kodowanie pliku MANIFEST.MF </q>
+<a>UTF-8</a>
+</item>
+
+<item id="1587212005" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jaka opcja polecenia "jar" wyłącza kompreję pakowanych plików?</q>
+<a><![CDATA[<b>0</b>]]></a>
+</item>
+
+<item id="1587212024" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Podaj wzór polecenia uruchomienia aplikacji z pliku JAR.</q>
+<a><![CDATA[<b>java -jar jar-file</b>]]></a>
+</item>
+
+<item id="1587212007" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jaka opcja polecenia "jar" zmienia katalog w trakcie wykonywania polecenia.</q>
+<a><![CDATA[<b>-C</b>]]></a>
+</item>
+
+<item id="1587212017" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jakie pole musi zawierać plik MANIFEST.MF</q>
+<a><![CDATA[<b>Main-Class: classname</b>]]></a>
+</item>
+
+<item id="1587212002" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jaka opcja polecenia "jar" wypakowuje pliki z archiwum?</q>
+<a><![CDATA[<b>x</b>]]></a>
+</item>
+
+<item id="1587212021" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Podaj wzór polecenia "jar" rozpakowujące pliki.</q>
+<a><![CDATA[<b>jar xf jar-file [archived-file(s)]
+jar xf jar-file</b>]]></a>
+</item>
+
+<item id="1587212026" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Podaj ścieżkę do pliku MANIFEST.MF.</q>
+<a><![CDATA[<b>jar-file/META-INF/MANIFEST.MF</b>]]></a>
+</item>
+
+<item id="1587211990" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jak wygląda polecenie "jar" tworzące plik manifestu z pliku tekstowego mymanifest.txt.</q>
+<a><![CDATA[<b>jar cfm jar-file mymanifest.txt input-file(s)</b>]]></a>
+</item>
+
+<item id="1587212011" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jaki nagłówek w MANIFEST.MF może zastapić opcję "-classpath" w poleceniu "java"</q>
+<a>Class-Path: name1 name2 directory/name3</a>
+</item>
+
+<item id="1587212000" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Jaka opcja polecenia "jar" tworzy plik manifest z dołączonego pliku tekstowego?</q>
+<a><![CDATA[<b>m</b>]]></a>
+</item>
+
+<item id="1587212019" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Podaj wzór polecenia "jar" aktualizująca archiwum.</q>
+<a><![CDATA[<b>jar uf jar-file input-file(s)</b>]]></a>
+</item>
+
+<item id="1587212023" tmtrpt="603" stmtrpt="603" livl="1" rllivl="1" ivl="6" rp="1" gr="4">
+<q>Podaj wzór polecenia "jar" z opcją zmiany katalogu na katalog bieżący.</q>
+<a><![CDATA[<b>jar cf jar-file -C input-directory_1 . -C input-directory_2 .</b>]]></a>
+</item>
+
+</category>
+
+<category name="Wyrażenia regularne">
+
+<item id="1587232704" tmtrpt="598" stmtrpt="598" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
+<q>Jak znaleźć w tekście dopasowanie całego skompilowanego wyrażenia regularnego z obiektu Pattern?</q>
+<a>Matcher matcher = pattern.matcher( tekst )</a>
+</item>
+
+<item id="1587232342" tmtrpt="598" stmtrpt="598" livl="0" rllivl="1" ivl="1" rp="0" gr="2">
+<q>Jak uzyskać skompilowaną postać wzorca z wyrażenia regulrnego?</q>
+<a>Pattern pattern = Pattern.compile( regexp )</a>
+</item>
+
+<item id="1587234462" tmtrpt="598" stmtrpt="598" livl="0" rllivl="0" ivl="1" rp="0" gr="3">
+<q>Jaki wyjątek jest generowany w trakcie kompilacji wzorca przy wystąpieniu błędu składniowego?</q>
+<a>PatternSyntaxException
+
+przykład
+
+String error = null;
+Pattern pattern = null;
+try {
+     pattern = Pattern.compile( regexp );
+} catch( Exception e ) {
+    return error + " " + e.getMessage();
+}</a>
+</item>
+
+<item id="1587233623" tmtrpt="599" stmtrpt="599" livl="0" rllivl="1" ivl="2" rp="0" gr="3">
+<q>Kiedy metoda find() zwraca true ?</q>
+<a>Gdy w przetwarzanym tekście znaleziono podłańcuchy wzorca.</a>
+</item>
+
+<item id="1587237134" tmtrpt="599" stmtrpt="599" livl="0" rllivl="1" ivl="2" rp="0" gr="3">
+<q>Jak zdefiniować zakres znaków w wyrażeniu regularnym?
+Podaj przykłady:
+- dowolną cyfrę
+- dowolną małą lub wielką literę alfabetu łacińskiego
+- dowolną literę lub cyfrę</q>
+<a>"[0-9]"
+"[a-zA-Z]"
+"[a-zA-Z0-9]"</a>
+</item>
+
+<item id="1587236791" tmtrpt="599" stmtrpt="599" livl="0" rllivl="0" ivl="2" rp="0" gr="4">
+<q>Jak określa się alternatywę w wyrażeniu regularnym? 
+Znajdź dowolny znak oprócz "a", "b", "c".</q>
+<a>"[^abc]"</a>
+</item>
+
+<item id="1587236509" tmtrpt="599" stmtrpt="599" livl="0" rllivl="0" ivl="2" rp="0" gr="4">
+<q>Jaka jest postać wyrażenia regularnego, które ma znaleźć w tekście literały "ala" albo "pies" albo "kot"?
+</q>
+<a>"ala|pies|kot"
+logiczna alternatywa</a>
+</item>
+
+<item id="1587232803" tmtrpt="599" stmtrpt="599" livl="0" rllivl="0" ivl="2" rp="0" gr="4">
+<q>Jak znaleźć w tekście dopasowanie część skompilowanego wyrażenia regularnego z obiektu Pattern?</q>
+<a>Matcher matcher = pattern.find( tekst )</a>
+</item>
+
+<item id="1587240579" tmtrpt="599" stmtrpt="599" livl="0" rllivl="0" ivl="2" rp="0" gr="4">
+<q>Co oznacza predefiniowana klasa "\d"? </q>
+<a>cyfra: [0-9]</a>
+</item>
+
+<item id="1587240686" tmtrpt="599" stmtrpt="599" livl="0" rllivl="0" ivl="2" rp="0" gr="4">
+<q>Co oznacza predefiniowana klasa "\D"? </q>
+<a>nie-cyfra: [^0-9] bądź [^\d]</a>
+</item>
+
+<item id="1587240933" tmtrpt="599" stmtrpt="599" livl="0" rllivl="0" ivl="2" rp="0" gr="4">
+<q>Co oznacza predefiniowana klasa "\w"? </q>
+<a>jeden ze znaków: [a-zA-Z0-9], znak "dopuszczalny" w słowie</a>
+</item>
+
+<item id="1587232964" tmtrpt="601" stmtrpt="601" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
+<q>Jaki jest typ zwracanej odpowiedzi metod matche() i find()? </q>
+<a>boolean</a>
+</item>
+
+<item id="1587240763" tmtrpt="601" stmtrpt="601" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
+<q>Co oznacza predefiniowana klasa "\s"? </q>
+<a>biały znak: [\t\n\x0B\f\r]</a>
+</item>
+
+<item id="1587240542" tmtrpt="601" stmtrpt="601" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
+<q>Co oznacza predefiniowana klasa "."? </q>
+<a>dowolny znak; w zależności od opcji kompilacji wzorca może pasować lub nie do znaku końca wiersza</a>
+</item>
+
+<item id="1587240823" tmtrpt="601" stmtrpt="601" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
+<q>Co oznacza predefiniowana klasa "\S"? </q>
+<a>każdy znak oprócz białego: [^\s]</a>
+</item>
+
+<item id="1587239962" tmtrpt="601" stmtrpt="601" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
+<q>Podaj przykład, w którym po słowie "Numer" powinna następowąć spajca, potem zaś jedna z cyfr 1,2,3,7,8,9, następnie dowolna cyfra, ukośnik i dowolny znak oprócz 0,1,2,3 oraz małej literyalfabetu łacińskiego.</q>
+<a>"Numer [1-37-9][0-9]/[^0-3a-z]"</a>
+</item>
+
+<item id="1587215401" tmtrpt="601" stmtrpt="601" livl="0" rllivl="1" ivl="4" rp="0" gr="4">
+<q>Jakie klasy w javie obsuługują wyrażenia regularne?</q>
+<a>java.util.regex: Pattern Matcher</a>
+</item>
+
+<item id="1587233264" tmtrpt="603" stmtrpt="603" livl="0" rllivl="1" ivl="6" rp="0" gr="5">
+<q>Kiedy metoda matches() zwraca true ?</q>
+<a>Gdy cały tekst pasuje do wzorca.</a>
+</item>
+
+<item id="1587236671" tmtrpt="604" stmtrpt="604" livl="0" rllivl="1" ivl="7" rp="0" gr="5">
+<q>Jak definiujemy w wyrażeniu regularnym klasę znaków 123abc?</q>
+<a>"[123abc]"</a>
+</item>
+
+</category>
 
 </category>
 
